@@ -378,3 +378,58 @@
     border-radius : 10% 0 0 0;
   }
 }
+
+
+// PORTFOLIO (DRAG AND SCROLL) -------------------------------------------------
+
+.drag-container {  
+  width:85%;
+  height: 40%;
+  display:flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  &:hover {
+    cursor:grab; 
+  }
+
+  &.is-dragging {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .box {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 6px;
+
+    &:hover img {
+      filter: brightness(80%);
+    }
+
+    &:hover > p {
+      opacity: 1;
+    }
+    
+    img {
+      transition : all .5s;
+    }
+
+    p {
+      transition: all .5s;
+      background: rgba(0, 0, 0, 0.664);
+      color:white;
+      width:100%;
+      height:20%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      position: absolute;
+      bottom:0;
+    }
+  }
+}

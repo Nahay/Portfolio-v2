@@ -168,6 +168,13 @@
     animation: gradientBg 25s ease infinite;
     background: linear-gradient(59deg, #FFB884, #FF2F2F);
     background-size: 5% 150%;
+
+    .section__content {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
 
 .home__4 {

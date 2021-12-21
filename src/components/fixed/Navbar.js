@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
             <div className="navbar__center">
                 <nav>
-                    <HashLink smooth to="/#top">
+                    <HashLink smooth to="/#home">
                         Home
                     </HashLink>
                     <HashLink smooth to="/#about">

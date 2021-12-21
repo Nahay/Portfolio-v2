@@ -6,7 +6,7 @@ const Logo = () => {
 
     return ( 
         <div className="logo__content">
-            <HashLink smooth to="/#top">lily b</HashLink>
+            <HashLink smooth to="/#home">lily b</HashLink>
         </div>
     );
 }
