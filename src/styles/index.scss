@@ -1,0 +1,8 @@
+@import "./settings";
+// @import "./components/pageNotFound";
+
+// avant les autres sinon changements spéciaux pas appliqués
+@import "./components/generics";
+
+@import "./components/fixed";
+@import "./components/home";

@@ -1,0 +1,380 @@
+// HEADPHONES ------------------------------------------------------------------------------------
+
+.headphones__content {
+  position : absolute;
+}
+
+.headphones {
+  position : relative;
+  width:180px;
+  height:180px;
+  border : 12.6px solid #1B1B1B;
+  border-bottom-color: transparent;
+  border-radius:50%;
+}
+
+.headphones::before {
+  content : '';
+  position : absolute;
+  bottom : 0;
+  left : -10%;
+  width : 25%;
+  height : 50%;
+  background : #1B1B1B;
+  border-right : 18px solid #ffe6cc;
+  border-radius : 50% 9px 9px 50%;
+}
+
+.headphones::after {
+  content : '';
+  position : absolute;
+  bottom : 0;
+  right : -10%;
+  width : 25%;
+  height : 50%;
+  background : #1B1B1B;
+  border-left: 18px solid #ffe6cc;
+  border-radius : 9px 50% 50% 9px;
+}
+
+.protec {
+  position : absolute;
+  top:-2%;
+  left:5%;
+  width:90%;
+  height:86%;
+  border : 12.6px solid transparent;
+  border-top-color: #676766;
+  border-radius:50%;
+}
+
+.micro {
+  position : relative;
+  bottom : -80%;
+  right : -70%;
+  z-index:1;
+  width : 30%;
+  height : 30%;
+  border : 9px solid transparent;
+  border-right-color: grey;
+  border-bottom-color : grey;
+  border-radius : 540px 180px;
+}
+
+.micro::before {
+  position : absolute;
+  content : '';
+  width : 55%;
+  height : 45%;
+  left : -20%;
+  top: 95%;
+  border-radius : 50%;
+  background : black;
+}
+
+
+// PHONE ----------------------------------------------------------------------------------------
+
+.phone__content {
+  position : absolute;
+}
+
+.phone {
+  position : relative;
+  background : #1B1B1B;
+  width : 117.45px;
+  height : 217.5px;
+  border-radius : 15px;
+  border: 5px solid firebrick;
+  display : flex;
+  justify-content : center;
+}
+
+.phone::after {
+  content:'';
+  position : absolute;
+  background : #ffe6cc;
+  width : 93.6%;
+  height : 96.5%;
+  top: 1.72%;
+  left : 3.19%;
+  border-radius : 7.5px;
+  
+}
+
+.phone::before {
+  position : absolute;
+  content:'';
+  background : #696969;
+  width : 3.3px;
+  height : 4.5px;
+  top: 0.5%;
+  left : 47%;
+  z-index:1;
+  border-radius : 50%;
+  border: 2.49px solid #1B1B1B;
+}
+
+.shadow1 {
+  background : #ffcc99;
+  position : absolute;
+  width : 42.55%;
+  height : 45.97%;
+  z-index:1;
+  top: 11.5%;
+  right : 8%;
+  border-radius : 49.99px 0;
+}
+
+.shadow2 {
+  background : #ffcc99;
+  position : absolute;
+  width : 21.27%;
+  height : 22.98%;
+  z-index:1;
+  bottom : 11.5%;
+  left : 13%;
+  border-radius : 0px 49.99px;
+}
+
+.container {
+  z-index: 2;
+  padding-top: 28%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 8.25px 4.99px;
+  width: 80%;
+  height: 90%;
+  justify-items: center;
+}
+
+.block {
+  width: 90%;
+  height : 16.5px;
+  border-radius : 3.49px;
+}
+
+.n1 {
+    /* purple */
+    background: linear-gradient(45deg, rgba(99,38,164,1) 0%, rgba(180,27,190,1) 50%, rgba(221,70,198,1) 100%);
+}
+
+.n2 {
+    /* darkblue */
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 100%);
+}
+
+.n3 {
+    /* lightblue */
+    background: linear-gradient(45deg, rgba(43,65,152,1) 0%, rgba(38,199,233,1) 49%, rgba(0,255,239,1) 100%);
+}
+
+.n4 {
+    /* green */
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(26,121,9,1) 49%, rgba(0,255,145,1) 100%);
+}
+
+.n5 {
+    /* orange */
+    background: linear-gradient(45deg, rgba(184,73,29,1) 0%, rgba(233,126,38,1) 55%, rgba(253,181,103,1) 100%);
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.n6 {
+    /* red */
+    background: linear-gradient(45deg, rgba(134,65,37,1) 0%, rgba(233,67,38,1) 49%, rgba(253,103,103,1) 100%);
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.n7 {
+    /* orange */
+    background: linear-gradient(45deg, rgba(184,73,29,1) 0%, rgba(233,126,38,1) 55%, rgba(253,181,103,1) 100%);
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.n8 {
+    /* red */
+    background: linear-gradient(45deg, rgba(162,66,66,1) 0%, rgba(255,0,0,1) 100%);
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.n9 {
+    /* lightgreen */
+    background: linear-gradient(45deg, rgba(79,124,38,1) 0%, rgba(27,190,59,1) 49%, rgba(70,221,140,1) 100%);    
+  grid-column: 1;
+  grid-row: 8;
+}
+
+.n10 {
+    /* yellow */
+    background: linear-gradient(45deg, rgba(161,165,56,1) 0%, rgba(255,226,0,1) 100%);
+    grid-column: 1;
+    grid-row: 9;
+}
+
+.n11 {
+    /* purple */
+    background: linear-gradient(45deg, rgba(67,57,92,1) 0%, rgba(178,55,255,1) 49%, rgba(203,165,255,1) 100%);
+    grid-column: 2;
+    grid-row: 9;
+}
+
+.n12 {
+    /* pink */
+    background: linear-gradient(45deg, rgba(148,48,107,1) 0%, rgba(239,43,116,1) 49%, rgba(255,125,182,1) 100%);  
+    grid-column: 3;
+    grid-row: 9;
+}
+
+
+// CUP ------------------------------------------------------------------------------------
+
+.cup__content {
+  position : absolute;
+}
+
+.cup {
+  position : relative;
+  width : 150px;
+  height : 150px;
+  border-radius : 50%;
+  background : #873d34;
+  border : 10px solid #EC4039;
+}
+
+.cup::after {
+  position : absolute;
+  content : '';
+  width : 26.66%;
+  height : 20%;
+  background : #EC4039;
+  right : -30%;
+  top: 40%;
+  border-radius : 0 40px 40px 0;
+}
+
+.cup::before {
+  position : absolute;
+  content : '';
+  border : 10px solid #eed9c4;
+  width : 87.66%;
+  height : 87.66%;
+  border-radius : 50%;
+  top: -1%;
+  left:-1.5%;
+}
+
+.tea {
+  position : relative;
+  top: 66.66%;
+  left : 53.33%;
+  height : 50%;
+  width: 50%;
+  border : 5px solid transparent;
+  border-top-color: white;
+  border-radius : 50%;
+  transform: rotate(25deg);
+}
+
+.tea::after {
+  content : '';
+  position : absolute;
+  height : 100%;
+  width : 100%;
+  border : 5px solid transparent;
+  border-bottom-color : white;
+  border-radius : 50%;
+  top:-89%;
+  left:65.5%;
+  transform : rotate(-1deg) translateX(0.5px);
+}
+
+.tea::before {
+  z-index : 2;
+  content : '';
+  background : #f29a26;
+  width : 25%;
+  height : 15%;
+  position : absolute;
+  right : -115.67%;
+  bottom: 75%;
+  border-top: 37px #f7c178 solid;
+  border-left: 9px solid #f7c178;
+  border-right : 9px solid #f7c178;
+  transform : rotate(45deg);
+}
+
+.shadow {
+  position : absolute;
+  width : 60%;
+  height : 60%;
+  background : #be7457;
+  z-index : 2;
+  top: 14%;
+  right : 14%;
+  border-radius : 50%;
+  clip-path: circle(70.0% at 90% 0);
+}
+
+
+// LOGO ---------------------------------------------------------------------------
+.logo__content a {
+    font-family : $font-titles; 
+    font-size : 70px;
+    font-weight : bold;
+    width : 100px;
+        
+    background: linear-gradient(79.42deg, #FF874F -13.16%, #E62828 57.87%);
+    
+    filter: drop-shadow(3px 3px 3px black);
+    
+    -webkit-background-clip: text;
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+// MAIL --------------------------------------------------------------------------
+
+.mail__content {
+  position : absolute;
+}
+
+.mail {
+  width : 50px;
+  height : 33.34px;
+  background : rgb(252, 159, 84);
+  border-radius : 5px;
+  position : relative;
+  overflow:hidden;
+  border : 3px solid rgb(56, 56, 56);
+  transition : background 0.5s;
+
+  &::after, &::before {
+    content : '';
+    position : absolute;
+    transform : rotate(45deg);
+    border : 2px solid rgb(56, 56, 56);
+    width : 68%;
+    height : 100%;
+  }
+  
+  &::after {
+    top:-58%;
+    left : 11%;
+    border-radius : 0 0 10% 0;
+    background : rgb(252, 159, 84);
+    transition : background 0.5s;
+  }
+  
+  &::before {
+    bottom:-58%;
+    left : 14%;
+    border-radius : 10% 0 0 0;
+  }
+}

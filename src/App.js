@@ -1,9 +1,22 @@
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import PortfolioRouter from './routers/PortfolioRouter';
+
+import FourOhFour from './Pages/FourOhFour';
+
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p>test</p>
-      </header>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/" element = {<PortfolioRouter/>} />
+          <Route exact element = {<FourOhFour/>} />
+          
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

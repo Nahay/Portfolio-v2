@@ -1,0 +1,169 @@
+// NAVBAR ----------------------------------------------------------------
+
+.navbar {
+    position : fixed;
+    top:0;
+    left:0;
+    right:0;
+    background : transparent;
+    color : white;
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    z-index : 5;
+    height : 90px;
+
+    a {
+        color : rgb(56, 56, 56);
+        font-weight : bold;
+    }
+
+    .navbar__left {
+        width : 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo__content {
+            width : 250px;
+            display : flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    .navbar__center {
+        width : 40%;
+        display: flex;
+        justify-content: center;
+        top:-20%;
+        position : relative;
+
+        &::before {
+            z-index:-1;
+            content : '';
+            background : rgba(255,255,255,0.2);
+            width : 400px;
+            height : 70px;
+            top:-160%;
+            position : absolute;
+            border-radius : 0 0 50px 50px;
+        }
+
+        nav {
+            width : 250px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 18px;
+            font-weight : 400;
+            letter-spacing: 0.035em;
+
+            a {
+                position : relative;
+                width : auto;
+            }
+
+            a::after {
+                content : '';
+                position : absolute;
+                background : #e43f3f;
+                width : 0px;
+                height : 7px;
+                transition : 0.4s;
+                display : block;
+            }
+
+            a:hover::after {
+                width: 100%;
+            }
+        }
+
+        .active-link {
+            font-weight : 800;
+        }
+    }
+
+    .navbar__right {
+        width : 30%;
+        display: flex;
+        justify-content: flex-end;
+
+        .navbar__right__icon {
+            cursor : pointer;
+            top:0;
+            right:-2px;
+            position : absolute;
+            display : flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            background : rgba(255,255,255,0.2);
+            width : 90px;
+            height : 80px;
+            margin-right : 17px;
+            border-radius: 0 0 0 50%;
+
+            .mail__content {
+                top: 23%;
+                right : 15%;
+            }
+
+            &:hover .mail__content .mail, &:hover .mail__content .mail::after {
+                background : rgb(245, 131, 38);
+            }
+        }
+    }
+}
+
+
+// SIDE SOCIAL MEDIA --------------------------------------------------------------
+
+.social-media {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background : rgba(255,255,255,0.2);
+    position : absolute;
+    top:40%;
+    right:-2px;
+    height : 200px;
+    width : 40px;
+    border-radius : 100px 0 0 100px;
+    z-index : 5;
+    margin-right : 17px;
+
+    svg {
+        transition : color 0.3s;
+        color: rgba(0,0,0,0.7);
+
+        &:hover {
+            color : #e43f3f;
+            cursor : pointer;
+        }
+
+        &:nth-child(3):hover {
+            position : relative;
+            cursor : default;
+        }
+
+        &:nth-child(3) + span {
+            display : flex;
+            justify-content: center;
+            align-items: center;
+            opacity:0;
+            transition : opacity 0.5s;
+            background:rgba(255,255,255,0.2);
+            top:70%;
+            right:120%;
+            position : absolute;
+            width:100px;
+            height:30px;
+            z-index:10;
+            border-radius: 100px;
+        }
+
+        &:nth-child(3):hover + span {
+            opacity : 1;
+        }
+    }
+}
