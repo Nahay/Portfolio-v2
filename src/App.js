@@ -1,6 +1,5 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Test from './components/Test/Test';
 import Home from './Pages/Home';
 
 import FourOhFour from './Pages/FourOhFour';
@@ -12,14 +11,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <main className="main">
-          <Routes>
+          <Switch>
 
-            <Route path="/" element={<Home />}>
-            </Route>
+            <Route exact path="/" component = {Home} />
+            <Route path="*" component = {FourOhFour} />
 
-            <Route path="*" element = {<FourOhFour/>} />
-          
-          </Routes>
+          </Switch>
         </main>
       </BrowserRouter>
     </div>

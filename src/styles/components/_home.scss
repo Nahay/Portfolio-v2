@@ -22,7 +22,7 @@
 
 
 .home {
-    scroll-snap-type: y mandatory ;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100%;
 }
@@ -142,7 +142,7 @@
         }
 
         .cup__content {
-            animation : moveXY 3s infinite alternate 1.5s linear;
+            //animation : moveXY 3s infinite alternate 1.5s linear;
             top:63%;
             right: 45%;
         }
