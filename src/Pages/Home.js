@@ -6,6 +6,7 @@ import Cup from '../components/generics/vectors/Cup';
 import Headphones from '../components/generics/vectors/Headphones';
 import Phone from '../components/generics/vectors/Phone';
 import Portfolio from '../components/generics/Portfolio';
+import Contact from './Contact';
 
 
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
             </section>
             <section className="home__section home__4" id="contact">
                 <div className="section__content">
+                    <Contact/>
                 </div>     
             </section>
         </div>

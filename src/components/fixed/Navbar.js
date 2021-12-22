@@ -26,9 +26,9 @@ const Navbar = () => {
                 </nav>
             </div>
             <div className="navbar__right">
-                <a className="navbar__right__icon"  href="mailto:lily.barberou@gmail.com">
+                <HashLink smooth to="/#contact">
                     <Mail/>
-                </a>
+                </HashLink>
             </div>
         </div>
     );

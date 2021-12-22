@@ -75,6 +75,14 @@ const Portfolio = () => {
                     alt="Coming Soon"
                 />
             </div>
+            <div className='box'>
+                <img
+                    src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
+                    width="500"
+                    height="300"
+                    alt="Coming Soon"
+                />
+            </div>
         </div>
     );
 }
