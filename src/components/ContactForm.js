@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAt, faEnvelope, faPaperPlane, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
@@ -7,31 +7,31 @@ import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
     const [captcha, setCaptcha] = useState([]);
-    const [answer, setAnswer] = useState("");
+    const [answer, setAnswer] = useState('');
 
     const form = useRef();
 
     useEffect(() => {
         for (let i = 0; i<2; i++)
-            setCaptcha(captcha => [...captcha, Math.floor(Math.random() * 10) + 1]);
+            setCaptcha(captcha => [...captcha, Math.floor(Math.random() * 10) + 1])
     }, []);
 
-    const handleNameChange = (e) => setName(e.target.value);
+    const handleNameChange = (e) => setName(e.target.value)
     
-    const handleEmailChange = (e) => setEmail(e.target.value);
+    const handleEmailChange = (e) => setEmail(e.target.value)
 
-    const handleSubjectChange = (e) => setSubject(e.target.value);
+    const handleSubjectChange = (e) => setSubject(e.target.value)
 
-    const handleMessageChange = (e) => setMessage(e.target.value);
+    const handleMessageChange = (e) => setMessage(e.target.value)
 
     const handleAnswerChange = (e) => {
         const val = e.target.value;
-        if (Number(val) || val === "") setAnswer(val);
+        if (Number(val) || val === "") setAnswer(val)
     }
 
     const handleSubmit = (e) => {
@@ -43,16 +43,21 @@ const ContactForm = () => {
 
                     emailjs.sendForm("service_cxoxesr", "TEMP", form.current, "user_YiCuJS7dEJZjxxcrfEK5I")
                     .then((res) => {
-                        toast.success("Mail sent!")
+                        toast.success("Mail sent!");
+                        setName('');
+                        setEmail('');
+                        setSubject('');
+                        setMessage('');
+                        setAnswer('');
                     }, (err) => {
-                        toast.error("Mail could not be sent.")
+                        toast.error("Mail could not be sent.");
                     });
                 }
-                else toast.error("Wrong calculation...")
+                else toast.error("Wrong calculation...");
             }
-            else toast.error("Please input a valid email.")
+            else toast.error("Please input a valid email.");
         }
-        else toast.error("Please complete every fields.")
+        else toast.error("Please complete every fields.");
     }
 
     return ( 
@@ -61,7 +66,6 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faUserTie}
-                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -77,7 +81,6 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faAt}
-                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -93,7 +96,6 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faPaperPlane}
-                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -109,7 +111,6 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faEnvelope}
-                        color="#EB4039"
                         size="2x"
                     />
                 </div>

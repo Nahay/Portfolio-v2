@@ -40,6 +40,7 @@
         position : relative;
 
         &::before {
+            backdrop-filter: $blur;
             z-index:-1;
             content : '';
             background : rgba(255,255,255,0.2);
@@ -89,6 +90,7 @@
         justify-content: flex-end;
 
         a {
+            backdrop-filter: $blur;
             cursor : pointer;
             top:0;
             right:-2px;
@@ -131,6 +133,7 @@
     border-radius : 100px 0 0 100px;
     z-index : 5;
     margin-right : 17px;
+    backdrop-filter: $blur;
 
     svg {
         transition : color 0.3s;

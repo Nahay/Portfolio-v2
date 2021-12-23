@@ -381,55 +381,81 @@
 
 
 // PORTFOLIO (DRAG AND SCROLL) -------------------------------------------------
+.drag {
+  backdrop-filter: $blur;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.349);
+  border-radius: 50px;
+  padding: 0 30px;
+  width: 85%;
+  height: 41%;
 
-.drag-container {  
-  width:85%;
-  height: 40%;
-  display:flex;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  .drag-container {    
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0;
 
-  &:hover {
-    cursor:grab; 
-  }
-
-  &.is-dragging {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-  }
-
-  .box {
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10px;
-
-    &:hover img {
-      filter: brightness(80%);
-    }
-
-    &:hover > p {
-      opacity: 1;
+    &::-webkit-scrollbar {
+      width: 15px;
+      background-color: transparent;
     }
     
-    img {
-      transition : all .5s;
+    &::-webkit-scrollbar-thumb {
+      box-shadow: inset 0 0 6px #20202054;
+      background-color: $color-red;
     }
-
-    p {
-      transition: all .5s;
-      background: rgba(0, 0, 0, 0.664);
-      color:white;
-      width:100%;
-      height:20%;
+    
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px transparent;
+      background-color: transparent;
+    }
+  
+    &:hover {
+      cursor:grab; 
+    }
+  
+    &.is-dragging {
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+    }
+  
+    .box {
+      position: relative;
       display:flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      opacity: 0;
-      position: absolute;
-      bottom:10%;
+      margin: 0 10px;
+  
+      &:hover img {
+        filter: brightness(80%);
+      }
+  
+      &:hover > p {
+        opacity: 1;
+      }
+      
+      img {
+        transition : all .5s;
+        border-radius: 50px;
+      }
+  
+      p {
+        transition: all .5s;
+        background: rgba(0, 0, 0, 0.664);
+        color:white;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        border-radius: 0 0 50px 50px;
+      }
     }
   }
 }

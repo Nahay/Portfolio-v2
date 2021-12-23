@@ -41,49 +41,51 @@ const Portfolio = () => {
     }
 
 
-    return ( 
-        <div
-            className={`drag-container ${isDown && "is-dragging"}`}
-            onMouseDown={(e) => handleMouseDown(e)}
-            onMouseLeave={() => setIsDown(false)}
-            onMouseUp={() => setIsDown(false)}
-            onMouseMove={(e) => handleMouseMove(e)}
-            ref={slider}
-        >
-            <div className='box'>
-                <img
-                    src="https://cdn.discordapp.com/attachments/899001744728682516/923597371298955355/charlemagne.png"
-                    width="500"
-                    height="300"
-                    alt="Le Charlemagne"
-                />
-                <p>Le Charlemagne</p>
+    return (
+        <div className="drag">
+            <div
+                className={`drag-container ${isDown && "is-dragging"}`}
+                onMouseDown={(e) => handleMouseDown(e)}
+                onMouseLeave={() => setIsDown(false)}
+                onMouseUp={() => setIsDown(false)}
+                onMouseMove={(e) => handleMouseMove(e)}
+                ref={slider}
+            >
+                <div className='box'>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/899001744728682516/923597371298955355/charlemagne.png"
+                        width="500"
+                        height="300"
+                        alt="Le Charlemagne"
+                    />
+                    <p>Le Charlemagne</p>
+                </div>
+                <div className='box'>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
+                        width="500"
+                        height="300"
+                        alt="Coming Soon"
+                    />
+                </div>
+                <div className='box'>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
+                        width="500"
+                        height="300"
+                        alt="Coming Soon"
+                    />
+                </div>
+                <div className='box'>
+                    <img
+                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
+                        width="500"
+                        height="300"
+                        alt="Coming Soon"
+                    />
+                </div>
             </div>
-            <div className='box'>
-                <img
-                    src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                    width="500"
-                    height="300"
-                    alt="Coming Soon"
-                />
-            </div>
-            <div className='box'>
-                <img
-                    src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                    width="500"
-                    height="300"
-                    alt="Coming Soon"
-                />
-            </div>
-            <div className='box'>
-                <img
-                    src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                    width="500"
-                    height="300"
-                    alt="Coming Soon"
-                />
-            </div>
-        </div>
+        </div>        
     );
 }
 

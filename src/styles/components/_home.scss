@@ -135,6 +135,7 @@
                   }
             
             a {
+                backdrop-filter: $blur;
                 display:flex;
                 justify-content: center;
                 align-items: center;
@@ -147,10 +148,10 @@
                 font-weight: bold;
                 margin-top:30px;
                 transition: all .5s;
-                font-size: 15px;
+                font-size: 17px;
                 
                 &:hover {
-                    background:#EB4039;
+                    background:$color-red;
                     color:white;
                     cursor:pointer;
                 }
@@ -195,7 +196,6 @@
         display:flex;
         align-items: center;
         justify-content: center;
-
     }
 }
 

@@ -1,3 +1,5 @@
+$color : #5c4747;
+
 .contact {
     width:100%;
     height:100%;
@@ -30,9 +32,10 @@
     justify-content: center;
     width:60%;
     height:60%;
-    background: rgba(196, 196, 196, 0.22);
+    background: rgba(255, 255, 255, 0.219);
     padding: 30px;
     border-radius: 60px;
+    backdrop-filter: $blur;
 
     .form__box {
         width:100%;
@@ -49,18 +52,22 @@
             justify-content: center;
             align-items: center;
             margin-right:30px;
+
+            svg {
+                color:$color;
+            }
         }
     }
 
     .box__icon, input, textarea {
         background: rgba(196, 196, 196, 0.41);
         font-size:15px;
-        color:#EB4039;
+        color:$color;
         font-weight:bold;
     }
 
     input::placeholder, textarea::placeholder {
-        color:#EB4039;
+        color:#776565;
         font-weight: bold;
     }
 
@@ -102,7 +109,8 @@
             height:100%;
 
             label {
-                width:50px;
+                margin-right:10px;
+                white-space: nowrap;
             }
             
             input[type="number"] {
@@ -129,14 +137,14 @@
         input[type="submit"] {
             width:140px;
             align-self: flex-end;
-            color: #EB4039;
+            color: $color-red;
             font-size: 23px;
             font-weight: bold;
             transition:all .5s;
     
             &:hover {
-                background:#EB4039;
-                color:white;
+                background:$color-red;
+                color:rgba(255, 255, 255, 0.664);
                 cursor:pointer;
             }
         }
