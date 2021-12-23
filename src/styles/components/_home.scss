@@ -53,7 +53,7 @@
             flex-direction: column;
             top: 35%;
             left : 13%;
-            height : 200px;
+            height : 310px;
 
             h1 {
                 font-size : 70px;
@@ -133,6 +133,28 @@
                         border-right: 0.15em solid #cc3131;
                       }
                   }
+            
+            a {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color:#383838;
+                background:rgba(255, 255, 255, 0.349);
+                border:none;
+                width:200px;
+                height:50px;
+                border-radius: 60px;
+                font-weight: bold;
+                margin-top:30px;
+                transition: all .5s;
+                font-size: 15px;
+                
+                &:hover {
+                    background:#EB4039;
+                    color:white;
+                    cursor:pointer;
+                }
+            }
         }
 
         .headphones__content {

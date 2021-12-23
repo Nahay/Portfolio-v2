@@ -8,6 +8,8 @@ import Phone from '../components/generics/vectors/Phone';
 import Portfolio from '../components/generics/Portfolio';
 import Contact from './Contact';
 
+import Pdf from '../assets/CV.pdf';
+
 
 const Home = () => {
 
@@ -28,6 +30,13 @@ const Home = () => {
                                 <li><h1>Geek</h1></li>
                             </ul>
                         </div>
+                        <a
+                            href={Pdf}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                                Download CV
+                        </a>
                     </div>                    
                     <Cup/>
                     <Headphones/>

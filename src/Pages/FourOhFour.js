@@ -4,7 +4,7 @@ const FourOhFour = () => {
 
     const infinite = () => {
         let tab = [];
-        for (let i=0; i<1000; i++)
+        for (let i=0; i<1100; i++)
             tab.push(<p>LOST</p>)
         return tab
     }
