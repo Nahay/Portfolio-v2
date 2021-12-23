@@ -22,7 +22,7 @@
 // FORM ----------------------------
 
 .contact-form {
-    color:#b33636;
+    color:rgba(196, 196, 196, 0.671);
     font-weight:bold;
     display:flex;
     flex-direction: column;
@@ -55,12 +55,12 @@
     .box__icon, input, textarea {
         background: rgba(196, 196, 196, 0.41);
         font-size:15px;
-        color:#b33636;
+        color:#EB4039;
         font-weight:bold;
     }
 
     input::placeholder, textarea::placeholder {
-        color:#b33636;
+        color:#EB4039;
         font-weight: bold;
     }
 
@@ -129,14 +129,13 @@
         input[type="submit"] {
             width:140px;
             align-self: flex-end;
-            color: #E95151;
-            letter-spacing: 0.075em;
+            color: #EB4039;
             font-size: 23px;
             font-weight: bold;
             transition:all .5s;
     
             &:hover {
-                background:#E95151;
+                background:#EB4039;
                 color:white;
                 cursor:pointer;
             }

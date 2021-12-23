@@ -61,7 +61,7 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faUserTie}
-                        color="#E95151"
+                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -77,7 +77,7 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faAt}
-                        color="#E95151"
+                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faPaperPlane}
-                        color="#E95151"
+                        color="#EB4039"
                         size="2x"
                     />
                 </div>
@@ -109,7 +109,7 @@ const ContactForm = () => {
                 <div className="box__icon">
                     <FontAwesomeIcon
                         icon={faEnvelope}
-                        color="#E95151"
+                        color="#EB4039"
                         size="2x"
                     />
                 </div>
