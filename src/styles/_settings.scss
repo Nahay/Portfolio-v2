@@ -51,3 +51,34 @@ a {
   height : 100vh;
   width : 100vw;
 }
+
+
+// TOAST -------------------------------------------
+
+/* Class for the displayed toast */
+.Toastify__toast { //
+  background: rgb(29,29,29);
+}
+
+.Toastify__toast-body {
+  font-size: 14px;
+  color: white;
+}
+
+/* Class for the progress bar */
+.Toastify__progress-bar {
+  background: rgb(255, 97, 79);
+}
+
+/* Class for the close button. */
+.Toastify__close-button {
+  color: white;
+}
+
+.Toastify__progress-bar--success {
+  background: green;
+}
+
+.Toastify__progress-bar--error {
+  background: rgb(255, 97, 79);
+}

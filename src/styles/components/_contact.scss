@@ -22,6 +22,8 @@
 // FORM ----------------------------
 
 .contact-form {
+    color:#b33636;
+    font-weight:bold;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +75,7 @@
 
     textarea {
         min-height: 80px;
-        max-height: 250px;
+        max-height: 220px;
         padding: 25px;
         width:100%;
         height:150px;
@@ -83,20 +85,61 @@
         resize: vertical;
     }
 
-    input[type="submit"] {
-        height:45px;
-        width:140px;
-        align-self: flex-end;
-        color: #E95151;
-        letter-spacing: 0.075em;
-        font-size: 23px;
-        font-weight: bold;
-        transition:all .4s;
+    .form__bottom {
 
-        &:hover {
-            background:#E95151;
-            color:white;
-            cursor:pointer;
+        display:flex;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+        height:45px;
+
+        .bottom_captcha {
+
+            margin-left:86px;
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+            height:100%;
+
+            label {
+                width:50px;
+            }
+            
+            input[type="number"] {
+                width:48px;
+            }
+
+            // hide arrow from input number --------------
+
+            // Chrome, Safari, Edge, Opera
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+            }
+
+            // Firefox
+            input[type=number] {
+            -moz-appearance: textfield;
+            }
+
+            // -------------------------------------------
+        }
+
+        input[type="submit"] {
+            width:140px;
+            align-self: flex-end;
+            color: #E95151;
+            letter-spacing: 0.075em;
+            font-size: 23px;
+            font-weight: bold;
+            transition:all .5s;
+    
+            &:hover {
+                background:#E95151;
+                color:white;
+                cursor:pointer;
+            }
         }
     }
 }

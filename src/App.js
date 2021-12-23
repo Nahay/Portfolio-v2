@@ -1,4 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './Pages/Home';
 
@@ -11,6 +13,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <main className="main">
+          <ToastContainer/>
           <Switch>
 
             <Route exact path="/" component = {Home} />
