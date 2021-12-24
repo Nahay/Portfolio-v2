@@ -128,6 +128,72 @@
 }
 
 
+// FULL SCREEN NAVBAR ----------------------------------------------------
+
+.full-screen-navbar {
+
+    visibility: hidden;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position : absolute;
+    z-index:10;
+    right:5%;
+    top:10px;
+
+    .full-screen-navbar__icon {
+        width:fit-content;
+        background: rgba(253, 253, 253, 0.349);
+        backdrop-filter: $blur;
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        svg {
+            font-size:70px;
+            color:$color-red;
+        }
+        
+        &:hover {
+            cursor:pointer;
+        }
+    }
+
+    .full-screen-navbar__links {
+
+        nav {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                opacity:0;
+                backdrop-filter: $blur;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                width:100px;
+                color:$color-black;
+                font-weight: bold;
+                margin-bottom:10px;
+                background: rgba(253, 253, 253, 0.349);
+                padding: 8px 10px;
+                border-radius: 60px;
+            }
+        }
+    }
+
+
+
+    @media (max-width: 800px) {
+        visibility: visible;
+    }
+}
+
 // SIDE SOCIAL MEDIA --------------------------------------------------------------
 
 .social-media {
@@ -182,6 +248,8 @@
     }
 }
 
+
+// RESP -----------------------------------
 
 @media (max-width: 930px) {
     .navbar__left {

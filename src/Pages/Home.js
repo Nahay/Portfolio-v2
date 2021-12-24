@@ -9,6 +9,7 @@ import Portfolio from '../components/generics/Portfolio';
 import Contact from './Contact';
 
 import Pdf from '../assets/CV.pdf';
+import FullScreenNavbar from '../components/fixed/FullScreenNavbar';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     return ( 
         <div className="home">
             <Navbar/>
+            <FullScreenNavbar/>
             <SocialMedia/>
             <section className="home__section home__1" id="home">
                 <div className="section__content">
