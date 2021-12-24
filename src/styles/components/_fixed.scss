@@ -21,12 +21,13 @@
     .navbar__left {
         width : 30%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
         .logo__content {
             width : 250px;
             display : flex;
+            margin-left:30%;
             justify-content: flex-start;
             align-items: center;
         }
@@ -114,6 +115,16 @@
             }
         }
     }
+
+    
+    @media (max-width: 930px) {
+        .navbar__left {
+
+            .logo__content {
+                margin-left:20%;
+            }
+        }
+    }
 }
 
 
@@ -168,5 +179,26 @@
         &:nth-child(3):hover + span {
             opacity : 1;
         }
+    }
+}
+
+
+@media (max-width: 930px) {
+    .navbar__left {
+
+        .logo__content {
+            margin-left:20%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        .navbar__center, .navbar__right {
+            display:none;
+        }
+    }
+    .social-media {
+        display:none;
     }
 }

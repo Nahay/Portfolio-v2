@@ -387,15 +387,17 @@
   align-items: center;
   background: rgba(255, 255, 255, 0.349);
   border-radius: 50px;
-  padding: 0 30px;
+  padding: 0 1.9%;
   width: 85%;
-  height: 41%;
+  height:45%;
+  
 
-  .drag-container {    
+  .drag-container {
+    height:80%;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 20px 0;
+    padding: 1.4% 0;
 
     &::-webkit-scrollbar {
       width: 15px;
@@ -412,9 +414,7 @@
       background-color: transparent;
     }
   
-    &:hover {
-      cursor:grab; 
-    }
+    &:hover { cursor:grab }
   
     &.is-dragging {
       cursor: grabbing;
@@ -427,19 +427,17 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 0.65%;
   
-      &:hover img {
-        filter: brightness(80%);
-      }
+      &:hover img { filter: brightness(80%) }
   
-      &:hover > p {
-        opacity: 1;
-      }
+      &:hover > p { opacity: 1 }
       
       img {
         transition : all .5s;
         border-radius: 50px;
+        width:auto;
+        height:100%;
       }
   
       p {

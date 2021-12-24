@@ -64,10 +64,7 @@ const ContactForm = () => {
         <form className="contact-form" onSubmit={handleSubmit} ref={form}>
             <div className="form__box">
                 <div className="box__icon">
-                    <FontAwesomeIcon
-                        icon={faUserTie}
-                        size="2x"
-                    />
+                    <FontAwesomeIcon icon={faUserTie} />
                 </div>
                 <input
                     type="text"
@@ -79,10 +76,7 @@ const ContactForm = () => {
             </div>
             <div className="form__box">
                 <div className="box__icon">
-                    <FontAwesomeIcon
-                        icon={faAt}
-                        size="2x"
-                    />
+                    <FontAwesomeIcon icon={faAt} />
                 </div>
                 <input
                     type="text"
@@ -94,10 +88,7 @@ const ContactForm = () => {
             </div>
             <div className="form__box">
                 <div className="box__icon">
-                    <FontAwesomeIcon
-                        icon={faPaperPlane}
-                        size="2x"
-                    />
+                    <FontAwesomeIcon icon={faPaperPlane} />
                 </div>
                 <input
                     type="text"
@@ -109,10 +100,7 @@ const ContactForm = () => {
             </div>
             <div className="form__box">
                 <div className="box__icon">
-                    <FontAwesomeIcon
-                        icon={faEnvelope}
-                        size="2x"
-                    />
+                    <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 <textarea
                     value={message}

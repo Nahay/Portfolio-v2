@@ -45,6 +45,22 @@ const Home = () => {
             </section>
             <section className="home__section home__2" id="about">
                 <div className="section__content">
+
+                </div>     
+            </section>
+            <section className="home__section home__2">
+                <div className="section__content">
+
+                </div>     
+            </section>
+            <section className="home__section home__2">
+                <div className="section__content">
+
+                </div>     
+            </section>
+            <section className="home__section home__2">
+                <div className="section__content">
+
                 </div>     
             </section>
             <section className="home__section home__3" id="works">

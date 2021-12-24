@@ -1,5 +1,7 @@
 import React, {useState, useRef} from 'react';
 
+import Charlemagne from '../../assets/charlemagne.png';
+
 
 const Portfolio = () => {
 
@@ -53,9 +55,7 @@ const Portfolio = () => {
             >
                 <div className='box'>
                     <img
-                        src="https://cdn.discordapp.com/attachments/899001744728682516/923597371298955355/charlemagne.png"
-                        width="500"
-                        height="300"
+                        src={Charlemagne}
                         alt="Le Charlemagne"
                     />
                     <p>Le Charlemagne</p>
@@ -63,24 +63,18 @@ const Portfolio = () => {
                 <div className='box'>
                     <img
                         src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        width="500"
-                        height="300"
                         alt="Coming Soon"
                     />
                 </div>
                 <div className='box'>
                     <img
                         src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        width="500"
-                        height="300"
                         alt="Coming Soon"
                     />
                 </div>
                 <div className='box'>
                     <img
                         src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        width="500"
-                        height="300"
                         alt="Coming Soon"
                     />
                 </div>
