@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const SIO = () => {
+const SIOIndex = () => {
 
     return ( 
         <div className="sio">
@@ -19,4 +19,4 @@ const SIO = () => {
     );
 }
 
-export default SIO;
+export default SIOIndex;

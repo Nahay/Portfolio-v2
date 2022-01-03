@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import SIONavbar from "../components/SIO/SIONavbar";
 
-import SIO from "../Pages/SIO/SIO";
+import SIOIndex from "../Pages/SIO/SIOIndex";
 import SIOProjects from "../Pages/SIO/SIOProjects";
 import SIOVeille from "../Pages/SIO/SIOVeille";
 
@@ -16,7 +16,7 @@ const SIORouter = ({ match }) => {
         <SIONavbar/>
         <Switch>
 
-            <Route exact path={match.url} component = {SIO} />
+            <Route exact path={match.url} component = {SIOIndex} />
             <Route exact path={match.url + '/realisations'} component = {SIOProjects} />
             <Route exact path={match.url + '/veille-technologique'} component = {SIOVeille} />
 
