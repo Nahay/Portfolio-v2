@@ -1,31 +1,16 @@
 import React, {useState, useRef} from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import Charlemagne from '../../assets/Projects/Charlemagne/charlemagne.png';
 
 
-const Portfolio = () => {
+const SIOPortfolio = ({setProject}) => {
 
     const [isDown, setIsDown] = useState(false);
     const [startX, setStartX] = useState("");
     const [scrollLeft, setScrollLeft] = useState("");
 
     const slider = useRef(null);
-
-    
-    // useEffect(() => {
-    //     let { clientWidth, scrollWidth } = slider.current;
-    //     let end = false;
-    //     setInterval(() => {
-    //         if (!end) {
-    //             slider.current.scrollTo(slider.current.scrollLeft + 1, 0);
-    //             if (scrollWidth - slider.current.scrollLeft === clientWidth) end = true;
-    //         }
-    //         else {
-    //             slider.current.scrollTo(slider.current.scrollLeft - 1, 0);
-    //             if (slider.current.scrollLeft === 0) end = false;
-    //         } 
-    //     }, 18);
-    // }, []);
 
     const handleMouseDown = ({ pageX }) => {
         setIsDown(true);
@@ -53,34 +38,41 @@ const Portfolio = () => {
                 onMouseMove={(e) => handleMouseMove(e)}
                 ref={slider}
             >
-                <div className='box'>
+                <HashLink
+                    className="box"
+                    smooth to="#project"
+                    onClick={() => setProject("charlemagne")}
+                >
                     <img
                         src={Charlemagne}
                         alt="Le Charlemagne"
                     />
                     <p>Le Charlemagne</p>
-                </div>
-                <div className='box'>
+                </HashLink>
+                <HashLink className="box" smooth to="#project">
                     <img
-                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        alt="Coming Soon"
+                        src={Charlemagne}
+                        alt="Le Charlemagne"
                     />
-                </div>
-                <div className='box'>
+                    <p>Le Charlemagne</p>
+                </HashLink>
+                <HashLink className="box" smooth to="#project">
                     <img
-                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        alt="Coming Soon"
+                        src={Charlemagne}
+                        alt="Le Charlemagne"
                     />
-                </div>
-                <div className='box'>
+                    <p>Le Charlemagne</p>
+                </HashLink>
+                <HashLink className="box" smooth to="#project">
                     <img
-                        src="https://cdn.discordapp.com/attachments/899001744728682516/922805564629717053/unknown.png"
-                        alt="Coming Soon"
+                        src={Charlemagne}
+                        alt="Le Charlemagne"
                     />
-                </div>
+                    <p>Le Charlemagne</p>
+                </HashLink>
             </div>
         </div>        
     );
 }
 
-export default Portfolio;
+export default SIOPortfolio;

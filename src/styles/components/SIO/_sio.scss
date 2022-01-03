@@ -1,0 +1,170 @@
+// MAIN SIO ----------------------------------------------------------------------------
+
+.mainSIO {
+    overflow-x:none;
+
+    .bg {
+        height : 100vh;
+        width:100vw;
+        position: fixed;
+        z-index: -1;
+        overflow:none;
+        background: linear-gradient(59deg, #fdd550, #f15540);
+        background-size: 400% 400%;
+    
+        -webkit-animation: gradientBg 19s ease infinite;
+        animation: gradientBg 19s ease infinite;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+
+        .navbar__center {
+            width:600px;
+            justify-self: center !important;
+        }
+        a { white-space: nowrap; }
+
+        .navbar__center a { font-size: 17px; }
+    }
+}
+
+@keyframes gradientBg {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+
+@-webkit-keyframes gradientBg {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+
+
+// ACCUEIL SIO ----------------------------------------------------------------------
+
+.sio {
+    overflow:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+
+    .sio__content {
+        display: flex;
+        flex-direction: column;
+        background : rgba(255,255,255,0.2);
+        width: 40%;
+        height: fit-content;
+        padding: 3% 3%;
+        border-radius: 60px;
+        backdrop-filter: $blur;
+        align-items: center;
+        h3 {
+            color:$color-red;
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5%;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        a {
+            padding: 15px 20px;
+            margin-top:4%;
+
+            background:#eb3f39;
+            color:white;
+            border-radius: 60px;
+            transition: background .5s;
+
+            display:flex;
+
+            &:hover {
+                background:#c53530;
+            }
+        }
+    }
+}
+
+
+// SIO PROJECTS -----------------------------------------------------------------
+
+.sio-projects {
+    width: 100vw;
+    .sio-projects__container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+        .container__portfolio {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 85%;            
+        }
+    }
+    .container__project { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+// SIO PROJECT RESUME ----------------------------------------------------------
+
+
+.project-resume {
+    width: 80%;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: $blur;
+    border-radius: 60px;
+    padding: 50px;
+
+    h1 {
+        font-size: 46px;
+        color: $color-red;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        margin-top: 10px;      
+    }
+
+    a {
+        color: $color-red;
+        outline: none;
+        font-weight: bold;
+    }
+
+    .project-btn {
+        margin: 20px 0;
+        padding: 15px 15px;
+        color: white;
+        font-weight: normal;
+        width:150px;
+        border-radius: 20px;
+        background: $color-red;
+
+        // pour régler le pb d'espace autour
+        display: flex;
+        justify-content: center;
+
+        transition: background .5s;
+        
+        &:hover {
+            background: rgb(190, 30, 30);
+        }
+    }
+}
