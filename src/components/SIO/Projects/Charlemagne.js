@@ -19,7 +19,7 @@ const Charlemagne = () => {
             </p>
 
             <a className='project-btn'
-                href="https://docs.google.com/viewer?url=https://github.com/Nahay/Charlemagne/blob/master/client/src/assets/Lycee_Pointet_-_Cahier_des_charges_VAE.pdf?raw=true"
+                href="https://nbviewer.org/github/Nahay/Charlemagne/blob/master/client/src/assets/Lycee_Pointet_-_Cahier_des_charges_VAE.pdf"
                 target='_blank'
                 rel='noopener noreferrer'
             >
