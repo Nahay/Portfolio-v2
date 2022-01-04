@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import Charlemagne from '../../assets/Projects/Charlemagne/charlemagne.png';
+import Charlemagne from '../../assets/Projects/Charlemagne/Utilisateur/Accueil_Deconnecté.png';
 
 
 const SIOPortfolio = ({setProject}) => {

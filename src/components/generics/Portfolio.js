@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
 
-import Charlemagne from '../../assets/Projects/Charlemagne/charlemagne.png';
+import Charlemagne from '../../assets/Projects/Charlemagne/Utilisateur/Accueil_Deconnecté.png';
 
 
 const Portfolio = () => {
