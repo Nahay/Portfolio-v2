@@ -121,7 +121,6 @@
 
 // SIO PROJECT RESUME ----------------------------------------------------------
 
-
 .project-resume {
     width: 80%;
     background-color: rgba(255,255,255,0.2);
@@ -155,25 +154,14 @@
         width:60%;
         height:10%;
         margin : 20px 0;
-        
+        cursor: pointer;
         img {
             border-radius: 20px;
             height:100%;
             width:100%;
         }
     }
-
-    .img-zoom {
-        margin:0;
-        width:70vw;
-        height:70vh;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
+    
 
     .project-btn {
         margin: 20px 0;

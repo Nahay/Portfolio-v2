@@ -1,18 +1,24 @@
-import React, {useState } from 'react';
+import React from 'react';
+
 
 const ProjectImg = ({img, title}) => {
-
-    const [isZoom, setIsZoom] = useState(false);
+    
+    const imgDiv = document.getElementById('imgDiv');
+    const imgZoom = document.getElementById('imgZoom');
 
     const onClick = () => {
-        if (isZoom) setIsZoom(false)
-        else setIsZoom(true)
+        if (imgDiv.style.display === "flex") imgDiv.style.display = "none";
+        // on  a appuyé sur une image
+        else {
+            imgDiv.style.display = "flex";
+            imgZoom.src = img;
+        } 
     }
 
     return (
-        <div className={isZoom ? "project-img img-zoom" : "project-img"} onClick={onClick}>
-            <img src={img} alt={title}/>
-        </div>        
+            <div className="project-img" onClick={onClick}>
+                <img src={img} alt={title}/>
+            </div>              
     );
 }
 
