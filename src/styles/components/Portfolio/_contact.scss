@@ -172,11 +172,11 @@ $color : #5c4747;
             font-size: 23px;
             font-weight: bold;
             transition:all .5s;
+            cursor:pointer;
     
             &:hover {
                 background:$color-red;
                 color:rgba(255, 255, 255, 0.664);
-                cursor:pointer;
             }
         }
     }

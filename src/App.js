@@ -1,12 +1,12 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Home from './Pages/Home';
+import Portfolio from './pages/Portfolio';
+import FourOhFour from './pages/FourOhFour';
 
 import SIORouter from './routers/SIORouter';
-
-import FourOhFour from './Pages/FourOhFour';
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Switch>
             
             <Route path="/sio" component = {SIORouter} />
-            <Route exact path="/" component = {Home} />
+            <Route exact path="/" component = {Portfolio} />
             <Route path="*" component = {FourOhFour} />
 
           </Switch>

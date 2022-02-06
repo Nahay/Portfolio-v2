@@ -1,0 +1,142 @@
+
+.home {
+
+    @keyframes topToBottom {
+        0% {
+            transform: translate(0,100px);
+        }
+        50% {
+            transform: translate(0px);
+        }
+        100% {
+            transform: translate(0,100px);
+        }
+    }
+
+    .home__flying-astro {
+        height:200px;
+        position : absolute;
+        right: 20%;
+        top:25%;
+        animation : topToBottom 10s ease-in alternate infinite;
+    }
+
+    .home__titles {
+        position : absolute;
+        display : flex;
+        justify-content: space-between;
+        flex-direction: column;
+        top: 35%;
+        left : 13%;
+        height : 310px;
+
+        h1 {
+            font-size : 70px;
+            font-weight : bold;
+            white-space: nowrap; /* Keeps the content on a single line */
+            letter-spacing: .10em;
+            color : white;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+
+            .static-txt {
+                color: white;
+                font-size: 70px;
+                font-weight: 400;
+                letter-spacing: 0.05em;
+                white-space: nowrap;
+            }
+
+            .dynamic-txts {
+                margin-left: 30px;
+                height: 90px;
+                line-height: 90px;
+                overflow: hidden;
+
+                li {
+                    list-style: none;
+                    font-size: 70px;
+                    font-weight: bold;
+                    position: relative;
+                    top: 0;
+                    width : fit-content;
+                    animation: slide 12s steps(4) infinite;
+
+                    &:nth-of-type(4) h1 {
+                        letter-spacing: 12px;
+                        animation: typing 1.5s steps(18, end) infinite alternate, blink-caret 0.7s step-end infinite;
+                    }
+
+                    h1 {
+                        color: $color-orange;
+                        overflow: hidden;
+                        border-right: 0.15em solid $color-orange;
+                        white-space: nowrap;
+                        letter-spacing: 8px;
+                        animation: typing 1.5s steps(30, end) infinite alternate, blink-caret 0.7s step-end infinite;
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+
+                @keyframes slide {
+                100% {
+                    top: -360px;
+                }
+                }
+
+                
+                /* The typing effect */
+                @keyframes typing {
+                from {
+                    width: 0;
+                }
+                to {
+                    width: 100%;
+                }
+                }
+                
+                /* The typewriter cursor effect */
+                @keyframes blink-caret {
+                from,
+                to {
+                    border-right: 0.15em solid transparent;
+                    }
+                    50% {
+                    border-right: 0.15em solid $color-orange;
+                    }
+                }
+        
+        a {
+            align-self: flex-start;
+        }
+
+        @media (max-width: 810px) {
+            height:280px;
+
+            h1, .wrapper .static-txt, .wrapper .dynamic-txts li h1 {
+                font-size:65px !important; 
+            }
+        }
+
+        @media (max-width: 734px) {
+            height: 240px;
+
+            h1, .wrapper .static-txt, .wrapper .dynamic-txts li h1 {
+                font-size:52px !important; 
+            }
+        }
+
+        @media (max-width: 595px) {
+            height: 230px;
+
+            h1, .wrapper .static-txt, .wrapper .dynamic-txts li h1 {
+                font-size:48px !important; 
+            }
+        }
+    }
+}

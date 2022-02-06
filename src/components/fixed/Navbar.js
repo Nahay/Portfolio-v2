@@ -1,34 +1,30 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
 
-import Mail from '../generics/vectors/Mail';
 import Logo from '../Logo';
 
 
-const Navbar = () => {
+const Navbar = ({fullpageApi}) => {
 
     return ( 
         <div className="navbar">
             <div className="navbar__left">
-                <Logo/>
-            </div>
-            <div className="navbar__center">
-                <nav>
-                    <HashLink smooth to="/#home">
-                        Home
-                    </HashLink>
-                    <HashLink smooth to={'/#about'}>
-                        About
-                    </HashLink>
-                    <HashLink smooth to="/#works">
-                        Works
-                    </HashLink>
-                </nav>
+                <Logo fullpageApi = {fullpageApi}/>
             </div>
             <div className="navbar__right">
-                <HashLink smooth to="/#contact">
-                    <Mail/>
-                </HashLink>
+                <nav>
+                    <a onClick={() => fullpageApi.moveTo(2, 0)}>
+                        About
+                    </a>
+                    <a onClick={() => fullpageApi.moveTo(4, 0)}>
+                        Services
+                    </a>
+                    <a onClick={() => fullpageApi.moveTo(5, 0)}>
+                        Works
+                    </a>
+                    <a onClick={() => fullpageApi.moveTo(6, 0)} className='btn'>
+                        Contact
+                    </a>
+                </nav>
             </div>
         </div>
     );

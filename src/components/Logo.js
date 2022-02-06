@@ -1,12 +1,11 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
 
 
-const Logo = () => {
+const Logo = ({fullpageApi}) => {
 
     return ( 
         <div className="logo__content">
-            <HashLink smooth to="/#home">lily b</HashLink>
+            <a onClick={() => fullpageApi.moveTo(1, 0)}>lilyb</a>
         </div>
     );
 }

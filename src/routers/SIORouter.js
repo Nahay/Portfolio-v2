@@ -1,9 +1,9 @@
 import { Switch, Route } from "react-router-dom";
 import SIONavbar from "../components/SIO/SIONavbar";
 
-import SIOIndex from "../Pages/SIO/SIOIndex";
-import SIOProjects from "../Pages/SIO/SIOProjects";
-import SIOVeille from "../Pages/SIO/SIOVeille";
+import SIOIndex from "../pages/SIO/SIOIndex";
+import SIOProjects from "../pages/SIO/SIOProjects";
+import SIOVeille from "../pages/SIO/SIOVeille";
 
 
 const SIORouter = ({ match }) => {
