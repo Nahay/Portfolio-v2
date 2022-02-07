@@ -5,10 +5,10 @@ import { loadStarsPreset } from "tsparticles-preset-stars";
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import Logo from '../components/Logo';
-import Home from './Portfolio/Home';
-import About from './Portfolio/About';
-import Skills from './Portfolio/Skills';
-import Contact from './Portfolio/Contact';
+import Home from './PortfolioContent/Home';
+import About from './PortfolioContent/About';
+import Skills from './PortfolioContent/Skills';
+import Contact from './PortfolioContent/Contact';
 
 
 const Portfolio = () => {
