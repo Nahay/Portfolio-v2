@@ -4,19 +4,18 @@ import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import ReactFullpage from '@fullpage/react-fullpage';
 
+import Logo from '../components/Logo';
 import Home from './Portfolio/Home';
 import About from './Portfolio/About';
+import Skills from './Portfolio/Skills';
 import Contact from './Portfolio/Contact';
 
 
 const Portfolio = () => {
 
-    const [api, setApi] = useState("");
     const [on, setOn] = useState(false);
     
-    const customInit = (Main) => {
-        loadStarsPreset(Main);
-    }
+    const customInit = (Main) => { loadStarsPreset(Main) }
 
     const onLeave = (origin, destination) => {
         if (origin.index === 0) setOn(true);
@@ -24,7 +23,7 @@ const Portfolio = () => {
     }
 
     const onUpClick = () => {
-        api.moveTo(1,0);
+        window.fullpage_api.moveTo(1,0);
         setOn(false);
     }
 
@@ -47,6 +46,8 @@ const Portfolio = () => {
                 init={customInit}
             />
 
+            <Logo/>
+
             {on ? 
                 <button className="up up---on" onClick={onUpClick}>
                     <span className="up--left"></span>
@@ -55,51 +56,46 @@ const Portfolio = () => {
             
                 :
 
-                <a className="up" onClick={onUpClick}>
+                <button className="up" >
                     <span className="up--left"></span>
                     <span className="up--right"></span>
-                </a>
-                
-            }      
+                </button>   
+            }    
 
             <ReactFullpage
-                licenceKey="null"
+                licenseKey="null"
                 scrollingSpeed = {1000}
+                navigation
+                navigationTooltips={["Home", "About", "Skills", "Services", "Works", "Contact"]}
                 onLeave={onLeave}
                 render={({ fullpageApi }) => {
 
-                    setApi(fullpageApi);
-
                     return (
 
-                        <>                        
+                        <ReactFullpage.Wrapper>
 
-                            <ReactFullpage.Wrapper>
+                            <section className="section home">
+                                <Home api = {fullpageApi}/>     
+                            </section>
 
-                                <section className="section home">
-                                    <Home fullpageApi = {fullpageApi}/>     
-                                </section>
+                            <section className="section">
+                                <About/>
+                            </section>
 
-                                <section className="section">
-                                    <About/>
-                                </section>
+                            <section className="section">
+                                <Skills/>
+                            </section>
 
-                                <section className="section skills" onClick={() => console.log(fullpageApi)}>
-                                    
-                                </section>
+                            <section className="section services">
+                            </section>
 
-                                <section className="section services">
-                                </section>
+                            <section className="section works">
+                            </section>
 
-                                <section className="section works">
-                                </section>
-
-                                <section className="section contact">
-                                    <Contact/>
-                                </section>
-                            </ReactFullpage.Wrapper>
-
-                        </>
+                            <section className="section contact">
+                                <Contact/>
+                            </section>
+                        </ReactFullpage.Wrapper>
                     );
                 }}
             />

@@ -122,11 +122,16 @@
 }
 
 // LOGO ---------------------------------------------------------------------------
-.logo__content a {
+.logo__content span {
+  position : absolute;
+  z-index:99;
+  top:1%;
+  left:10.5%;
   font-family : $font-titles; 
   font-size : 70px;
   font-weight : bold;
   width : 100px;
+  cursor:pointer;
       
   background: linear-gradient(79.42deg, $color-orange -13.16%, $color-red 57.87%);
   
@@ -138,7 +143,7 @@
 }
 
 
-// btn
+// btn ------------------------------------------------------------------------------
 
 .btn {
     backdrop-filter: blur(50px) brightness(1%) opacity(0.1);
@@ -203,8 +208,8 @@
   background:white;
   border-radius:50%;
   position : fixed;
-  cursor:pointer;
   border:none;
+  cursor:default;
 
   .up--left, .up--right {
     position: absolute;
@@ -228,4 +233,7 @@
   }
 }
 
-.up---on { opacity: 1 }
+.up---on {
+  opacity: 1;
+  cursor:pointer;
+}

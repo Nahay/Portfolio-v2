@@ -9,6 +9,7 @@ const About = () => {
             <div className='about__box blur'>
                 <h2 className='box__title'><span className='underline'>Me, My</span>self & I</h2>
                 <p>
+                    
                     I'm a Front-End Developer located in France, specializing in building (and occasionally designing)
                     exceptional digital experiences.
                     <br/> <br/>

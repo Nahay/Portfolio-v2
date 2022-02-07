@@ -6,12 +6,12 @@ import Astro from '../../assets/Portfolio/flyingAstro.png';
 import Pdf from '../../assets/CV.pdf';
 
 
-const Home = ({fullpageApi}) => {
+const Home = ({api}) => {
 
     return (
         <>
             <img src = {Astro} className='home__flying-astro' alt="Flying Astronaut"/>
-            <Navbar fullpageApi = {fullpageApi}/>
+            <Navbar api = {api}/>
             <div className="home__titles">
                 <h1>Hi! I'm <span className='title-lily'>Lily</span>.</h1>
                 <div className="wrapper">

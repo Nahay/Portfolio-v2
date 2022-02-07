@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const Logo = ({fullpageApi}) => {
+const Logo = () => {
 
     return ( 
         <div className="logo__content">
-            <a onClick={() => fullpageApi.moveTo(1, 0)}>lilyb</a>
+            <span onClick={() => window.fullpage_api.moveTo(1, 0)}>lilyb</span>
         </div>
     );
 }
