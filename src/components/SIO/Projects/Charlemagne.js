@@ -1,27 +1,7 @@
 import React from 'react';
 
 import ProjectImg from '../ProjectImg';
-import {
-    AdminAccueil, 
-    AdminCommDel, 
-    AdminCommMod, 
-    AdminComptesAdd, 
-    AdminComptesDel, 
-    AdminComptesMod, 
-    AdminConnexion, 
-    AdminDateAdd, 
-    AdminDateDel, 
-    AdminDateMod, 
-    AdminPlatsAdd, 
-    AdminPlatsDel, 
-    AdminPlatsMod, 
-    UserAccueilCo,
-    UserAccueilDeco,     
-    UserCommander, 
-    UserConnexion, 
-    UserContact, 
-    UserPasserComm 
-} from '../../../assets/Projects/index';
+import * as c from '../../../assets/Projects/index';
 
 
 const Charlemagne = () => {
@@ -53,26 +33,26 @@ const Charlemagne = () => {
                 Le panel utilisateur permet de passer commande selon les dates proposées ou de contacter le restaurant. <br/>
             </p>
 
-            <ProjectImg img={AdminConnexion} alt="Accueil Connecté"/>
+            <ProjectImg img={c.AdminConnexion} alt="Accueil Connecté"/>
 
             <p>
                 Le panel admin pour sa part va permettre de gérer les plats, les dates, les commandes et les utilisateurs.
             </p>
 
-                <ProjectImg img={AdminAccueil} alt="Accueil Admin"/>
+                <ProjectImg img={c.AdminAccueil} alt="Accueil Admin"/>
             
 
             <h3>Partie Utilisateur</h3>
 
-            <ProjectImg img={UserCommander} alt="Commander"/>
+            <ProjectImg img={c.UserCommander} alt="Commander"/>
             
-            <ProjectImg img={UserConnexion} alt="Connexion utilisateur"/>
+            <ProjectImg img={c.UserConnexion} alt="Connexion utilisateur"/>
         
-            <ProjectImg img={UserContact} alt="Contact"/>
+            <ProjectImg img={c.UserContact} alt="Contact"/>
         
-            <ProjectImg img={UserPasserComm} alt="Passer Commande"/>
+            <ProjectImg img={c.UserPasserComm} alt="Passer Commande"/>
         
-            <ProjectImg img={AdminAccueil} alt=""/>
+            <ProjectImg img={c.AdminAccueil} alt=""/>
 
             
             <p>

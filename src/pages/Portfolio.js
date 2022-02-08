@@ -63,7 +63,7 @@ const Portfolio = () => {
             }    
 
             <ReactFullpage
-                licenseKey="null"
+                licenseKey={""}
                 scrollingSpeed = {1000}
                 navigation
                 navigationTooltips={["Home", "About", "Skills", "Services", "Works", "Contact"]}
