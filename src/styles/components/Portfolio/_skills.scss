@@ -1,0 +1,102 @@
+.skills {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width: 100%;
+
+    .bg-title {
+
+        .skills__planet {
+            width:55px;
+            height:55px;
+            position : absolute;
+            right:3%;
+            bottom:13%;
+            z-index:-2;
+        }
+    }
+
+    .skill-box {
+        width:80px;
+        height:80px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        transition : all 0.5s;
+        position : absolute;
+
+        .skill-box__img {
+            width:60%;
+            height:60%;
+        }
+
+        // angular
+        &:nth-child(2) {
+            top:10%;
+            left:30%;
+        }
+
+        // css
+        &:nth-child(3) {
+            bottom:10%;
+            left:30%;
+        }
+
+        // git
+        &:nth-child(4) {
+            bottom:30%;
+            right:5%;
+        }
+
+        // html
+        &:nth-child(5) {
+            bottom:15%;
+            left:5%;
+        }
+
+        // js
+        &:nth-child(6) {
+            top:45%;
+            left:5%;
+        }
+
+        // mongodb
+        &:nth-child(7) {
+            top:8%;
+            right:20%;
+        }
+
+        // nodejs
+        &:nth-child(8) {
+            top:10%;
+            right:40%;
+        }
+
+        // php
+        &:nth-child(9) {
+            bottom:10%;
+            right:20%;
+        }
+
+        // react
+        &:nth-child(10) {
+            top:20%;
+            left:10%;
+        }
+
+        // sass
+        &:nth-child(11) {
+            bottom:15%;
+            left:50%;
+        }
+        // sql
+        &:nth-child(12) {
+            top:25%;
+            right:5%;
+        }
+    }
+}

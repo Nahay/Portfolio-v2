@@ -5,6 +5,22 @@
     height:100%;
     width: 100%;
 
+    .bg-title {
+        .about__img {
+            height:60px;
+
+            &:nth-child(1) {
+                bottom:15%;
+                right:6%;
+            }
+
+            &:nth-child(2) {
+                top:22%;
+                left:3%;
+            }
+        }
+    }
+
     .about__box {
         display:flex;
         flex-direction: column;
@@ -13,6 +29,9 @@
         height:60%;
         border-radius : 60px;
         padding: 0 5%;
+
+        position:absolute;
+        z-index:99;
 
         .box__title {
             align-self: flex-start;
@@ -29,5 +48,23 @@
             width:90%;
             font-size:20px;
         }
+    }
+
+    .about__img {
+        position : absolute;
+        z-index:-99;
+    }
+
+    .img__burger {
+        width:150px;
+        top:10%;
+        right:23%;
+        transform: rotate(-25deg);
+    }
+
+    .img__laptop {
+        width:150px;
+        bottom:12%;
+        left:25%;
     }
 }

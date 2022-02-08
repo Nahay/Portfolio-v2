@@ -179,8 +179,8 @@
 .blur {
   background-color:rgba(255, 255, 255, 0.05);
   border : 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px) saturate(180%) opacity(100%);
-  -webkit-backdrop-filter: blur(4px) saturate(180%) opacity(100%);
+  backdrop-filter: blur(4px) opacity(100%);
+  -webkit-backdrop-filter: blur(4px) opacity(100%);
 }
 
 .bg-title {
@@ -188,12 +188,20 @@
   transform:translate(-50%,-50%);
   top:50%;
   left:50%;
-  font-size:300px;
+  font-size:400px;
   font-weight: bold;
-  color:#413F3F;
-  -webkit-text-stroke: 2px rgba(61, 61, 61, 0.2);
-  backdrop-filter: brightness(2%) blur(50px) opacity(0%);
-  text-shadow: -10px -10px $color-orange;
+
+  -webkit-text-stroke: 0.5px #8888883f;
+  
+  color:transparent;
+ 
+  // rgb(64,36,6)  /   #ff8f1741
+  background:rgb(64,36,6);
+  // rgb(13,7,1)   /   rgba(0, 0, 0, 0.801)
+  text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.801);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; 
 }
 
 

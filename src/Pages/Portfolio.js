@@ -87,14 +87,17 @@ const Portfolio = () => {
                             </section>
 
                             <section className="section services">
+                                
                             </section>
 
                             <section className="section works">
+                                
                             </section>
 
                             <section className="section contact">
                                 <Contact/>
                             </section>
+
                         </ReactFullpage.Wrapper>
                     );
                 }}
