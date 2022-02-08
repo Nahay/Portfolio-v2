@@ -8,6 +8,8 @@ import Logo from '../components/Logo';
 import Home from './PortfolioContent/Home';
 import About from './PortfolioContent/About';
 import Skills from './PortfolioContent/Skills';
+import Services from './PortfolioContent/Services';
+import Works from './PortfolioContent/Works';
 import Contact from './PortfolioContent/Contact';
 
 
@@ -86,12 +88,12 @@ const Portfolio = () => {
                                 <Skills/>
                             </section>
 
-                            <section className="section services">
-                                
+                            <section className="section">
+                                <Services/>
                             </section>
 
                             <section className="section works">
-                                
+                                <Works/>
                             </section>
 
                             <section className="section contact">

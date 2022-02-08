@@ -188,17 +188,18 @@
   transform:translate(-50%,-50%);
   top:50%;
   left:50%;
+
   font-size:400px;
   font-weight: bold;
+  transition : all 0.5s;
 
-  -webkit-text-stroke: 0.5px #8888883f;
-  
   color:transparent;
+  -webkit-text-stroke: 0.5px #8888883f;
  
   // rgb(64,36,6)  /   #ff8f1741
   background:rgb(64,36,6);
   // rgb(13,7,1)   /   rgba(0, 0, 0, 0.801)
-  text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.801);
+  text-shadow: 8px 8px 6px rgba(24, 24, 24, 0.801);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text; 

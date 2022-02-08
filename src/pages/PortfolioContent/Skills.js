@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Planet from '../../assets/Portfolio/planet1.png';
-import * as s from  '../../assets/Portfolio/skills/index';
+import * as s from  '../../assets/Portfolio/skillsIndex';
 
 
 const Skills = () => {
