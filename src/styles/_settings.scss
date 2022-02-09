@@ -5,7 +5,7 @@ $blur: blur(5px);
 
 
 $color-orange : #FF8E17;
-$color-red: #EB4039;
+$color-red: #b9302c;
 $color-black: rgb(29,29,29);
 
 
@@ -23,21 +23,23 @@ $font-titles : 'Passions Conflict', cursive;
     background : $color-red;
   }
 
+  // scrollbar ----------------------
+
   &::-webkit-scrollbar {
-    width: 15px;
-    background-color: #2b2b2b;
+    width: 13px;
+    background-color: transparent;
   }
   
   &::-webkit-scrollbar-thumb {
     border-radius: 10px;
     box-shadow: inset 0 0 6px rgba(44, 44, 44,0.3);
-    background-color: #c9a474;
+    background-color: $color-red;
   }
   
   &::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(44, 44, 44,0.3);
+    // box-shadow: inset 0 0 6px rgba(44, 44, 44,0.3);
     border-radius: 10px;
-    background-color: rgb(44, 44, 44);
+    background-color: transparent;
   }
 }
 

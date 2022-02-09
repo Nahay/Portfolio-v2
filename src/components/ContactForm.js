@@ -1,6 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAt, faEnvelope, faPaperPlane, faUserTie } from '@fortawesome/free-solid-svg-icons';
+
 import { toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 
@@ -9,7 +8,6 @@ const ContactForm = () => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [captcha, setCaptcha] = useState([]);
     const [answer, setAnswer] = useState('');
@@ -25,8 +23,6 @@ const ContactForm = () => {
     
     const handleEmailChange = (e) => setEmail(e.target.value)
 
-    const handleSubjectChange = (e) => setSubject(e.target.value)
-
     const handleMessageChange = (e) => setMessage(e.target.value)
 
     const handleAnswerChange = (e) => {
@@ -37,7 +33,7 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (name !== "" && email !== "" && subject !== "" && message !== "") {
+        if (name !== "" && email !== "" && message !== "") {
             if (email.match(/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/)) {
                 if (Number(answer) === captcha[0]+captcha[1]) {
 
@@ -46,7 +42,6 @@ const ContactForm = () => {
                         toast.success("Mail sent!");
                         setName('');
                         setEmail('');
-                        setSubject('');
                         setMessage('');
                         setAnswer('');
                     }, (err) => {
@@ -61,11 +56,10 @@ const ContactForm = () => {
     }
 
     return ( 
-        <form className="contact-form" onSubmit={handleSubmit} ref={form}>
-            <div className="form__box">
-                <div className="box__icon">
-                    <FontAwesomeIcon icon={faUserTie} />
-                </div>
+        <form className="contact-form blur" onSubmit={handleSubmit} ref={form}>
+            <h1 className='form__title'><span className='underline'>Conta</span>ct Me</h1>
+
+            <div className="form__middle">
                 <input
                     type="text"
                     value={name}
@@ -73,11 +67,6 @@ const ContactForm = () => {
                     placeholder='Name'
                     onChange={handleNameChange}
                 />
-            </div>
-            <div className="form__box">
-                <div className="box__icon">
-                    <FontAwesomeIcon icon={faAt} />
-                </div>
                 <input
                     type="text"
                     value={email}
@@ -85,42 +74,25 @@ const ContactForm = () => {
                     placeholder='Email'
                     onChange={handleEmailChange}
                 />
-            </div>
-            <div className="form__box">
-                <div className="box__icon">
-                    <FontAwesomeIcon icon={faPaperPlane} />
-                </div>
-                <input
-                    type="text"
-                    value={subject}
-                    name="subject"
-                    placeholder='Subject'
-                    onChange={handleSubjectChange}
-                />
-            </div>
-            <div className="form__box">
-                <div className="box__icon">
-                    <FontAwesomeIcon icon={faEnvelope} />
-                </div>
                 <textarea
                     value={message}
                     name="message"
-                    placeholder='Your Message...'
+                    placeholder='Message'
+                    id='inputMessage'
                     onChange={handleMessageChange}
                 />
             </div>
+            
             <div className="form__bottom">
-                <div className="bottom_captcha">
-                    <label htmlFor="captcha">{`${captcha[0]} + ${captcha[1]}`}</label>
-                    <input
-                        type="number"
-                        value={answer}
-                        name="captcha"
-                        id="captcha"
-                        onChange={handleAnswerChange}
-                    />
-                </div>
-                <input type="submit" value="Send"/>
+                <input
+                    type="number"
+                    value={answer}
+                    name="captcha"
+                    id="captcha"
+                    placeholder={`${captcha[0]} + ${captcha[1]}`}
+                    onChange={handleAnswerChange}
+                />
+                <input type="submit" value="Send" className='btn'/>
             </div>
         </form>
     );

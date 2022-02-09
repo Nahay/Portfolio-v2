@@ -152,7 +152,7 @@
     border : 1px solid rgba(255, 255, 255, 0.2);
     padding: 12px 30px;
     border-radius: 60px;
-    transition: all .5s;
+    transition: all 0.5s;
     font-size: 17px;
     cursor:pointer;
 
@@ -200,7 +200,7 @@
   // rgb(64,36,6)  /   #ff8f1741
   background:rgb(64,36,6);
   // rgb(13,7,1)   /   rgba(0, 0, 0, 0.801)
-  text-shadow: 8px 8px 6px rgba(24, 24, 24, 0.801);
+  text-shadow: 8px 8px 6px rgba(0, 0, 0, 0.801);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text; 
