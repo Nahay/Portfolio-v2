@@ -1,6 +1,6 @@
 .works {
 
-    * { transition : all 0.5s; }
+    // * { transition : all 0.5s; }
 
     .bg-title {
         .works__planet {
@@ -19,6 +19,24 @@
         align-items: center;
         flex-wrap: wrap;
 
+        .box__1, .box__3 {
+            margin-bottom:100px;
+        }
+
+        .box__2 {
+            width:250px;
+            margin:100px 80px 0 80px;
+            padding:50px 50px 70px 50px;
+
+            .box__title {
+                font-size:32px;
+            }
+
+            .box__img {
+                padding-top:50px;
+            }
+        }
+        
         .works__box {
             display:flex;
             flex-direction: column;
@@ -42,24 +60,6 @@
             .box__img {
                 width:200px;
                 padding-top:40px;
-            }
-
-            &:first-child, &:last-child {
-                margin-bottom:100px;
-            }
-
-            &:nth-child(2) {
-                width:250px;
-                margin:100px 80px 0 80px;
-                padding:50px 50px 70px 50px;
-
-                .box__title {
-                    font-size:32px;
-                }
-
-                .box__img {
-                    padding-top:50px;
-                }
             }
         }
 
