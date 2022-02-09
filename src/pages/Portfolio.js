@@ -38,7 +38,7 @@ const Portfolio = () => {
                 options={{
                     particles: {
                         size: {
-                            value: 4,
+                            value: 6,
                         },
                         move: {
                             speed:0.2,

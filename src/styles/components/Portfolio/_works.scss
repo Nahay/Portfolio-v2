@@ -1,12 +1,80 @@
 .works {
+
+    * { transition : all 0.5s; }
+
     .bg-title {
         .works__planet {
             position : absolute;
             bottom:14%;
-            right:2%;
+            right:12%;
             z-index:-99;
 
             width:60px;
+        }
+    }
+
+    .works__boxes {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .works__box {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            padding:40px 40px 50px 40px;
+            border-radius: 30px;
+
+            .box__title {
+                align-self: flex-start;
+
+                font-size:28px;
+
+                .underline::after {
+                    height:3px;
+                    bottom:-3px;
+                }
+            }
+
+            .box__img {
+                width:200px;
+                padding-top:40px;
+            }
+
+            &:first-child, &:last-child {
+                margin-bottom:100px;
+            }
+
+            &:nth-child(2) {
+                width:250px;
+                margin:100px 80px 0 80px;
+                padding:50px 50px 70px 50px;
+
+                .box__title {
+                    font-size:32px;
+                }
+
+                .box__img {
+                    padding-top:50px;
+                }
+            }
+        }
+
+        .fishing-container {
+
+            position : relative;
+
+            .fishing__img {
+                position : absolute;
+                top:-77px;
+                left:40%;
+                z-index:-99;
+
+                width:120px;
+            }
         }
     }
 }
