@@ -185,6 +185,8 @@ $color : #5c4747;
     height:90px;
 
     border-radius: 10px;
+
+    &:hover {background : $color-red}
     
     .social__img {
         width:60%;

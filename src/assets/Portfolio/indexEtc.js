@@ -5,8 +5,6 @@ import Laptop from './laptop.png';
 import OrangeRocket from './orangeRocket.png';
 import PlanetOne from './planetOne.png';
 import PlanetTwo from './planetTwo.png';
-import Up from './up.png';
-
 
 
 export {
@@ -17,5 +15,4 @@ export {
     OrangeRocket,
     PlanetOne,
     PlanetTwo,
-    Up
 }

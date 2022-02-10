@@ -207,6 +207,18 @@
 }
 
 
+// UP --------------------------------------------------------------------
+
+@keyframes upGoesUp {
+  from {
+    top:16px;
+  }
+  to {
+    top:-20px;
+    opacity: 0;
+  }
+}
+
 .up {
   opacity:0;
   transition : all 0.5s;
@@ -220,6 +232,13 @@
   position : fixed;
   border:none;
   cursor:default;
+
+  &:hover { background:transparent }
+  
+  &:hover > .up--left, &:hover > .up--right {
+    background:white;
+    animation : upGoesUp 1s infinite linear;
+  }
 
   .up--left, .up--right {
     position: absolute;
