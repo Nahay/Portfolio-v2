@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Planet from '../../assets/Portfolio/planet1.png';
+import { PlanetOne } from '../../assets/Portfolio/indexEtc';
 import * as s from  '../../assets/Portfolio/skillsIndex';
 
 
@@ -12,7 +12,7 @@ const Skills = () => {
             
             <h1 className='bg-title'>
                 SKILLS
-                <img src={Planet} className='skills__planet' alt="Planet" />
+                <img src={PlanetOne} className='skills__planet' alt="Planet" />
             </h1>
 
             <div className='skill-box blur'>

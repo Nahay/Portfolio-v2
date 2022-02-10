@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Navbar from '../../components/fixed/Navbar';
-
-import Astro from '../../assets/Portfolio/flyingAstro.png';
+import { FlyingAstro } from '../../assets/Portfolio/indexEtc';
 import Pdf from '../../assets/CV.pdf';
+
+import Navbar from '../../components/fixed/Navbar';
 
 
 const Home = ({api}) => {
 
     return (
         <>
-            <img src = {Astro} className='home__flying-astro' alt="Flying Astronaut"/>
+            <img src = {FlyingAstro} className='home__flying-astro' alt="Flying Astronaut"/>
             <Navbar api = {api}/>
             <div className="home__titles">
                 <h1>Hi! I'm <span className='title-lily'>Lily</span>.</h1>

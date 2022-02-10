@@ -2,8 +2,7 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import PlanetOne from '../../assets/Portfolio/planet1.png';
-
+import { PlanetOne } from '../../assets/Portfolio/indexEtc';
 import * as s from '../../assets/Portfolio/servicesIndex';
 
 

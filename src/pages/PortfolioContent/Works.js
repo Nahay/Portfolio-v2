@@ -2,8 +2,7 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import Planet from '../../assets/Portfolio/planet1.png';
-import Fishing from '../../assets/Portfolio/fishing.png';
+import { PlanetOne, Fishing } from '../../assets/Portfolio/indexEtc';
 import * as w from '../../assets/Portfolio/worksIndex';
 
 
@@ -15,7 +14,7 @@ const Works = () => {
             
             <h1 className='bg-title'>
                 WORKS
-                <img src={Planet} className='works__planet' alt="Planet" />
+                <img src={PlanetOne} className='works__planet' alt="Planet" />
             </h1>
 
             <div className="works__boxes">

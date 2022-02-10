@@ -1,7 +1,8 @@
 import React from 'react';
+
 import { toast } from 'react-toastify';
 
-import OrangeRocket from '../../assets/Portfolio/orangeRocket.png';
+import { OrangeRocket } from '../../assets/Portfolio/indexEtc';
 import * as s from '../../assets/Portfolio/socialIndex';
 
 import ContactForm from '../../components/ContactForm';

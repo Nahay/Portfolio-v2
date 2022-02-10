@@ -2,10 +2,8 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import Burger from '../../assets/Portfolio/burger.png';
-import Laptop from '../../assets/Portfolio/orangePc.png';
-import PlanetOne from '../../assets/Portfolio/planet1.png';
-import PlanetTwo from '../../assets/Portfolio/planet2.png';
+import { PlanetOne, PlanetTwo, Burger, Laptop } from '../../assets/Portfolio/indexEtc';
+
 
 const About = () => {
 
