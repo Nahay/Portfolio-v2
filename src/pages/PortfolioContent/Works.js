@@ -26,7 +26,13 @@ const Works = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <Tilt className='works__box box__1 blur'>
+                        <Tilt
+                            glareEnable={true}
+                            glareMaxOpacity={0.05}
+                            glarePosition={'all'}
+                            glareBorderRadius={'30px'}
+                            className='works__box box__1 blur'
+                        >
                             <h2 className='box__title'><span className='underline'>Man</span>do</h2>
                             <img src={w.Mando} className='box__img' alt="Mando" />
                         </Tilt>
@@ -38,7 +44,13 @@ const Works = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Tilt className='works__box box__2 blur'>
+                    <Tilt
+                            glareEnable={true}
+                            glareMaxOpacity={0.05}
+                            glarePosition={'all'}
+                            glareBorderRadius={'30px'}
+                            className='works__box box__2 blur'
+                    >
                         <h2 className='box__title'><span className='underline'>Charle</span>magne</h2>
                         <img src={w.Charlemagne} className='box__img' alt="Charlemagne" />
                     </Tilt>
@@ -48,7 +60,13 @@ const Works = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <Tilt className='works__box box__3 blur'>
+                    <Tilt
+                        glareEnable={true}
+                        glareMaxOpacity={0.05}
+                        glarePosition={'all'}
+                        glareBorderRadius={'30px'}
+                        className='works__box box__3 blur'
+                    >
                         <h2 className='box__title'><span className='underline'>Weeb</span> Lampe</h2>
                         <img src={w.WeebLampe} className='box__img' alt="Weeb Lampe" />
                     </Tilt>
