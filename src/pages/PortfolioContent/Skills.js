@@ -10,10 +10,10 @@ const Skills = () => {
         
         <div className='skills'>
             
-            <h1 className='bg-title'>
-                SKILLS
+            <div className="title__container">
+                <h1 className='bg-title'>SKILLS</h1>
                 <img src={PlanetOne} className='skills__planet' alt="Planet" />
-            </h1>
+            </div>
 
             <div className='skill-box blur'>
                 <img src={s.Angular} className='skill-box__img' alt="Angular" />

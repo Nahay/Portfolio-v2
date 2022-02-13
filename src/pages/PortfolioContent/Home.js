@@ -13,7 +13,7 @@ const Home = ({api}) => {
             <img src = {FlyingAstro} className='home__flying-astro' alt="Flying Astronaut"/>
             <Navbar api = {api}/>
             <div className="home__titles">
-                <h1>Hi! I'm <span className='title-lily'>Lily</span>.</h1>
+                <h1 className='titles__hi'>Hi! I'm <span>Lily</span>.</h1>
                 <div className="wrapper">
                     <div className="static-txt">I'm a</div>
                     <ul className="dynamic-txts">

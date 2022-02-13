@@ -12,10 +12,10 @@ const Works = () => {
         
         <div className='works'>
             
-            <h1 className='bg-title'>
-                WORKS
+            <div className="title__container">
+                <h1 className='bg-title'>WORKS</h1>
                 <img src={PlanetOne} className='works__planet' alt="Planet" />
-            </h1>
+            </div>
 
             <div className="works__boxes">
                 

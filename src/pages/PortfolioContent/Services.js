@@ -10,10 +10,11 @@ const Services = () => {
 
     return ( 
         <div className='services'>
-            <h1 className='bg-title'>
-                SERVICES
+
+            <div className="title__container">
+                <h1 className='bg-title'>SERVICES</h1>
                 <img src={PlanetOne} className='services__img' alt="PlanetOne" />
-            </h1>
+            </div>
 
             <div className="services__twin-box">
                 <Tilt

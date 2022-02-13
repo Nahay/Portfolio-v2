@@ -30,12 +30,14 @@
         left : 13%;
         height : 310px;
 
-        h1 {
+        .titles__hi {
             font-size : 70px;
             font-weight : bold;
             white-space: nowrap; /* Keeps the content on a single line */
             letter-spacing: .10em;
             color : white;
+
+            span { text-decoration: underline }
         }
 
         .wrapper {
@@ -83,37 +85,35 @@
             }
         }
 
-                @keyframes slide {
-                100% {
-                    top: -360px;
-                }
-                }
+        @keyframes slide {
+            100% {
+                top: -360px;
+            }
+        }
 
                 
-                /* The typing effect */
-                @keyframes typing {
-                from {
-                    width: 0;
-                }
-                to {
-                    width: 100%;
-                }
-                }
-                
-                /* The typewriter cursor effect */
-                @keyframes blink-caret {
-                from,
-                to {
-                    border-right: 0.15em solid transparent;
-                    }
-                    50% {
-                    border-right: 0.15em solid $color-orange;
-                    }
-                }
-        
-        a {
-            align-self: flex-start;
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
         }
+        
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from,
+            to {
+                border-right: 0.15em solid transparent;
+            }
+            50% {
+                border-right: 0.15em solid $color-orange;
+            }
+        }
+        
+        a { align-self: flex-start }
 
         @media (max-width: 810px) {
             height:280px;

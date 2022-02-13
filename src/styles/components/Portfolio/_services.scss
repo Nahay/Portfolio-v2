@@ -9,13 +9,15 @@
 
     * { transition : all 0.5s; }
 
-    .bg-title {
-        font-size:400px;
-
-        @media (max-width: 1670px) { font-size:300px }
-
-        @media (max-width: 1270px) { font-size:200px }
-
+    .title__container {
+        .bg-title {
+            font-size:400px;
+    
+            @media (max-width: 1670px) { font-size:300px }
+    
+            @media (max-width: 1270px) { font-size:200px }
+        }
+    
         .services__img {
             position : absolute;
             z-index: -99;

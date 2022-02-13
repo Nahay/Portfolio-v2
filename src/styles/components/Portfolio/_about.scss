@@ -5,11 +5,12 @@
     height:100%;
     width: 100%;
 
-    .bg-title {
+    .title__container {
         .about__img {
+            position : absolute;
             height:60px;
 
-            &:nth-child(1) {
+            &:nth-child(3) {
                 bottom:15%;
                 right:6%;
             }
@@ -20,6 +21,7 @@
             }
         }
     }
+    
 
     .about__box {
         display:flex;

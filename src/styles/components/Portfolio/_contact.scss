@@ -9,14 +9,15 @@ $color : #5c4747;
 
     * { transition: all .5s }
 
-    .rocket__img {
-        position : absolute;
-        top:-8%;
-        right:23%;
-        z-index:-99;
+    .title__container {
+        .rocket__img {
+            position : absolute;
+            top:-8%;
+            right:23%;
+            z-index:-99;
 
-        width:350px;
-
+            width:350px;
+        }
     }
 
     .contact__left {
@@ -192,12 +193,15 @@ $color : #5c4747;
         width:60%;
     }
 
+    // discord
     &:first-child {
         bottom:10%;
         left:45%;
 
         transform: rotate(-15deg);
         cursor: pointer;
+
+        &:hover {transform:rotate(-375deg)}
 
         &:hover > span {
             opacity: 1;
@@ -214,17 +218,23 @@ $color : #5c4747;
         }
     }
 
+    // github
     &:nth-child(2) {
         bottom:15%;
         right:15%;
 
         transform: rotate(15deg);
+
+        &:hover {transform:rotate(375deg)}
     }
 
+    // linkedin
     &:last-child {
         bottom:15%;
         left:15%;
 
         transform: rotate(-30deg);
+
+        &:hover {transform:rotate(-390deg)}
     }
 }

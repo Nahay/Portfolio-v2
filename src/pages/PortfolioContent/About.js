@@ -9,11 +9,11 @@ const About = () => {
 
     return ( 
         <div className='about'>
-            <h1 className='bg-title'>
-                ABOUT
+            <div className="title__container">
+                <h1 className='bg-title'>ABOUT</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />
                 <img src={PlanetTwo} className='about__img' alt="PlanetTwo" />
-            </h1>
+            </div>
             <Tilt
                 tiltEnable={false}
                 glareEnable={true}

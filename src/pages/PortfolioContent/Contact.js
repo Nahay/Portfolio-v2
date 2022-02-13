@@ -18,10 +18,10 @@ const Contact = () => {
     return ( 
         <div className="contact">
             
-            <h1 className='bg-title'>
-                CONTACT
+            <div className="title__container">
+                <h1 className='bg-title'>CONTACT</h1>
                 <img src={OrangeRocket} className='rocket__img' alt="Orange Rocket" />
-            </h1>
+            </div>
 
             <div className="contact__left">
                 <ContactForm/>
