@@ -30,7 +30,7 @@ const Works = () => {
                             glareMaxOpacity={0.05}
                             glarePosition={'all'}
                             glareBorderRadius={'30px'}
-                            className='works__box box__1 blur'
+                            className='works__box blur'
                         >
                             <h2 className='box__title'><span className='underline'>Man</span>do</h2>
                             <img src={w.Mando} className='box__img' alt="Mando" />
@@ -42,13 +42,14 @@ const Works = () => {
                     href='https://github.com/Nahay/Charlemagne'
                     target="_blank"
                     rel="noopener noreferrer"
+                    className='box__2'
                 >
                     <Tilt
                             glareEnable={true}
                             glareMaxOpacity={0.05}
                             glarePosition={'all'}
                             glareBorderRadius={'30px'}
-                            className='works__box box__2 blur'
+                            className='works__box box__2__container blur'
                     >
                         <h2 className='box__title'><span className='underline'>Charle</span>magne</h2>
                         <img src={w.Charlemagne} className='box__img' alt="Charlemagne" />
@@ -58,13 +59,14 @@ const Works = () => {
                     href='https://github.com/Nahay/WeebLampe'
                     target="_blank"
                     rel="noopener noreferrer"
+                    className='box__3'
                 >
                     <Tilt
                         glareEnable={true}
                         glareMaxOpacity={0.05}
                         glarePosition={'all'}
                         glareBorderRadius={'30px'}
-                        className='works__box box__3 blur'
+                        className='works__box blur'
                     >
                         <h2 className='box__title'><span className='underline'>Weeb</span> Lampe</h2>
                         <img src={w.WeebLampe} className='box__img' alt="Weeb Lampe" />

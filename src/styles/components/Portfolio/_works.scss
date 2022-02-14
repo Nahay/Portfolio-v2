@@ -9,7 +9,7 @@
             right:12%;
             z-index:-99;
 
-            width:60px;
+            width:6%;
         }
     }
     
@@ -17,23 +17,26 @@
         display:flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
 
-        .box__1, .box__3 {
-            margin-bottom:100px;
+        .fishing-container, .box__3 {
+            margin-bottom:12vh;
         }
 
         .box__2 {
-            width:250px;
-            margin:100px 80px 0 80px;
-            padding:50px 50px 70px 50px;
+            margin:15vh 4.4vw 0 4.4vw;
 
-            .box__title {
-                font-size:32px;
-            }
-
-            .box__img {
-                padding-top:50px;
+            .box__2__container {
+                width:250px;
+                // 50px 70px
+                padding:14% 50px 19.5% 50px;
+    
+                .box__title {
+                    font-size:32px;
+                }
+    
+                .box__img {
+                    padding-top:50px;
+                }
             }
         }
         
@@ -43,7 +46,7 @@
             justify-content: space-around;
             align-items: center;
 
-            padding:40px 40px 50px 40px;
+            padding:14% 40px 17% 40px;
             border-radius: 30px;
 
             .box__title {
@@ -59,7 +62,7 @@
 
             .box__img {
                 width:200px;
-                padding-top:40px;
+                padding-top:20%;
             }
         }
 
@@ -74,6 +77,89 @@
                 z-index:-99;
 
                 width:120px;
+            }
+        }
+    }
+
+    @media (max-width:1150px) {
+        .works__boxes {
+
+            .works__box {
+                padding:14% 30px 17% 30px;
+    
+                .box__title { font-size: 22px }
+                .box__img { width:150px }
+            }
+
+            .box__2 .box__2__container {
+                width:180px;
+                padding:14% 40px 19.5% 40px;
+
+                .box__title { font-size: 26px }
+            }
+
+            .fishing-container {
+                .fishing__img {
+                    top:-58px;
+                    width:90px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:850px) {
+        .works__boxes {
+            .works__box {
+                border-radius: 20px;
+                padding:14% 20px 17% 20px;
+    
+                .box__title { font-size: 16px }
+                .box__img { width:100px }
+            }
+
+            .box__2 {
+                margin-top:10vh;
+                
+                .box__2__container {
+                    width:120px;
+                    padding:14% 30px 19.5% 30px;
+    
+                    .box__title { font-size: 19px }
+                }
+            }
+
+            .fishing-container {
+                .fishing__img {
+                    top:-45px;
+                    left:37%;
+                    width:70px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:650px) {
+        .works__boxes {
+            position: absolute;
+            top:70%;
+            left:50%;
+            transform: translate(-50%,-50%);
+
+            justify-content: space-around;
+            
+            width:70vw;
+            min-width:400px;
+
+            .box__2 {
+                position : absolute;
+                bottom:110%;
+                
+                .box__2__container {
+                    width:100px;
+
+                    .box__title { font-size: 17px }
+                    .box__img { padding-top:30px }
+                }
             }
         }
     }

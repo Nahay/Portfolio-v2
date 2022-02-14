@@ -8,7 +8,7 @@
     .title__container {
         .about__img {
             position : absolute;
-            height:60px;
+            height:15%;
 
             &:nth-child(3) {
                 bottom:15%;
@@ -24,25 +24,27 @@
     
 
     .about__box {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        width:35%;
-        height:60%;
-        border-radius : 60px;
-        padding: 0 5%;
-
         position:absolute;
         z-index:99;
 
-        .box__title {
-            align-self: flex-start;
-            margin-bottom:5%;
-            width:90%;
-        }
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
 
-        h2 {
+        min-width: 340px;
+        width:35%;
+        height:60%;
+
+        border-radius : 60px;
+        padding: 0 5%;
+
+        .box__title {
             justify-self:flex-start;
+            align-self: flex-start;
+            
+            width:90%;
+
+            margin-bottom:10%;
             font-size:30px;
         }
         
@@ -68,5 +70,73 @@
         width:150px;
         bottom:12%;
         left:25%;
+    }
+
+
+    // RESPONSIVE ------------------------------------------
+
+    @media (max-width: 1200px) { 
+        .about__box {
+            height:55%;
+
+            .box__title { font-size: 27px }
+            p { font-size: 18px }
+        }
+
+        .img__burger {
+            width:120px;
+            top:13%;
+            right:23%;
+        }
+    
+        .img__laptop {
+            width:120px;
+            bottom:17%;
+            left:25%;
+        }
+    }
+
+    @media (max-width: 570px) { 
+        .about__box {
+            min-width: 300px;
+
+            .box__title { font-size: 20px }
+            p { font-size: 15px }
+        }
+
+        .img__burger {
+            width:100px;
+            top:13%;
+            right:11%;
+        }
+    
+        .img__laptop {
+            width:100px;
+            bottom:18%;
+            left:14%;
+        }
+    }
+
+    @media (max-width: 400px) { 
+        .about__box {
+            min-width: 250px;
+            height:50%;
+            border-radius: 50px;
+
+            .box__title { font-size: 18px }
+            p { font-size: 14px }
+        }
+
+        .img__burger {
+            width:80px;
+            top:19%;
+            right: 4%;
+        }
+    
+        .img__laptop {
+            width:80px;
+            bottom:21%;
+            left:8%;
+        }
     }
 }

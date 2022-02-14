@@ -1,14 +1,14 @@
 // MAIN SIO ----------------------------------------------------------------------------
 
 .mainSIO {
-    overflow-x:none;
+    overflow-x:hidden;
 
     .bg {
         height : 100vh;
         width:100vw;
         position: fixed;
         z-index: -1;
-        overflow:none;
+        overflow:hidden;
         animation: gradientBg 40s linear infinite;
         background: linear-gradient(59deg, #FF7426, #FF9E63);
         background-size: 180px 180px;
@@ -46,7 +46,7 @@
 // ACCUEIL SIO ----------------------------------------------------------------------
 
 .sio {
-    overflow:none;
+    overflow:hidden;
     display:flex;
     justify-content: center;
     align-items: center;

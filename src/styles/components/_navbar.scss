@@ -57,5 +57,7 @@
                 margin: 0 10px;
             }
         }
+
+        @media (max-width: 715px) { display:none }
     }
 }

@@ -11,8 +11,7 @@
         bottom:13%;
         z-index:-2;
         
-        width:55px;
-        height:55px;
+        height:15%;
     }
 
     .skill-box {
@@ -24,12 +23,38 @@
         align-items: center;
         border-radius: 10px;
 
-        transition : all 0.5s;
+        transition : all .5s;
         position : absolute;
 
         .skill-box__img {
             width:60%;
             height:60%;
+        }
+
+        @keyframes translateEven {
+            to {
+                transform: translateX(10px) translateY(10px) rotate(-15deg);
+            }
+        }
+
+        @keyframes translateOdd {
+            to {
+                transform: translateX(-10px) translateY(-10px) rotate(15deg);
+            }
+        }
+
+        &:nth-child(even) {
+            transform: rotate(15deg);
+            animation : translateEven 6s ease-in-out infinite alternate;
+        }
+
+        &:nth-child(odd) {
+            transform: rotate(-15deg);
+            animation : translateOdd 6s ease-in-out infinite alternate;
+        }
+
+        &:last-child {
+            transform: rotate(5deg);
         }
 
         // angular
@@ -38,63 +63,156 @@
             left:30%;
         }
 
-        // css
+        // nodejs
         &:nth-child(3) {
-            bottom:10%;
-            left:30%;
+            top:10%;
+            right:40%;
+        }
+
+        // mongodb
+        &:nth-child(4) {
+            top:8%;
+            right:20%;
+        }
+
+        // sql
+        &:nth-child(5) {
+            top:25%;
+            right:5%;
         }
 
         // git
-        &:nth-child(4) {
+        &:nth-child(6) {
             bottom:30%;
             right:5%;
         }
 
+        // php
+        &:nth-child(7) {
+            bottom:10%;
+            right:20%;
+        }
+
+        // sass
+        &:nth-child(8) {
+            bottom:15%;
+            left:50%;
+        }
+
+        // css
+        &:nth-child(9) {
+            bottom:10%;
+            left:30%;
+        }
+
         // html
-        &:nth-child(5) {
+        &:nth-child(10) {
             bottom:15%;
             left:5%;
         }
 
         // js
-        &:nth-child(6) {
+        &:nth-child(11) {
             top:45%;
             left:5%;
         }
 
-        // mongodb
-        &:nth-child(7) {
-            top:8%;
-            right:20%;
-        }
-
-        // nodejs
-        &:nth-child(8) {
-            top:10%;
-            right:40%;
-        }
-
-        // php
-        &:nth-child(9) {
-            bottom:10%;
-            right:20%;
-        }
-
         // react
-        &:nth-child(10) {
+        &:nth-child(12) {
             top:20%;
             left:10%;
         }
+    }
 
-        // sass
-        &:nth-child(11) {
-            bottom:15%;
-            left:50%;
+
+    @media (max-width:1200px) {
+        .skill-box {
+            width: 70px;
+            height: 70px;
         }
-        // sql
-        &:nth-child(12) {
-            top:25%;
-            right:5%;
+    }
+
+    @media (max-width:900px) {
+        .skill-box {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    @media (max-width:800px) {
+        .skill-box {
+            // angular
+            &:nth-child(2) {
+                top:7%;
+                left:30%;
+            }
+
+            // nodejs
+            &:nth-child(3) {
+                top:20%;
+                right:40%;
+            }
+
+            // mongodb
+            &:nth-child(4) {
+                top:9%;
+                right:12%;
+            }
+
+            // sql
+            &:nth-child(5) {
+                top:30%;
+                right:15%;
+            }
+
+            // git
+            &:nth-child(6) {
+                bottom:30%;
+                right:5%;
+            }
+
+            // php
+            &:nth-child(7) {
+                bottom:18%;
+                right:20%;
+            }
+
+            // sass
+            &:nth-child(8) {
+                bottom:20%;
+                left:28%;
+            }
+
+            // css
+            &:nth-child(9) {
+                bottom:30%;
+                left:50%;
+            }
+
+            // html
+            &:nth-child(10) {
+                bottom:30%;
+                left:5%;
+            }
+
+            // js
+            &:nth-child(11) {
+                top:20%;
+                left:5%;
+            }
+
+            // react
+            &:nth-child(12) {
+                top:30%;
+                left:20%;
+            }
+        }
+    }
+
+    @media (max-width:500px) {
+        .skill-box {
+            width: 50px;
+            height: 50px;
         }
     }
 }
