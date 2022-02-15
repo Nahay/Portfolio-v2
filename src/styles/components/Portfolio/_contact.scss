@@ -8,13 +8,21 @@
     * { transition: all .5s }
 
     .title__container {
-        .rocket__img {
+        .contact__img {
             position : absolute;
-            top:-8%;
-            right:23%;
             z-index:-99;
 
-            width:22.5%;
+            &:nth-child(2) {
+                top:-8%;
+                right:23%;
+                width:22.5%;
+            }
+
+            &:nth-child(3) {
+                bottom:13%;
+                left:34%;
+                width:9%;
+            }
         }
     }
 

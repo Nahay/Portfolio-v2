@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PlanetOne } from '../../assets/Portfolio/indexEtc';
+import { PlanetOne, PlanetThree } from '../../assets/Portfolio/indexEtc';
 import * as s from  '../../assets/Portfolio/skillsIndex';
 
 
@@ -12,7 +12,8 @@ const Skills = () => {
             
             <div className="title__container">
                 <h1 className='bg-title'>SKILLS</h1>
-                <img src={PlanetOne} className='skills__planet' alt="Planet" />
+                <img src={PlanetOne} className='skills__planet' alt="Planet One" />
+                <img src={PlanetThree} className='skills__planet' alt="Planet Three" />
             </div>
 
             <div className='skill-box blur'>

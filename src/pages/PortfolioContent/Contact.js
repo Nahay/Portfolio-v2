@@ -2,7 +2,7 @@ import React from 'react';
 
 import { toast } from 'react-toastify';
 
-import { OrangeRocket } from '../../assets/Portfolio/indexEtc';
+import { OrangeRocket, PlanetTwo } from '../../assets/Portfolio/indexEtc';
 import * as s from '../../assets/Portfolio/socialIndex';
 
 import ContactForm from '../../components/ContactForm';
@@ -20,7 +20,8 @@ const Contact = () => {
             
             <div className="title__container">
                 <h1 className='bg-title'>CONTACT</h1>
-                <img src={OrangeRocket} className='rocket__img' alt="Orange Rocket" />
+                <img src={OrangeRocket} className='contact__img' alt="Orange Rocket" />
+                <img src={PlanetTwo} className='contact__img' alt="Planet Two" />
             </div>
 
             <div className="contact__left">

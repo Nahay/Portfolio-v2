@@ -9,13 +9,26 @@
 
     * { transition : all 0.5s; }
 
-    .title__container {    
-        .services__img {
+    .title__container { 
+        
+        // planète droite
+        .services__img:nth-child(2) {
             position : absolute;
             z-index: -99;
-            width:60px;
-            bottom:10%;
-            right:1%;
+            width:6%;
+            bottom:32%;
+            right:22%;
+        }
+
+        // planète gauche
+        .services__img:nth-child(3) {
+            position : absolute;
+            z-index: -99;
+            width:8%;
+            top:37%;
+            left:20%;
+
+            transform: rotate(35deg);
         }
     }
 

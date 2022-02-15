@@ -2,7 +2,7 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import { PlanetOne } from '../../assets/Portfolio/indexEtc';
+import { PlanetThree, PlanetTwo } from '../../assets/Portfolio/indexEtc';
 import * as s from '../../assets/Portfolio/servicesIndex';
 
 
@@ -13,7 +13,8 @@ const Services = () => {
 
             <div className="title__container">
                 <h1 className='bg-title'>SERVICES</h1>
-                <img src={PlanetOne} className='services__img' alt="PlanetOne" />
+                <img src={PlanetThree} className='services__img' alt="PlanetThree" />
+                <img src={PlanetTwo} className='services__img' alt="PlanetTwo" />
             </div>
 
             <div className="services__twin-box">
