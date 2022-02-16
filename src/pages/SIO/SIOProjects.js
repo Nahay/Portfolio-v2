@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Charlemagne from '../../components/SIO/Projects/Charlemagne';
 
-import SIOPortfolio from '../../components/SIO/SIOPortfolio';
 import ImageZoom from '../../components/SIO/ImageZoom';
 
 
@@ -21,9 +20,6 @@ const SIOProjects = () => {
             <ImageZoom onClick={onClick}/>
             
            <div className="sio-projects__container">
-               <div className="container__portfolio">
-                   <SIOPortfolio setProject={setProject}/>
-               </div>
             </div> 
             <div className="container__project" id="project">
                    {project === "charlemagne" && <Charlemagne/>}
