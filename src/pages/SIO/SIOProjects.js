@@ -1,30 +1,38 @@
-import React, {useState} from 'react';
-import Charlemagne from '../../components/SIO/Projects/Charlemagne';
+import React from 'react';
 
-import ImageZoom from '../../components/SIO/ImageZoom';
+import Particles from "react-tsparticles";
+import { loadStarsPreset } from "tsparticles-preset-stars";
+
+// import Logo from '../../components/Logo';
+// import FullPage from '../PortfolioContent/FullPage';
 
 
 const SIOProjects = () => {
 
-    const [project, setProject] = useState("");
-    const container = document.getElementById("imgDiv");
+    const customInit = (Main) => loadStarsPreset(Main)
 
-    const onClick = () => {
-        if (container.style.display === "flex") container.style.display = "none";
-        else container.style.display = "flex";
-    }
+    return (
 
-    return ( 
-        <div className="sio-projects">
+        <>
 
-            <ImageZoom onClick={onClick}/>
-            
-           <div className="sio-projects__container">
-            </div> 
-            <div className="container__project" id="project">
-                   {project === "charlemagne" && <Charlemagne/>}
-            </div>
-        </div>
+            <Particles
+                options={{
+                    particles: {
+                        size: {
+                            value: 6,
+                        },
+                        move: {
+                            speed:0.2,
+                        },
+                    },
+                    preset: "stars"}}
+                init={customInit}
+            />
+
+            {/* <Logo/>
+
+            <FullPage/> */}
+        </>        
     );
 }
 
