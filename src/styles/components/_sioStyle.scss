@@ -1,0 +1,70 @@
+.about {
+    .about__box { padding: 0 4% 0 5% }
+
+    .box__veille p { font-size:17px }
+
+    .img__rocket {
+        width:300px;
+        top:8%;
+        right:20%;
+    }
+
+    .img__git {
+        transform: rotate(15deg);
+        width:100px;
+        top:18%;
+        right:25%;
+    }
+
+    .img__github {
+        transform: rotate(-15deg);
+        width:100px;
+        bottom:18%;
+        left:25%;
+    }
+
+    
+    // RESPONSIVE -------------------------------------
+
+    @media (max-width: 1650px) {
+        .box__veille {
+            .box__title { font-size: 27px }
+            p { font-size:16px }
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .box__veille {
+            .box__title { font-size: 23px }
+            p { font-size:14px }
+            .btn {
+                padding : 11px 14px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .img__rocket {
+            width:250px;
+            top:10%;
+            right:18%;
+        }
+    }
+
+    @media (max-width: 570px) { 
+        .img__rocket {
+            width:200px;
+            top:12%;
+            right:4%;
+        }
+    }
+
+    @media (max-width: 400px) { 
+        .img__rocket {
+            width:150px;
+            top:18%;
+            right:-2%;
+        }
+    }
+}

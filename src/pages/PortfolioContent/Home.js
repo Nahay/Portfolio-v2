@@ -6,12 +6,12 @@ import Pdf from '../../assets/CV.pdf';
 import Navbar from '../../components/fixed/Navbar';
 
 
-const Home = ({api}) => {
+const Home = () => {
 
     return (
         <>
             <img src = {FlyingAstro} className='home__flying-astro' alt="Flying Astronaut"/>
-            <Navbar api = {api}/>
+            <Navbar/>
             <div className="home__titles">
                 <h1 className='titles__hi'>Hi! I'm <span>Lily</span>.</h1>
                 <div className="wrapper">

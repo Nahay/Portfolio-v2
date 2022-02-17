@@ -31,7 +31,7 @@ const Portfolio = () => {
 
             <Logo/>
 
-            <FullPage/>
+            <FullPage mainApp={true} />
         </>        
     );
 }

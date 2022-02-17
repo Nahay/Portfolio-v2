@@ -21,7 +21,6 @@
             }
         }
     }
-    
 
     .about__box {
         position:absolute;
@@ -47,7 +46,12 @@
             margin-bottom:10%;
             font-size:30px;
         }
-        
+
+        .box__btn {
+            margin-top: 10%;
+            z-index: 2;
+        }
+
         p {
             width:90%;
             font-size:20px;

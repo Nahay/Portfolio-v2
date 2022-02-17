@@ -3,13 +3,13 @@ import React from 'react';
 import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 
-// import Logo from '../../components/Logo';
-// import FullPage from '../PortfolioContent/FullPage';
+import Logo from '../../components/Logo';
+import FullPage from '../PortfolioContent/FullPage';
 
 
-const SIOProjects = () => {
+const SIOPresent = () => {
 
-    const customInit = (Main) => loadStarsPreset(Main)
+    const customInit = (Main) => loadStarsPreset(Main);
 
     return (
 
@@ -29,11 +29,11 @@ const SIOProjects = () => {
                 init={customInit}
             />
 
-            {/* <Logo/>
+            <Logo/>
 
-            <FullPage/> */}
-        </>        
+            <FullPage mainApp={false}/>
+        </>
     );
 }
 
-export default SIOProjects;
+export default SIOPresent;

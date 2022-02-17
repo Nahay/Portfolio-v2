@@ -9,8 +9,11 @@ import Services from './Services';
 import Works from './Works';
 import Contact from './Contact';
 
+import SIOAbout from '../SIO/SIOAbout';
+import SIOVeille from '../SIO/SIOVeille';
 
-const FullPage = () => {
+
+const FullPage = ({ mainApp }) => {
 
     const [on, setOn] = useState(false);
 
@@ -46,41 +49,65 @@ const FullPage = () => {
                 licenseKey={""}
                 scrollingSpeed = {1000}
                 navigation
-                navigationTooltips={["Home", "About", "Skills", "Services", "Works", "Contact"]}
+                navigationTooltips={mainApp ? ["Home", "About", "Skills", "Services", "Works", "Contact"]: ["Index", "Works", "Veille"]}
                 onLeave={onLeave}
                 normalScrollElements='#inputMessage'
-                render={({ fullpageApi }) => {
+                render={() => {
 
-                    return (
+                    if(mainApp) {
+                        return (
 
-                        <ReactFullpage.Wrapper>
+                            <ReactFullpage.Wrapper>
+    
+                                <section className="section home">
+                                    <Home/>
+                                </section>
+    
+                                <section className="section">
+                                    <About/>
+                                </section>
+    
+                                <section className="section">
+                                    <Skills/>
+                                </section>
+    
+                                <section className="section">
+                                    <Services/>
+                                </section>
+    
+                                <section className="section">
+                                    <Works/>
+                                </section>
+    
+                                <section className="section">
+                                    <Contact/>
+                                </section>
+    
+                            </ReactFullpage.Wrapper>
+    
+                        );
+                    }
+                    else {
+                        return (
 
-                            <section className="section home">
-                                <Home api = {fullpageApi}/>
-                            </section>
+                            <ReactFullpage.Wrapper>
+    
+                                <section className="section">
+                                    <SIOAbout/>
+                                </section>
+    
+                                <section className="section">
+                                    <Works/>
+                                </section>
+    
+                                <section className="section">
+                                    <SIOVeille/>
+                                </section>
 
-                            <section className="section">
-                                <About/>
-                            </section>
-
-                            <section className="section">
-                                <Skills/>
-                            </section>
-
-                            <section className="section">
-                                <Services/>
-                            </section>
-
-                            <section className="section">
-                                <Works/>
-                            </section>
-
-                            <section className="section">
-                                <Contact/>
-                            </section>
-
-                        </ReactFullpage.Wrapper>
-                    );
+                            </ReactFullpage.Wrapper>
+    
+                        );
+                    }
                 }}
             />
         </>        
