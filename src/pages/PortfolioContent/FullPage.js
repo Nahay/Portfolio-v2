@@ -32,14 +32,14 @@ const FullPage = ({ mainApp }) => {
 
         <>
             {on ? 
-                <button className="up up---on" onClick={onUpClick}>
+                <button className="up up---on" onClick={onUpClick} aria-label="Goes Up">
                     <span className="up--left"></span>
                     <span className="up--right"></span>
                 </button>
             
                 :
 
-                <button className="up" >
+                <button className="up" aria-label="Goes Up">
                     <span className="up--left"></span>
                     <span className="up--right"></span>
                 </button>   
