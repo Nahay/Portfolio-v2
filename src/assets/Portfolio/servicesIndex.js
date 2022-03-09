@@ -1,6 +1,6 @@
-import Light from './services/light.png';
-import Lightning from './services/lightning.png';
-import Responsive from './services/responsive.png';
+import Light from './services/light.webp';
+import Lightning from './services/lightning.webp';
+import Responsive from './services/responsive.webp';
 import Rocket from './services/rocket.webp';
 
 

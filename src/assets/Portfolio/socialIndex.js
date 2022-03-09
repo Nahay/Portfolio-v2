@@ -1,6 +1,6 @@
-import Discord from './social/discord.png';
-import GitHub from './social/github.png';
-import Linkedin from './social/linkedin.png';
+import Discord from './social/discord.webp';
+import GitHub from './social/github.webp';
+import Linkedin from './social/linkedin.webp';
 
 
 export {

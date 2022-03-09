@@ -1,14 +1,14 @@
-import Angular from './skills/angular.png';
-import CSS from './skills/css.png';
-import Git from './skills/git.png';
-import HTML from './skills/html.png';
-import JS from './skills/js.png';
-import MongoDB from './skills/mongodb.png';
+import Angular from './skills/angular.webp';
+import CSS from './skills/css.webp';
+import Git from './skills/git.webp';
+import HTML from './skills/html.webp';
+import JS from './skills/js.webp';
+import MongoDB from './skills/mongodb.webp';
 import NodeJS from './skills/nodejs.webp';
-import PHP from './skills/php.png';
-import React from './skills/react.png';
-import Sass from './skills/sass.png';
-import SQL from './skills/sql.png';
+import PHP from './skills/php.webp';
+import React from './skills/react.webp';
+import Sass from './skills/sass.webp';
+import SQL from './skills/sql.webp';
 
 
 
