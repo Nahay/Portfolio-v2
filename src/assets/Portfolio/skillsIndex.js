@@ -4,7 +4,7 @@ import Git from './skills/git.png';
 import HTML from './skills/html.png';
 import JS from './skills/js.png';
 import MongoDB from './skills/mongodb.png';
-import NodeJS from './skills/nodejs.png';
+import NodeJS from './skills/nodejs.webp';
 import PHP from './skills/php.png';
 import React from './skills/react.png';
 import Sass from './skills/sass.png';

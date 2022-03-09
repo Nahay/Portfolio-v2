@@ -1,6 +1,6 @@
-import Charlemagne from './works/charlemagne.png';
-import Mando from './works/mando.png';
-import WeebLampe from './works/weeblampe.png';
+import Charlemagne from './works/charlemagne.webp';
+import Mando from './works/mando.webp';
+import WeebLampe from './works/weeblampe.webp';
 
 
 export {

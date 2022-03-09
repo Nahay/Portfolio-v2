@@ -1,11 +1,11 @@
-import Burger from './burger.png';
-import Fishing from './fishing.png';
-import FlyingAstro from './flyingAstro.png';
-import Laptop from './laptop.png';
-import OrangeRocket from './orangeRocket.png';
-import PlanetOne from './planetOne.png';
-import PlanetTwo from './planetTwo.png';
-import PlanetThree from './planetThree.png';
+import Burger from './burger.webp';
+import Fishing from './fishing.webp';
+import FlyingAstro from './flyingAstro.webp';
+import Laptop from './laptop.webp';
+import OrangeRocket from './orangeRocket.webp';
+import PlanetOne from './planetOne.webp';
+import PlanetTwo from './planetTwo.webp';
+import PlanetThree from './planetThree.webp';
 
 
 export {
