@@ -3,23 +3,27 @@ import React from 'react';
 
 const Navbar = () => {
 
-    const {fullpage_api : api} = window;
+    const moveTo = (link) => {
+        document.getElementById(link).scrollIntoView({
+            block: 'start',
+            behavior: 'smooth'
+        });
+    }
 
     return ( 
         <div className="navbar">
-            <div className="navbar__left"></div>
             <div className="navbar__right">
                 <nav>
-                    <button className='nav__btn' onClick={() => api.moveTo(2,0)}>
+                    <button className='nav__btn' onClick={() => moveTo('about')}>
                         About
                     </button>
-                    <button className='nav__btn' onClick={() => api.moveTo(4,0)}>
+                    <button className='nav__btn' onClick={() => moveTo('services')}>
                         Services
                     </button>
-                    <button className='nav__btn' onClick={() => api.moveTo(5,0)}>
+                    <button className='nav__btn' onClick={() => moveTo('works')}>
                         Works
                     </button>
-                    <button className='btn' onClick={() => api.moveTo(6,0)}>
+                    <button className='btn' onClick={() => moveTo('contact')}>
                         Contact
                     </button>
                 </nav>

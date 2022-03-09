@@ -123,7 +123,7 @@
 
 // LOGO ---------------------------------------------------------------------------
 .logo__content span {
-  position : absolute;
+  position : fixed;
   z-index:99;
   top:1%;
   left:10.5%;
@@ -189,7 +189,7 @@
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  z-index:-99;
+  z-index:0;
   
   .bg-title {
     font-size:22vw;

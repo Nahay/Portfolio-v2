@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
 
-import ReactFullpage from '@fullpage/react-fullpage';
-
 import Home from './Home';
 import About from './About';
 import Skills from './Skills';
@@ -17,16 +15,20 @@ const FullPage = ({ mainApp }) => {
 
     const [on, setOn] = useState(false);
 
-    const onLeave = (origin, destination) => {
-        if (origin.index === 0) setOn(true);
-        if (destination.index === 0) setOn(false);
+
+    window.onscroll = () => handleScroll();
+
+    const handleScroll = () => {
+        if (document.documentElement.scrollTop > 300) setOn(true);
+        else setOn(false);
     }
 
     const onUpClick = () => {
-        window.fullpage_api.moveTo(1,0);
+        document.documentElement.scrollTop = 0;
         setOn(false);
     }
 
+    /* {mainApp ? ["Home", "About", "Skills", "Services", "Works", "Contact"]: ["Index", "Works", "Veille"]} */
 
     return (
 
@@ -43,73 +45,57 @@ const FullPage = ({ mainApp }) => {
                     <span className="up--left"></span>
                     <span className="up--right"></span>
                 </button>   
-            }    
+            }
 
-            <ReactFullpage
-                licenseKey={""}
-                scrollingSpeed = {1000}
-                navigation
-                navigationTooltips={mainApp ? ["Home", "About", "Skills", "Services", "Works", "Contact"]: ["Index", "Works", "Veille"]}
-                onLeave={onLeave}
-                normalScrollElements='#inputMessage'
-                render={() => {
+            { mainApp ?
 
-                    if(mainApp) {
-                        return (
+                <>
 
-                            <ReactFullpage.Wrapper>
-    
-                                <section className="section home">
-                                    <Home/>
-                                </section>
-    
-                                <section className="section">
-                                    <About/>
-                                </section>
-    
-                                <section className="section">
-                                    <Skills/>
-                                </section>
-    
-                                <section className="section">
-                                    <Services/>
-                                </section>
-    
-                                <section className="section">
-                                    <Works/>
-                                </section>
-    
-                                <section className="section">
-                                    <Contact/>
-                                </section>
-    
-                            </ReactFullpage.Wrapper>
-    
-                        );
-                    }
-                    else {
-                        return (
+                    <section className="section home">
+                        <Home/>
+                    </section>
 
-                            <ReactFullpage.Wrapper>
-    
-                                <section className="section">
-                                    <SIOAbout/>
-                                </section>
-    
-                                <section className="section">
-                                    <Works/>
-                                </section>
-    
-                                <section className="section">
-                                    <SIOVeille/>
-                                </section>
+                    <section className="section">
+                        <About/>
+                    </section>
 
-                            </ReactFullpage.Wrapper>
-    
-                        );
-                    }
-                }}
-            />
+                    <section className="section">
+                        <Skills/>
+                    </section>
+
+                    <section className="section">
+                        <Services/>
+                    </section>
+
+                    <section className="section">
+                        <Works/>
+                    </section>
+
+                    <section className="section">
+                        <Contact/>
+                    </section>
+
+                </>
+                
+            :
+
+                <>
+
+                    <section className="section">
+                        <SIOAbout/>
+                    </section>
+
+                    <section className="section">
+                        <Works/>
+                    </section>
+
+                    <section className="section">
+                        <SIOVeille/>
+                    </section>
+
+                </>
+            
+            }
         </>        
     );
 }

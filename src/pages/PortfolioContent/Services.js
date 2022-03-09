@@ -9,7 +9,7 @@ import * as s from '../../assets/Portfolio/servicesIndex';
 const Services = () => {
 
     return ( 
-        <div className='services'>
+        <div className='services' id='services'>
 
             <div className="title__container">
                 <h1 className='bg-title'>SERVICES</h1>

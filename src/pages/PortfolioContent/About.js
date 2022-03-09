@@ -8,7 +8,7 @@ import { PlanetOne, PlanetTwo, Burger, Laptop } from '../../assets/Portfolio/ind
 const About = () => {
 
     return ( 
-        <div className='about'>
+        <div className='about' id='about'>
             <div className="title__container">
                 <h1 className='bg-title'>ABOUT</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />

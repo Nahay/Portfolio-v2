@@ -1,5 +1,11 @@
 .works {
 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+
     * { transition : all 0.5s; }
 
     .title__container { 
@@ -69,12 +75,13 @@
         .fishing-container {
 
             position : relative;
+            z-index:10;
 
             .fishing__img {
                 position : absolute;
                 top:-77px;
                 left:40%;
-                z-index:-99;
+                z-index:-1;
 
                 width:120px;
             }

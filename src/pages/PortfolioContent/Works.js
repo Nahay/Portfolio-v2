@@ -10,7 +10,7 @@ const Works = () => {
 
     return (
         
-        <div className='works'>
+        <div className='works' id='works'>
             
             <div className="title__container">
                 <h1 className='bg-title'>WORKS</h1>

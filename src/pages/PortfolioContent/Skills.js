@@ -8,7 +8,7 @@ const Skills = () => {
 
     return (
         
-        <div className='skills'>
+        <div className='skills' id='skills'>
             
             <div className="title__container">
                 <h1 className='bg-title'>SKILLS</h1>
