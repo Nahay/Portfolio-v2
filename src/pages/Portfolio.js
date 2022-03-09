@@ -7,7 +7,7 @@ import Logo from '../components/Logo';
 import FullPage from './PortfolioContent/FullPage';
 
 
-const Portfolio = () => {
+const Portfolio = ({ mainApp }) => {
 
     const customInit = (Main) => loadStarsPreset(Main)
 
@@ -31,7 +31,7 @@ const Portfolio = () => {
 
             <Logo/>
 
-            <FullPage mainApp={true} />
+            <FullPage mainApp={mainApp} />
         </>        
     );
 }

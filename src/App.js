@@ -6,8 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Portfolio from './pages/Portfolio';
 import FourOhFour from './pages/FourOhFour';
 
-import SIOPresent from './pages/SIO/SIOPresent';
-
 
 function App() {
 
@@ -18,8 +16,12 @@ function App() {
           <ToastContainer/>
           <Switch>
             
-            <Route path="/sio" component = {SIOPresent} />
-            <Route exact path="/" component = {Portfolio} />
+            <Route exact path="/sio">
+              <Portfolio mainApp={false}/>
+            </Route>
+            <Route exact path="/">
+              <Portfolio mainApp={true}/>
+            </Route>
             <Route path="*" component = {FourOhFour} />
 
           </Switch>
