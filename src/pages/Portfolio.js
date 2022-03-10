@@ -2,6 +2,7 @@ import React from 'react';
 
 import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
+import SideNav from '../components/fixed/SideNav';
 
 import Logo from '../components/Logo';
 import FullPage from './PortfolioContent/FullPage';
@@ -30,6 +31,7 @@ const Portfolio = ({ mainApp }) => {
             />
 
             <Logo/>
+            <SideNav/>
 
             <FullPage mainApp={mainApp} />
         </>        
