@@ -16,7 +16,7 @@ const FullPage = ({ mainApp }) => {
     const [on, setOn] = useState(false);
 
 
-    window.onscroll = () => handleScroll();
+    window.addEventListener('scroll', () => handleScroll());
 
     const handleScroll = () => {
         if (document.documentElement.scrollTop > 300) setOn(true);

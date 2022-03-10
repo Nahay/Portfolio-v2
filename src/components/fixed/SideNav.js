@@ -26,7 +26,7 @@ const SideNav = () => {
     }, []);
 
 
-    window.onscroll = () => handleScroll();
+    window.addEventListener('scroll', () => handleScroll());
 
     const btnList = document.getElementsByClassName('side-nav__btn');
 
