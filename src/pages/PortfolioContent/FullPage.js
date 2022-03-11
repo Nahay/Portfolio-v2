@@ -51,7 +51,7 @@ const FullPage = ({ mainApp }) => {
 
                 <>
 
-                    <section className="section home">
+                    <section className="section home" id='home'>
                         <Home/>
                     </section>
 
