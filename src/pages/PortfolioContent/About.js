@@ -32,6 +32,7 @@ const About = () => {
                     Here are the technologies I've been working with recently ⬇
                 </p>
             </Tilt>
+
             <img src={Burger} className='about__img img__burger' alt="Burger" />
             <img src={Laptop} className='about__img img__laptop' alt="Laptop" />
         </div>
