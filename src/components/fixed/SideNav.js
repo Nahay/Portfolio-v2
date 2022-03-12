@@ -23,7 +23,7 @@ const SideNav = ({ anchorList }) => {
 
         setAnchorPosition(positions);
 
-    }, []);
+    }, [anchorList]);
 
 
     window.addEventListener('scroll', () => handleScroll());
