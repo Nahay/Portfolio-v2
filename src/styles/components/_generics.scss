@@ -227,8 +227,8 @@
 .up {
   position : fixed;
   z-index:99;
-  right:4%;
-  bottom:7%;
+  right:60px;
+  bottom:50px;
 
   height:40px;
   width:40px;
@@ -266,6 +266,11 @@
   .up--right {
     right: 7px;
     transform: rotate(45deg);
+  }
+
+  @media(max-width:600px) {
+    right:35px;
+    bottom:30px;
   }
 }
 
