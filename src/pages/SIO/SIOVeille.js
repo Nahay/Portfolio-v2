@@ -9,7 +9,7 @@ import { Git } from '../../assets/Portfolio/skillsIndex';
 const SIOVeille = () => {
 
     return ( 
-        <div className="about">
+        <div className="about" id="T.I.">
             <div className="title__container">
                 <h1 className='bg-title'>VEILLE</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />

@@ -28,8 +28,6 @@ const FullPage = ({ mainApp }) => {
         setOn(false);
     }
 
-    /* {mainApp ? ["Home", "About", "Skills", "Services", "Works", "Contact"]: ["Index", "Works", "Veille"]} */
-
     return (
 
         <>

@@ -8,7 +8,7 @@ import { PlanetOne, PlanetTwo, OrangeRocket, Laptop } from '../../assets/Portfol
 const SIOAbout = () => {
 
     return ( 
-        <div className='about'>
+        <div className='about' id='home'>
             <div className="title__container">
                 <h1 className='bg-title'>ABOUT</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />
@@ -31,7 +31,7 @@ const SIOAbout = () => {
                 </p>
                     <br/>
                 <p>
-                    J'ai choisi l'option <b>SLAM</b> Solutions Logicielles et Applications Métiers qui est proposée dans ce BTS, car j'ai l'ambition de devenir <b>WebDéveloppeuse</b>.                    
+                    J'ai choisi l'option <b>SLAM</b> Solutions Logicielles et Applications Métiers qui est proposée dans ce BTS, car j'ai l'ambition de devenir <b>Développeuse Web</b>.                    
                 </p>
                 
                 <div className="box__btn">

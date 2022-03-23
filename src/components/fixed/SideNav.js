@@ -37,27 +37,19 @@ const SideNav = ({ anchorList }) => {
             btn.classList.remove('active');
         });
 
-        switch(true) {
-            case top < anchorPosition[1]:
-                addActive(0);
+
+        for (let i = 0; i <= anchorPosition.length; i++) {
+            if (i == 0 && top < anchorPosition[i+1]) {
+                addActive(i);
                 break;
-            case top >= anchorPosition[1] && top < anchorPosition[2]:
-                addActive(1);
-                break;
-            case top >= anchorPosition[2] && top < anchorPosition[3]:
-                addActive(2);
-                break;
-            case top >= anchorPosition[3] && top < anchorPosition[4]:
-                addActive(3);
-                break;
-            case top >= anchorPosition[4] && top < anchorPosition[5]:
-                addActive(4);
-                break;
-            case top >= anchorPosition[5]:
-                addActive(5);
-                break;
-            default:
-                break;
+            }
+            else if (i == anchorPosition.length-1) addActive(i);
+            else {
+                if (top >= anchorPosition[i] && top < anchorPosition[i+1]) {
+                    addActive(i);
+                    break;
+                }
+            }
         }
     }
 

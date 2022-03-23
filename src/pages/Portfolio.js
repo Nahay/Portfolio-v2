@@ -31,7 +31,13 @@ const Portfolio = ({ mainApp }) => {
             />
 
             <Logo/>
-            <SideNav anchorList={['home','about','skills','services','works','contact']}/>
+            
+            { mainApp ?
+                <SideNav anchorList={['home','about','skills','services','works','contact']}/>
+            :
+                <SideNav anchorList={['home', 'works', 'T.I.']}/>
+            }
+            
 
             <FullPage mainApp={mainApp} />
         </>        
