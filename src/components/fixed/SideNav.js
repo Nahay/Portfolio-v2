@@ -39,11 +39,11 @@ const SideNav = ({ anchorList }) => {
 
 
         for (let i = 0; i <= anchorPosition.length; i++) {
-            if (i == 0 && top < anchorPosition[i+1]) {
+            if (i === 0 && top < anchorPosition[i+1]) {
                 addActive(i);
                 break;
             }
-            else if (i == anchorPosition.length-1) addActive(i);
+            else if (i === anchorPosition.length-1) addActive(i);
             else {
                 if (top >= anchorPosition[i] && top < anchorPosition[i+1]) {
                     addActive(i);
