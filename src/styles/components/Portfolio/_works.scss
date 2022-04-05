@@ -5,6 +5,7 @@
     align-items: center;
     height:100%;
     width:100%;
+    overflow-x: hidden;
 
     * { transition : all 0.5s; }
 
@@ -18,154 +19,296 @@
             width:6%;
         }
     }
+
+    .filter__container {
+        position : absolute;
+        top:12%;
+        left:18%;
+
+        button {
+            width:150px;
+            height:50px;
+            
+            font-size:16px;
+            margin-right:20px;
+            color:white;
+            border-radius: 20px;
+
+            &:last-child { margin-right:0px }
+        }
+
+        .clicked {
+            background:$color-red;
+        }
+    }
+
+    .visible {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
     
-    .works__boxes {
-        display:flex;
+    .arrow {
+        position : absolute;
+        right:100px;
+        z-index:99;
+
+        height:65px;
+        width:65px;
+
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        cursor:pointer;
+        transform:rotate(90deg);
+
+        &:hover .arrow--left, &:hover .arrow--right {
+            background : $color-red;
+        }
+
+        .arrow--left, .arrow--right {
+            position: absolute;
+            z-index: 1;
+            background-color: white;
+            
+            width: 45%;
+            height: 12.5%;
+            top:42.5%;
+        }
+          
+        .arrow--left {
+            left: 15%;
+            transform: rotate(-45deg);
+        }
+          
+        .arrow--right {
+            right: 15%;
+            transform: rotate(45deg);
+        }
+    }
+
+    .arrow-left {
+        left:100px;
+        transform: rotate(-90deg);
+    }
+
+    .works__container { 
+        display: flex;
         justify-content: center;
         align-items: center;
 
-        .fishing-container, .box__3 {
-            margin-bottom:12vh;
-        }
-
-        .box__2 {
-            margin:15vh 4.4vw 0 4.4vw;
-
-            .box__2__container {
-                width:250px;
-                // 50px 70px
-                padding:14% 50px 19.5% 50px;
+        width: 100%;
+        height: 100%;
     
-                .box__title {
-                    font-size:32px;
-                }
     
-                .box__img {
-                    padding-top:50px;
-                }
-            }
-        }
-        
-        .works__box {
+        .works__content {
+            position: relative;
+
             display:flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            align-items: flex-end;
 
-            padding:14% 40px 17% 40px;
-            border-radius: 30px;
+            width: 100%;
+            height: 60%;
 
-            .box__title {
-                align-self: flex-start;
+            scroll-behavior: smooth;
 
-                font-size:28px;
 
-                .underline::after {
-                    height:3px;
-                    bottom:-3px;
-                }
+            .fishing-container, .box__3 {
+                margin-bottom:12vh;
+            }
+            
+            .hidden { 
+                visibility: hidden;
+                opacity: 0;
             }
 
-            .box__img {
-                width:200px;
-                padding-top:20%;
-            }
-        }
+            .hidden-left { transform: translate3d(-20vw, -20vw, 0vw) scale(0.5) !important }
+        
+            .hidden-right { transform: translate3d(100vw, -20vw, 0vw) scale(0.5) !important }
 
-        .fishing-container {
-
-            position : relative;
-            z-index:10;
-
-            .fishing__img {
-                position : absolute;
-                top:-77px;
-                left:40%;
-                z-index:-1;
-
-                width:120px;
-            }
-        }
-    }
-
-    @media (max-width:1150px) {
-        .works__boxes {
-
-            .works__box {
-                padding:14% 30px 17% 30px;
-    
-                .box__title { font-size: 22px }
-                .box__img { width:150px }
+            .mid-active {
+                transform: translate3d(calc(50vw - 50%), 2vw, 0vw) scale(1.1);
             }
 
-            .box__2 .box__2__container {
-                width:180px;
-                padding:14% 40px 19.5% 40px;
+            .right-active { transform: translate3d(calc(85vw - 100%), -5vw, 0vw) }
 
-                .box__title { font-size: 26px }
-            }
-
-            .fishing-container {
-                .fishing__img {
-                    top:-58px;
-                    width:90px;
-                }
-            }
-        }
-    }
-
-    @media (max-width:850px) {
-        .works__boxes {
-            .works__box {
-                border-radius: 20px;
-                padding:14% 20px 17% 20px;
-    
-                .box__title { font-size: 16px }
-                .box__img { width:100px }
-            }
+            .left-active { transform: translate3d(15vw, -5vw, 0vw) }
 
             .box__2 {
-                margin-top:10vh;
-                
-                .box__2__container {
-                    width:120px;
-                    padding:14% 30px 19.5% 30px;
-    
-                    .box__title { font-size: 19px }
+                width: 17%;
+                position: absolute;
+                transition: all .5s ease-in; 
+                &:nth-child(1) {
+                    margin-left:0;
+                }
+
+                &:last-child {
+                    margin-right:0;
                 }
             }
+            
+            .works__box {
 
-            .fishing-container {
-                .fishing__img {
-                    top:-45px;
-                    left:37%;
-                    width:70px;
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                padding: 12% 35px 7% 35px;
+                border-radius: 30px;
+
+                transition: all 0.5s ease-in;
+                .box__title {
+                    align-self: flex-start;
+
+                    font-size:25px;
+
+                    .underline::after {
+                        height:3px;
+                        bottom:-3px;
+                    }
+                }
+
+                .box__img {
+                    width:200px;
+                    padding-top:15%;
                 }
             }
         }
     }
+
+    @media (max-width:1400px) {
+        .works__container {
+
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        padding:14% 35px 17% 35px;
+            
+                        .box__title { font-size: 22px }
+                        .box__img { width:150px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:1050px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:14% 30px 17% 30px;
+                        .box__title { font-size: 16px }
+                        .box__img { width:100px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:720px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:14% 20px 17% 20px;
+
+                        .box__title { font-size: 15px }
+                        .box__img { width:80px }
+                    }
+                }
+            }
+        }
+    }
+
 
     @media (max-width:650px) {
-        .works__boxes {
-            position: absolute;
-            top:70%;
-            left:50%;
-            transform: translate(-50%,-50%);
+        .works__container {
+            .works__content {
 
-            justify-content: space-around;
-            
-            width:70vw;
-            min-width:400px;
+                .hidden-left { transform: translate3d(-20vw, -20vw, 0vw) scale(0.5) !important }
+        
+                .hidden-right { transform: translate3d(100vw, -20vw, 0vw) scale(0.5) !important }
+    
+                .mid-active { 
+                    transform: translate3d(calc(50vw - 50%), 5vw, 0vw) scale(1.3);
+                    width: 22%;
+                }
+    
+                .right-active { 
+                    transform: translate3d(calc(85vw - 100%), -27vw, 0vw);
+                    width: 22%; 
+                }
+    
+                .left-active { 
+                    transform: translate3d(15vw, -27vw, 0vw);
+                    width: 22%;
+                }
+            }
+        }
+    }
 
-            .box__2 {
-                position : absolute;
-                bottom:110%;
-                
-                .box__2__container {
-                    width:100px;
+    
+    @media (max-width:600px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:14% 15px 17% 15px;
 
-                    .box__title { font-size: 17px }
-                    .box__img { padding-top:30px }
+                        .box__img { width:70px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:540px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:12% 15px 15% 15px;
+
+                        .box__title { font-size: 14px }
+                        .box__img { width:65px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:488px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:12% 15px 15% 15px;
+
+                        .box__title { font-size: 12px }
+                        .box__img { width:50px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:430px) {
+        .works__container {
+            .works__content {
+                .box__2 {
+                    .works__box {
+                        border-radius: 20px;
+                        padding:12% 10px 15% 10px;
+
+                        .box__title { font-size: 10px }
+                        .box__img { width:45px }
+                    }
                 }
             }
         }

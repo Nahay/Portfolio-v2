@@ -4,11 +4,13 @@ import Home from './Home';
 import About from './About';
 import Skills from './Skills';
 import Services from './Services';
-import Works from './Works';
 import Contact from './Contact';
+import WorksSlider from './WorksSlider';
 
 import SIOAbout from '../SIO/SIOAbout';
 import SIOVeille from '../SIO/SIOVeille';
+
+import { worksList } from '../../assets/worksList';
 
 
 const FullPage = ({ mainApp }) => {
@@ -66,7 +68,7 @@ const FullPage = ({ mainApp }) => {
                     </section>
 
                     <section className="section">
-                        <Works/>
+                        <WorksSlider worksList={worksList}/>
                     </section>
 
                     <section className="section">
@@ -84,7 +86,7 @@ const FullPage = ({ mainApp }) => {
                     </section>
 
                     <section className="section">
-                        <Works/>
+                        <WorksSlider worksList={worksList}/>
                     </section>
 
                     <section className="section">
