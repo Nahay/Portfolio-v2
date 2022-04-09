@@ -49,7 +49,7 @@
     
     .arrow {
         position : absolute;
-        right:100px;
+        right: 5%;
         z-index:99;
 
         height:65px;
@@ -87,7 +87,7 @@
     }
 
     .arrow-left {
-        left:100px;
+        left: 5%;
         transform: rotate(-90deg);
     }
 
@@ -153,14 +153,17 @@
                 justify-content: space-around;
                 align-items: center;
 
-                padding: 12% 35px 7% 35px;
+                padding: 12% 40px 7% 40px;
                 border-radius: 30px;
 
                 transition: all 0.5s ease-in;
+                cursor:pointer;
+
                 .box__title {
                     align-self: flex-start;
 
-                    font-size:25px;
+                    font-size:23px;
+                    height:25px;
 
                     .underline::after {
                         height:3px;
@@ -169,7 +172,7 @@
                 }
 
                 .box__img {
-                    width:200px;
+                    width: 100%;
                     padding-top:15%;
                 }
             }
@@ -184,8 +187,8 @@
                     .works__box {
                         padding:14% 35px 17% 35px;
             
-                        .box__title { font-size: 22px }
-                        .box__img { width:150px }
+                        .box__title { font-size: 19px }
+                        .box__img { width: 100% }
                     }
                 }
             }
@@ -196,10 +199,10 @@
         .works__container {
             .works__content {
                 .box__2 {
+                    width: 20%;
                     .works__box {
-                        border-radius: 20px;
                         padding:14% 30px 17% 30px;
-                        .box__title { font-size: 16px }
+                        .box__title { font-size: 17px }
                         .box__img { width:100px }
                     }
                 }
@@ -211,12 +214,12 @@
         .works__container {
             .works__content {
                 .box__2 {
+                    width: 20%;
                     .works__box {
-                        border-radius: 20px;
                         padding:14% 20px 17% 20px;
 
                         .box__title { font-size: 15px }
-                        .box__img { width:80px }
+                        .box__img { width:90px }
                     }
                 }
             }
@@ -224,58 +227,87 @@
     }
 
 
-    @media (max-width:650px) {
+    @media (max-width: 650px) {
+        .arrow-left {
+            left: 10%;
+        }
+        .arrow {
+            right: 10%;
+        }
+        .filter__container {
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
         .works__container {
             .works__content {
-
-                .hidden-left { transform: translate3d(-20vw, -20vw, 0vw) scale(0.5) !important }
+                overflow: hidden;
+                height: 75%;
+                .hidden-left { transform: translate3d(0, 30vw, 0vw) scale(0.5) !important }
         
-                .hidden-right { transform: translate3d(100vw, -20vw, 0vw) scale(0.5) !important }
+                .hidden-right { transform: translate3d(80vw, 30vw, 0vw) scale(0.5) !important }
     
                 .mid-active { 
-                    transform: translate3d(calc(50vw - 50%), 5vw, 0vw) scale(1.3);
-                    width: 22%;
+                    transform: translate3d(calc(50vw - 50%), -35vw, 0vw) scale(1.1);
+                    width: 25%;
                 }
     
                 .right-active { 
-                    transform: translate3d(calc(85vw - 100%), -27vw, 0vw);
-                    width: 22%; 
+                    transform: translate3d(calc(85vw - 100%), 0, 0);
+                    width: 25%; 
                 }
     
                 .left-active { 
-                    transform: translate3d(15vw, -27vw, 0vw);
-                    width: 22%;
+                    transform: translate3d(15vw, 0, 0);
+                    width: 25%;
+                }
+
+                .box__2 {
+                    width: 28%;
+
+                    .works_box { border-radius: 20px }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 620px) {
+        .works__container {
+            .works__content {    
+                .mid-active { 
+                    transform: translate3d(calc(50vw - 50%), -38vw, 0vw) scale(1.1);
                 }
             }
         }
     }
 
-    
-    @media (max-width:600px) {
-        .works__container {
-            .works__content {
-                .box__2 {
-                    .works__box {
-                        border-radius: 20px;
-                        padding:14% 15px 17% 15px;
 
-                        .box__img { width:70px }
-                    }
+    @media (max-width: 580px) {
+        .works__container {
+            .works__content {    
+                .mid-active { 
+                    transform: translate3d(calc(50vw - 50%), -40.5vw, 0vw) scale(1.1);
+                    width: 25%; 
                 }
             }
         }
     }
 
     @media (max-width:540px) {
+        .filter__container {
+            top: 15%;
+        }
         .works__container {
             .works__content {
                 .box__2 {
+                    width: 30%;
                     .works__box {
-                        border-radius: 20px;
-                        padding:12% 15px 15% 15px;
-
-                        .box__title { font-size: 14px }
-                        .box__img { width:65px }
+                        padding:14% 20px 17% 20px;
+                        .box__title { font-size: 13px }
+                        .box__img { width:95px }
                     }
                 }
             }
@@ -285,13 +317,12 @@
     @media (max-width:488px) {
         .works__container {
             .works__content {
+                height: 60%;
                 .box__2 {
-                    .works__box {
-                        border-radius: 20px;
-                        padding:12% 15px 15% 15px;
+                    .works__box {   
 
                         .box__title { font-size: 12px }
-                        .box__img { width:50px }
+                        .box__img { width:60px }
                     }
                 }
             }
@@ -299,15 +330,61 @@
     }
 
     @media (max-width:430px) {
+        .filter__container { 
+            button { 
+                font-size: 12px;
+            }
+        }
         .works__container {
             .works__content {
+                .right-active { 
+                    transform: translate3d(calc(85vw - 100%), -1vw, 0);
+                }
+    
+                .left-active { 
+                    transform: translate3d(15vw, -1vw, 0);
+                }
+                
                 .box__2 {
+                    width: 30%;
                     .works__box {
-                        border-radius: 20px;
-                        padding:12% 10px 15% 10px;
+                        padding:12% 20px 15% 20px;
 
                         .box__title { font-size: 10px }
-                        .box__img { width:45px }
+                        .box__img { width:75px }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:384px) {
+        .works__container {
+            .works__content {
+                .hidden-left { transform: translate3d(0, 30vw, 0vw) scale(0.5) !important }
+        
+                .hidden-right { transform: translate3d(80vw, 30vw, 0vw) scale(0.5) !important }
+    
+                .mid-active { 
+                    transform: translate3d(calc(50vw - 50%), -50vw, 0vw) scale(1.1);
+                    width: 25%;
+                }
+    
+                .right-active { 
+                    transform: translate3d(calc(90vw - 100%), 0vw, 0vw);
+                    width: 25%; 
+                }
+    
+                .left-active { 
+                    transform: translate3d(10vw, 0vw, 0vw);
+                    width: 25%;
+                }
+                .box__2 {
+                    width: 35%;
+                    .works__box {
+
+                        .box__title { font-size: 10px }
+                        .box__img { width:70px }
                     }
                 }
             }

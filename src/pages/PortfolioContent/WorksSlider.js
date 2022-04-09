@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
+import Modal from '../../components/generics/Modal';
 import { PlanetOne } from '../../assets/Portfolio/indexEtc';
 
 
@@ -14,6 +15,8 @@ const WorksSlider = ({ worksList }) => {
 
     const [childrens, setChildrens] = useState([]);
     const [active, setActive] = useState(0);
+    const [modal, setModal] = useState(false);
+    const [currentMod, setCurrentMod] = useState({});
 
     const [currentList, setCurrentList] = useState(Object.values(worksList[0])[0]);
 
@@ -25,28 +28,30 @@ const WorksSlider = ({ worksList }) => {
         element.classList.remove("right-active");
     }
 
-    useEffect(() => {
-        filters.current.children[0].classList.add('clicked');
-    }, [])
+    useEffect(() => filters.current.children[0].classList.add('clicked'), [])
 
     useEffect(() => {
         
         setChildrens(container.current.children);
+
         container.current.children.item(0).classList.remove("hidden");
-        container.current.children.item(1).classList.remove("hidden");
-        container.current.children.item(2).classList.remove("hidden");
-
         resetClass(container.current.children.item(0));
-        resetClass(container.current.children.item(1));
-        resetClass(container.current.children.item(2));
-
         container.current.children.item(0).classList.add("left-active");
-        container.current.children.item(1).classList.add("mid-active");
-        container.current.children.item(2).classList.add("right-active");
-
         container.current.children.item(0).classList.add("left-active");
-        container.current.children.item(1).classList.add("mid-active");
-        container.current.children.item(2).classList.add("right-active");
+
+        if (currentList.length > 1) {
+            container.current.children.item(1).classList.remove("hidden");
+            resetClass(container.current.children.item(1));
+            container.current.children.item(1).classList.add("mid-active");
+            container.current.children.item(1).classList.add("mid-active");
+
+            if (currentList.length > 2) {
+                container.current.children.item(2).classList.remove("hidden");
+                resetClass(container.current.children.item(2));
+                container.current.children.item(2).classList.add("right-active");
+                container.current.children.item(2).classList.add("right-active");
+            }
+        }
 
         for (let i = 0; i < container.current.children.length; i++) { 
             if (i > 2) {
@@ -57,7 +62,7 @@ const WorksSlider = ({ worksList }) => {
             } 
         }
 
-        if (currentList.length > 3) showArrow('right', true)
+        currentList.length > 3 ? showArrow('right', true) : showArrow('right', false);
 
     }, [currentList]);
 
@@ -68,8 +73,7 @@ const WorksSlider = ({ worksList }) => {
             else arrowLeft.current.classList.remove('visible');
             return
         }
-        if (show) arrowRight.current.classList.add('visible');
-        else arrowRight.current.classList.remove('visible');
+        show ? arrowRight.current.classList.add('visible') : arrowRight.current.classList.remove('visible');
     }
 
     const moveLeftWork = (i, a, b, c, d) => {
@@ -178,9 +182,16 @@ const WorksSlider = ({ worksList }) => {
         showArrow('left', false);
     }
 
+
     return (
         
         <div className='works' id='works'>
+
+            <Modal
+                show={modal}
+                setModal={setModal}
+                info={currentMod}
+            />
             
             <div className="title__container">
                 <h1 className='bg-title'>WORKS</h1>
@@ -213,14 +224,15 @@ const WorksSlider = ({ worksList }) => {
 
                 <div className="works__content" ref={container}>
                         {
-                            currentList.map(({ url, title, img }, i) => {
+                            currentList.map((c, i) => {
                                 return(
-                                    <a
-                                        href={url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
+                                    <div
                                         className='box__2 hidden'
                                         key={i}
+                                        onClick={() => {
+                                            setModal(true);
+                                            setCurrentMod(c);
+                                        }}
                                     >
                                         <Tilt
                                             glareEnable={true}
@@ -229,10 +241,10 @@ const WorksSlider = ({ worksList }) => {
                                             glareBorderRadius={'30px'}
                                             className='works__box blur'
                                         >
-                                            <h2 className='box__title'>{title}</h2>
-                                            <img src={img} className='box__img' alt={title} />
+                                            <h2 className='box__title'>{c.title}</h2>
+                                            <img src={c.img} className='box__img' alt={c.title} />
                                         </Tilt>
-                                    </a>
+                                    </div>
                                 );
                             })
                         }
