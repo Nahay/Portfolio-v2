@@ -6,7 +6,7 @@ import Modal from '../../components/generics/Modal';
 import { PlanetOne } from '../../assets/Portfolio/indexEtc';
 
 
-const WorksSlider = ({ worksList }) => {
+const WorksSlider = ({ worksList, fr }) => {
 
     const container = useRef(null);
     const filters = useRef(null);
@@ -191,6 +191,7 @@ const WorksSlider = ({ worksList }) => {
                 show={modal}
                 setModal={setModal}
                 info={currentMod}
+                fr={fr}
             />
             
             <div className="title__container">

@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWindowClose } from "@fortawesome/free-solid-svg-icons";
  
 
-const Modal = ({ setModal, show, info }) => {
+const Modal = ({ setModal, show, info, fr }) => {
 
   const modalRef = useRef(null);
 
-  const { title, url, description, tools, doc, github, banner, img } = info;
+  const { title, description, tools, img, banner, url, doc, github, dribbble } = info;
 
   const closeModal = () => {
     setModal(false);
@@ -37,7 +37,7 @@ const Modal = ({ setModal, show, info }) => {
               
               {description && <p>{description}</p> }
               
-              {tools && <p>Outils : {tools}</p>}
+              {tools && <p>{fr ? 'Outils' : 'Tools' } : {tools}</p>}
 
             </div>
           </div>
@@ -50,7 +50,7 @@ const Modal = ({ setModal, show, info }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Lien du site
+                {fr ? 'Lien' : 'Link' }
               </a>
             }
 
@@ -75,6 +75,19 @@ const Modal = ({ setModal, show, info }) => {
                 </a>
               )
             }
+
+            {
+              dribbble && (
+                <a
+                  href={dribbble}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dribbble
+                </a>
+              )
+            }
+
           </div>
         </div>
 

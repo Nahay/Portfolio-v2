@@ -10,7 +10,8 @@ import WorksSlider from './WorksSlider';
 import SIOAbout from '../SIO/SIOAbout';
 import SIOVeille from '../SIO/SIOVeille';
 
-import { worksList } from '../../assets/worksList';
+import { worksListEn } from '../../assets/worksListEn';
+import { worksListFr } from '../../assets/worksListFr';
 
 
 const FullPage = ({ mainApp }) => {
@@ -68,7 +69,7 @@ const FullPage = ({ mainApp }) => {
                     </section>
 
                     <section className="section">
-                        <WorksSlider worksList={worksList}/>
+                        <WorksSlider worksList={worksListEn}/>
                     </section>
 
                     <section className="section">
@@ -86,7 +87,7 @@ const FullPage = ({ mainApp }) => {
                     </section>
 
                     <section className="section">
-                        <WorksSlider worksList={worksList}/>
+                        <WorksSlider worksList={worksListFr} fr={true}/>
                     </section>
 
                     <section className="section">
