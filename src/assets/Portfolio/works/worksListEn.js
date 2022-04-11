@@ -1,4 +1,4 @@
-import * as w from './Portfolio/worksIndex';
+import * as w from './worksIndex';
 
 export const worksListEn = [
     {
@@ -44,7 +44,6 @@ export const worksListEn = [
             {
                 title : 'Weeb Battle',
                 url:'http://weeb-battle.000webhostapp.com',
-                github:'https://github.com/Nahay/Weeb-Battle',
                 img:w.WeebBattle,
                 description: "Weeb Battle is an anime-themed website project.",
                 tools: 'PHP, MySQL',
@@ -68,6 +67,14 @@ export const worksListEn = [
                 description:'Figma model for a website project under development.',
                 tools:'Figma, Adobe Photoshop',
                 url: 'https://www.figma.com/file/2C88wU7Lof9Cy2CW9oDQ1I/Crypto?node-id=0%3A1'
+            },
+            {
+                title : 'Arrow Icons',
+                img:w.ArrowIcons,
+                banner:w.ArrowIconBanner,
+                description:'Arrow Icons set created with Illustrator.',
+                tools:'Adobe Illustrator',
+                url: 'https://dribbble.com/shots/17981602-Icons-set'
             },
         ]
     },

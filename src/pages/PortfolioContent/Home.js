@@ -9,7 +9,7 @@ import Navbar from '../../components/fixed/Navbar';
 const Home = () => {
 
     return (
-        <>
+        <div className='home' id='home'>
             <img src = {FlyingAstro} className='home__flying-astro' alt="Flying Astronaut"/>
             <Navbar/>
             <div className="home__titles">
@@ -32,7 +32,7 @@ const Home = () => {
                         Download CV
                 </a>
             </div>
-        </>
+        </div>
     );
 }
 

@@ -10,21 +10,18 @@ import WorksSlider from './WorksSlider';
 import SIOAbout from '../SIO/SIOAbout';
 import SIOVeille from '../SIO/SIOVeille';
 
-import { worksListEn } from '../../assets/worksListEn';
-import { worksListFr } from '../../assets/worksListFr';
+import { worksListEn } from '../../assets/Portfolio/works/worksListEn';
+import { worksListFr } from '../../assets/Portfolio/works/worksListFr';
 
 
-const FullPage = ({ mainApp }) => {
+const Content = ({ mainApp }) => {
 
     const [on, setOn] = useState(false);
 
 
     window.addEventListener('scroll', () => handleScroll());
 
-    const handleScroll = () => {
-        if (document.documentElement.scrollTop > 300) setOn(true);
-        else setOn(false);
-    }
+    const handleScroll = () => { document.documentElement.scrollTop > 300 ? setOn(true) : setOn(false) }
 
     const onUpClick = () => {
         document.documentElement.scrollTop = 0;
@@ -52,7 +49,7 @@ const FullPage = ({ mainApp }) => {
 
                 <>
 
-                    <section className="section home" id='home'>
+                    <section className="section">
                         <Home/>
                     </section>
 
@@ -101,4 +98,4 @@ const FullPage = ({ mainApp }) => {
     );
 }
 
-export default FullPage;
+export default Content;

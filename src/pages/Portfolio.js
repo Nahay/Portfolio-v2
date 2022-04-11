@@ -5,7 +5,7 @@ import { loadStarsPreset } from "tsparticles-preset-stars";
 import SideNav from '../components/fixed/SideNav';
 
 import Logo from '../components/Logo';
-import FullPage from './PortfolioContent/FullPage';
+import Content from './PortfolioContent/Content';
 
 
 const Portfolio = ({ mainApp }) => {
@@ -39,7 +39,7 @@ const Portfolio = ({ mainApp }) => {
             }
             
 
-            <FullPage mainApp={mainApp} />
+            <Content mainApp={mainApp} />
         </>        
     );
 }

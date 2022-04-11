@@ -1,4 +1,4 @@
-import * as w from './Portfolio/worksIndex';
+import * as w from './worksIndex';
 
 export const worksListFr = [
     {
