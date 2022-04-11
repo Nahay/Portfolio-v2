@@ -76,10 +76,6 @@ export const worksListEn = [
                 tools:'Adobe Illustrator',
                 url: 'https://dribbble.com/shots/17981602-Icons-set'
             },
-        ]
-    },
-    {
-        'Illustration' : [
             {
                 title : 'Logo',
                 img:w.LogoL,
@@ -87,13 +83,10 @@ export const worksListEn = [
                 tools:'Adobe Illustrator',
                 dribbble:'https://dribbble.com/shots/17840070-L-Logo'
             },
-            {
-                title : 'Illustration',
-                img:w.Shiba,
-                banner:w.ShibaBanner,
-                tools:'Adobe Illustrator',
-                dribbble:'https://dribbble.com/shots/17843329-Shiba-Origami'
-            },
+        ]
+    },
+    {
+        'Illustration' : [
             {
                 title : 'Brochure',
                 img:w.InDesign,
@@ -101,6 +94,52 @@ export const worksListEn = [
                 description:'Presentation brochure of the game Elden Ring produced by the studio From Software. (pretty good game!)',
                 tools:'Adobe InDesign, Adobe Photoshop',
                 url:'https://drive.google.com/file/d/1CPgBWAH-t8xAasMMCodn5JUfijo1-hZ-/view?usp=sharing'
+            },
+            {
+                title : 'Portrait',
+                img:w.Portrait,
+                banner:w.PortraitBanner,
+                description:'Portrait of my brother!',
+                tools:'Clip Studio Paint',
+                url:'https://drive.google.com/file/d/1nP1eCY7o6QTKqM5TaVm-dETXsC4Z3vm6/view?usp=sharing'
+            },
+            {
+                title : 'Illustration',
+                img:w.Sunrise,
+                banner:w.SunriseBanner,
+                description:'Try of a sunrise illustration.',
+                tools:'Adobe Illustrator',
+                dribbble:'https://dribbble.com/shots/17996062-Sunrise'
+            },
+            {
+                title : 'Drawing',
+                img:w.Pikachu,
+                banner:w.PikachuBanner,
+                description:'Drawing of Pikachu from Pokemon.',
+                tools:'Clip Studio Paint',
+                url:'https://drive.google.com/file/d/1c1RBc7wbwXKidChlAjsehHDXnHxSTr5Y/view?usp=sharing'
+            },
+            {
+                title : 'Drawing',
+                img:w.Giyuu,
+                banner:w.GiyuuBanner,
+                description:'Giyuu character drawing from Demon Slayer manga.',
+                tools:'Clip Studio Paint',
+                url:'https://drive.google.com/file/d/1j_lbkGs-UH4AXzl8ySaUfGz9X-aIg_Ym/view?usp=sharing'
+            },
+            {
+                title : 'Origami Shiba',
+                img:w.Shiba,
+                banner:w.ShibaBanner,
+                tools:'Adobe Illustrator',
+                dribbble:'https://dribbble.com/shots/17843329-Shiba-Origami'
+            },
+            {
+                title : 'Drawing',
+                img:w.Kakashi,
+                description:'Kakashi character drawing from Naruto manga.',
+                tools:'Clip Studio Paint',
+                url:'https://drive.google.com/file/d/1JLP9Kp6kybaoAjd3xoBxfeSOaNG3c89L/view?usp=sharing'
             },
         ]
     }
