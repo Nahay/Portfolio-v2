@@ -13,7 +13,6 @@ Just take a look ! Everything's here: [lilyb.netlify.app](https://lilyb.netlify.
 
 ## 💻 Dev with
 - Reactjs
-- [Fullpage.js](https://github.com/alvarotrigo/fullPage.js#options)
 - [react-parallax-tilt](https://github.com/mkosir/react-parallax-tilt)
 - [ts-particles](https://github.com/matteobruni/tsparticles)
 
