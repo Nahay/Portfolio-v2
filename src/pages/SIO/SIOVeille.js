@@ -2,8 +2,6 @@ import React from 'react';
 
 import Tilt from 'react-parallax-tilt';
 
-import Pdf from '../../assets/Veille.pdf';
-
 import { PlanetOne, PlanetTwo } from '../../assets/Portfolio/indexEtc';
 import { GitHub } from '../../assets/Portfolio/socialIndex';
 import { Git } from '../../assets/Portfolio/skillsIndex';
@@ -41,7 +39,7 @@ const SIOVeille = () => {
                 <div className="box__btn">
                     <a
                         className="btn"
-                        href={Pdf}
+                        href='https://drive.google.com/file/d/1Mlwk8qEsg15qar_064hH2zyL5qKlqrgA/view?usp=sharing'
                         target="_blank"
                         rel="noopener noreferrer"
                     >

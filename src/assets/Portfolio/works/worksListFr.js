@@ -2,16 +2,7 @@ import * as w from './worksIndex';
 
 export const worksListFr = [
     {
-        'Développement' : [
-            {
-                title : 'Mando',
-                github:'https://github.com/Nahay/Mando',
-                img:w.Mando,
-                banner:w.MandoBanner,
-                description: "Mando est un logiciel marchand sur le thème de la série The Mandalorian développé en C# avec SQL Server (ADO).",
-                tools: 'C#, SQL Server',
-                doc: 'https://github.com/Nahay/Mando/wiki'
-            },
+        'Web' : [
             {
                 title : 'Charlemagne',
                 url:'https://le-charlemagne.netlify.app',
@@ -44,11 +35,23 @@ export const worksListFr = [
             {
                 title : 'Weeb Battle',
                 url:'http://weeb-battle.000webhostapp.com',
-                github:'https://github.com/Nahay/Weeb-Battle',
                 img:w.WeebBattle,
                 description: "Weeb Battle est un projet de site sur le thème des animés.",
                 tools: 'PHP, MySQL',
             }
+        ]
+    },
+    {
+        'Logiciel' : [
+            {
+                title : 'Mando',
+                github:'https://github.com/Nahay/Mando',
+                img:w.Mando,
+                banner:w.MandoBanner,
+                description: "Mando est un logiciel marchand sur le thème de la série The Mandalorian développé en C# avec SQL Server (ADO).",
+                tools: 'C#, SQL Server',
+                doc: 'https://github.com/Nahay/Mando/wiki'
+            },
         ]
     },
     {
@@ -68,24 +71,6 @@ export const worksListFr = [
                 description:'Maquette Figma pour un projet de site web en cours de développement.',
                 tools:'Figma, Adobe Photoshop',
                 url: 'https://www.figma.com/file/2C88wU7Lof9Cy2CW9oDQ1I/Crypto?node-id=0%3A1'
-            },
-        ]
-    },
-    {
-        'Illustration' : [
-            {
-                title : 'Logo',
-                img:w.LogoL,
-                banner:w.LogoLBanner,
-                tools:'Adobe Illustrator',
-                dribbble:'https://dribbble.com/shots/17840070-L-Logo'
-            },
-            {
-                title : 'Illustration',
-                img:w.Shiba,
-                banner:w.ShibaBanner,
-                tools:'Adobe Illustrator',
-                dribbble:'https://dribbble.com/shots/17843329-Shiba-Origami'
             },
         ]
     }
