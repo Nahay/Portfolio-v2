@@ -35,7 +35,7 @@ const Portfolio = ({ mainApp }) => {
             { mainApp ?
                 <SideNav anchorList={['home','about','skills','services','works','contact']}/>
             :
-                <SideNav anchorList={['home', 'works', 'T.I.']}/>
+                <SideNav anchorList={['accueil', 'works', 'veille']}/>
             }
             
 

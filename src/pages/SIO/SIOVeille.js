@@ -10,7 +10,7 @@ import { Git } from '../../assets/Portfolio/skillsIndex';
 const SIOVeille = () => {
 
     return ( 
-        <div className="about" id="T.I.">
+        <div className="about" id="veille">
             <div className="title__container">
                 <h1 className='bg-title'>VEILLE</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />
@@ -27,7 +27,7 @@ const SIOVeille = () => {
                 <h2 className='box__title'><span className='underline'>Ma veille t</span>echnologique</h2>
 
                 <p>
-                    La <b>veille technologique</b> consiste à surveiller les évolutions techniques et les innovations dans un secteur d'activité donné. Cela comprend notamment la surveillance, la collecte, le partage et la diffusion d'information permettant d'anticiper ou de s'informer sur des changements en matière de recherche, développement, processus, etc...
+                    La <b>veille technologique</b> consiste à surveiller les évolutions techniques et les innovations dans un secteur d'activité donné. Cela comprend notamment la surveillance, la collecte, le partage et la diffusion d'information permettant d'anticiper ou de s'informer sur des changements en matière de recherche, développement, processus...
                 </p>
                     <br/>
                 <p>

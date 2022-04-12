@@ -8,7 +8,7 @@ import { PlanetOne, PlanetTwo, OrangeRocket, Laptop } from '../../assets/Portfol
 const SIOAbout = () => {
 
     return ( 
-        <div className='about' id='home'>
+        <div className='about' id='accueil'>
             <div className="title__container">
                 <h1 className='bg-title'>ABOUT</h1>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />
