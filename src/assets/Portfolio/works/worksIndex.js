@@ -1,6 +1,6 @@
 import Charlemagne from './charlemagne.webp';
 import Mando from './mando.webp';
-import QuoteWars from './quote-wars.png';
+import QuoteWars from './quote-wars.webp';
 import WeebLampe from './weeblampe.webp';
 import WeebBattle from './weebbattle.webp';
 import Kakashi from './kakashi.webp';
@@ -19,7 +19,7 @@ import EldenRing from './elden-ring.webp';
 import ArrowIcons from './arrow-icons.webp';
 
 import CharlemagneBanner from './charlemagne-banner.webp'
-import QuoteWarsBanner from './quote-wars-banner.png'
+import QuoteWarsBanner from './quote-wars-banner.webp'
 import CharlemagneResBanner from './charlemagne-res-banner.webp'
 import MandoBanner from './mando-banner.webp'
 import WLBanner from './weeblampe-banner.webp'
