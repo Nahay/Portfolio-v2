@@ -37,7 +37,7 @@ export const worksListEn = [
                 github:'https://github.com/Nahay/quoteWars',
                 img:w.QuoteWars,
                 banner:w.QuoteWarsBanner,
-                description:"Quote Wars is a free API serving qualities series quotes!",
+                description:"Quote Wars is a free API serving quality serie & movie quotes!",
                 tools: 'Next.js, Tailwind, MongoDB',
             },
             {
