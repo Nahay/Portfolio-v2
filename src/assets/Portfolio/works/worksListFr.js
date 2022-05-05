@@ -28,7 +28,7 @@ export const worksListFr = [
                 github:'https://github.com/Nahay/quoteWars',
                 img:w.QuoteWars,
                 banner:w.QuoteWarsBanner,
-                description:"Quote Wars est une API retournant des citations de séries !",
+                description:"Quote Wars est une API retournant des citations de séries et de films!",
                 tools: 'Next.js, Tailwind, MongoDB',
             },
             {
