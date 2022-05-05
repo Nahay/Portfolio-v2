@@ -32,6 +32,15 @@ export const worksListEn = [
                 tools: 'PHP, MySQL',
             },
             {
+                title : 'Quote Wars API',
+                url:'https://quote-wars.vercel.app',
+                github:'https://github.com/Nahay/quoteWars',
+                img:w.QuoteWars,
+                banner:w.QuoteWarsBanner,
+                description:"Quote Wars is a free API serving qualities series quotes!",
+                tools: 'Next.js, Tailwind, MongoDB',
+            },
+            {
                 title : 'Charlemagne Réservation',
                 github:'https://github.com/Nahay/charlemagne-reservation-client',
                 img:w.Charlemagne,
