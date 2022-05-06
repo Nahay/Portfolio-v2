@@ -24,7 +24,7 @@ export const worksListFr = [
             },
             {
                 title : 'Quote Wars API',
-                url:'https://quote-wars.vercel.app',
+                url:'https://quotewars.vercel.app',
                 github:'https://github.com/Nahay/quoteWars',
                 img:w.QuoteWars,
                 banner:w.QuoteWarsBanner,
