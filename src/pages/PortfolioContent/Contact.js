@@ -41,7 +41,7 @@ const Contact = () => {
                     <img src={s.GitHub} className='social__img' alt="GitHub" />
                 </a>
                 <a
-                    href='https://www.linkedin.com/in/lily-barberou-1b2b65221/'
+                    href='https://www.linkedin.com/in/lilybarberou/'
                     target="_blank"
                     rel="noopener noreferrer"
                     className='social__box blur'
