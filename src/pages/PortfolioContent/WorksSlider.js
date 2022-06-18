@@ -195,7 +195,7 @@ const WorksSlider = ({ worksList, fr }) => {
             />
             
             <div className="title__container">
-                <h1 className='bg-title'>WORKS</h1>
+                <h2 className='bg-title'>WORKS</h2>
                 <img src={PlanetOne} className='works__planet' alt="Planet" />
             </div>
 

@@ -12,7 +12,7 @@ const SIOVeille = () => {
     return ( 
         <div className="about" id="veille">
             <div className="title__container">
-                <h1 className='bg-title'>VEILLE</h1>
+                <h2 className='bg-title'>VEILLE</h2>
                 <img src={PlanetOne} className='about__img' alt="PlanetOne" />
                 <img src={PlanetTwo} className='about__img' alt="PlanetTwo" />
             </div>

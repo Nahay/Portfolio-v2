@@ -11,7 +11,7 @@ const Skills = () => {
         <div className='skills' id='skills'>
             
             <div className="title__container">
-                <h1 className='bg-title'>SKILLS</h1>
+                <h2 className='bg-title'>SKILLS</h2>
                 <img src={PlanetOne} className='skills__planet' alt="Planet One" />
                 <img src={PlanetThree} className='skills__planet' alt="Planet Three" />
             </div>

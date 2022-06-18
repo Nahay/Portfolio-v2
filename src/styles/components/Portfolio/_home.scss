@@ -66,12 +66,12 @@
                     width : fit-content;
                     animation: slide 12s steps(4) infinite;
 
-                    &:nth-of-type(4) h1 {
+                    &:nth-of-type(4) h2 {
                         letter-spacing: 12px;
                         animation: typing 1.5s steps(18, end) infinite alternate, blink-caret 0.7s step-end infinite;
                     }
 
-                    h1 {
+                    h2 {
                         color: $color-orange;
                         overflow: hidden;
                         border-right: 0.15em solid $color-orange;
@@ -131,7 +131,7 @@
     @media (max-width: 810px) {
         .home__titles { height:280px }
 
-        h1, .wrapper .static-txt, .wrapper .dynamic-txts li h1 {
+        h1, .wrapper .static-txt, .wrapper .dynamic-txts li h2 {
             font-size:8vw !important; 
         }
     }

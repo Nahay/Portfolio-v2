@@ -17,10 +17,10 @@ const Home = () => {
                 <div className="wrapper">
                     <div className="static-txt">I'm a</div>
                     <ul className="dynamic-txts">
-                        <li><h1>Developer</h1></li>
-                        <li><h1>Designer</h1></li>
-                        <li><h1>Freelancer</h1></li>
-                        <li><h1>Geek</h1></li>
+                        <li><h2>Developer</h2></li>
+                        <li><h2>Designer</h2></li>
+                        <li><h2>Freelancer</h2></li>
+                        <li><h2>Geek</h2></li>
                     </ul>
                 </div>
                 <a

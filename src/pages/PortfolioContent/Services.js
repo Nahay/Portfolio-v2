@@ -12,7 +12,7 @@ const Services = () => {
         <div className='services' id='services'>
 
             <div className="title__container">
-                <h1 className='bg-title'>SERVICES</h1>
+                <h2 className='bg-title'>SERVICES</h2>
                 <img src={PlanetThree} className='services__img' alt="PlanetThree" />
                 <img src={PlanetTwo} className='services__img' alt="PlanetTwo" />
             </div>

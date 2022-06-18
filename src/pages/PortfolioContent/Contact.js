@@ -17,9 +17,8 @@ const Contact = () => {
 
     return ( 
         <div className="contact" id='contact'>
-            
             <div className="title__container">
-                <h1 className='bg-title'>CONTACT</h1>
+                <h2 className='bg-title'>CONTACT</h2>
                 <img src={OrangeRocket} className='contact__img' alt="Orange Rocket" />
                 <img src={PlanetTwo} className='contact__img' alt="Planet Two" />
             </div>
