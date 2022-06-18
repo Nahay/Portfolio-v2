@@ -1,22 +1,10 @@
-import Burger from './burger.webp';
-import Fishing from './fishing.webp';
-import FlyingAstro from './flyingAstro.webp';
+export { default as Burger } from './burger.webp';
+export { default as Fishing } from './fishing.webp';
+export { default as FlyingAstro } from './flyingAstro.webp';
 
-import Laptop from './laptop.webp';
+export { default as Laptop } from './laptop.webp';
 
-import OrangeRocket from './orangeRocket.webp';
-import PlanetOne from './planetOne.webp';
-import PlanetTwo from './planetTwo.webp';
-import PlanetThree from './planetThree.webp';
-
-
-export {
-    Burger,
-    Fishing,
-    FlyingAstro,
-    Laptop,
-    OrangeRocket,
-    PlanetOne,
-    PlanetTwo,
-    PlanetThree
-}
+export { default as OrangeRocket } from './orangeRocket.webp';
+export { default as PlanetOne } from './planetOne.webp';
+export { default as PlanetTwo } from './planetTwo.webp';
+export { default as PlanetThree } from './planetThree.webp';

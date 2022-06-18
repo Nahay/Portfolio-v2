@@ -1,10 +1,3 @@
-import Discord from './social/discord.webp';
-import GitHub from './social/github.webp';
-import Linkedin from './social/linkedin.webp';
-
-
-export {
-    Discord,
-    GitHub,
-    Linkedin
-}
+export { default as Discord } from './social/discord.webp';
+export { default as GitHub } from './social/github.webp';
+export { default as Linkedin } from './social/linkedin.webp';

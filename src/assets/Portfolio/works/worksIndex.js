@@ -1,70 +1,35 @@
-import Charlemagne from './charlemagne.webp';
-import Mando from './mando.webp';
-import QuoteWars from './quote-wars.webp';
-import WeebLampe from './weeblampe.webp';
-import WeebBattle from './weebbattle.webp';
-import Kakashi from './kakashi.webp';
-import Portrait from './portrait.webp';
-import Giyuu from './giyuu.webp';
-import Pikachu from './pikachu.webp';
-import Sunrise from './sunrise.webp';
+export { default as Charlemagne } from './charlemagne.webp';
+export { default as Mando } from './mando.webp';
+export { default as QuoteWars } from './quote-wars.webp';
+export { default as WeebLampe } from './weeblampe.webp';
+export { default as WeebBattle } from './weebbattle.webp';
+export { default as Kakashi } from './kakashi.webp';
+export { default as Portrait } from './portrait.webp';
+export { default as Giyuu } from './giyuu.webp';
+export { default as Pikachu } from './pikachu.webp';
+export { default as Sunrise } from './sunrise.webp';
 
-import Figma from './figma.webp';
-import AdobeXd from './adobe-xd.webp';
-import InDesign from './indesign.webp';
+export { default as Figma } from './figma.webp';
+export { default as AdobeXd } from './adobe-xd.webp';
+export { default as InDesign } from './indesign.webp';
 
-import Shiba from './origami-shiba.webp';
-import LogoL from './logo-L.webp';
-import EldenRing from './elden-ring.webp';
-import ArrowIcons from './arrow-icons.webp';
+export { default as Shiba } from './origami-shiba.webp';
+export { default as LogoL } from './logo-L.webp';
+export { default as EldenRing } from './elden-ring.webp';
+export { default as ArrowIcons } from './arrow-icons.webp';
 
-import CharlemagneBanner from './charlemagne-banner.webp'
-import QuoteWarsBanner from './quote-wars-banner.webp'
-import CharlemagneResBanner from './charlemagne-res-banner.webp'
-import MandoBanner from './mando-banner.webp'
-import WLBanner from './weeblampe-banner.webp'
-import PortfolioBanner from './portfolio-banner.webp'
-import ProjectBanner from './project-banner.webp'
-import PortraitBanner from './portrait-banner.webp'
-import GiyuuBanner from './giyuu-banner.webp'
-import PikachuBanner from './pikachu-banner.webp'
+export { default as CharlemagneBanner } from './charlemagne-banner.webp'
+export { default as QuoteWarsBanner } from './quote-wars-banner.webp'
+export { default as CharlemagneResBanner } from './charlemagne-res-banner.webp'
+export { default as MandoBanner } from './mando-banner.webp'
+export { default as WLBanner } from './weeblampe-banner.webp'
+export { default as PortfolioBanner } from './portfolio-banner.webp'
+export { default as ProjectBanner } from './project-banner.webp'
+export { default as PortraitBanner } from './portrait-banner.webp'
+export { default as GiyuuBanner } from './giyuu-banner.webp'
+export { default as PikachuBanner } from './pikachu-banner.webp'
 
-import ShibaBanner from './origami-shiba-banner.webp'
-import LogoLBanner from './logo-L-banner.webp'
-import ArrowIconBanner from './arrow-icons-banner.webp'
-import SunriseBanner from './sunrise-banner.webp'
-
-
-export {
-    Charlemagne,
-    SunriseBanner,
-    Pikachu,
-    QuoteWars,
-    PikachuBanner,
-    QuoteWarsBanner,
-    Sunrise,
-    Giyuu,
-    GiyuuBanner,
-    PortraitBanner,
-    Portrait,
-    Kakashi,
-    CharlemagneResBanner,
-    InDesign,
-    EldenRing,
-    ArrowIconBanner,
-    AdobeXd,
-    Figma,
-    ArrowIcons,
-    Mando,
-    WeebLampe,
-    WeebBattle,
-    Shiba,
-    LogoL,
-    CharlemagneBanner,
-    MandoBanner,
-    LogoLBanner,
-    ShibaBanner,
-    WLBanner,
-    PortfolioBanner,
-    ProjectBanner
-}
+export { default as ShibaBanner } from './origami-shiba-banner.webp'
+export { default as LogoLBanner } from './logo-L-banner.webp'
+export { default as ArrowIconBanner } from './arrow-icons-banner.webp'
+export { default as SunriseBanner } from './sunrise-banner.webp'
