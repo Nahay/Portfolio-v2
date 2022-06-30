@@ -1,51 +1,51 @@
 .about {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-    height:100%;
+
+    height: 100%;
     width: 100%;
 
     .title__container {
         .about__img {
-            position : absolute;
-            height:15%;
+            position: absolute;
+            height: 15%;
 
             &:nth-child(3) {
-                bottom:15%;
-                right:6%;
+                bottom: 15%;
+                right: 6%;
             }
 
             &:nth-child(2) {
-                top:22%;
-                left:3%;
+                top: 22%;
+                left: 3%;
             }
         }
     }
 
     .about__box {
-        position:absolute;
-        z-index:99;
+        position: absolute;
+        z-index: 99;
 
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
         min-width: 340px;
-        width:35%;
-        height:60%;
+        width: 35%;
+        height: 60%;
 
-        border-radius : 60px;
+        border-radius: 60px;
         padding: 0 5%;
 
         .box__title {
-            justify-self:flex-start;
+            justify-self: flex-start;
             align-self: flex-start;
-            
-            width:90%;
 
-            margin-bottom:10%;
-            font-size:30px;
+            width: 90%;
+
+            margin-bottom: 10%;
+            font-size: 30px;
         }
 
         .box__btn {
@@ -54,99 +54,110 @@
         }
 
         p {
-            width:90%;
-            font-size:20px;
+            width: 90%;
+            font-size: 20px;
         }
     }
 
     .about__img {
-        position : absolute;
-        z-index:-99;
+        position: absolute;
+        z-index: -99;
     }
 
     .img__burger {
-        top:10%;
-        right:23%;
-        z-index:0;
+        top: 10%;
+        right: 23%;
+        z-index: 0;
 
-        width:150px;
-        
+        width: 150px;
+
         transform: rotate(-25deg);
     }
 
     .img__laptop {
-        bottom:12%;
-        left:25%;
-        z-index:0;
+        bottom: 12%;
+        left: 25%;
+        z-index: 0;
 
-        width:150px;
+        width: 150px;
     }
-
 
     // RESPONSIVE ------------------------------------------
 
-    @media (max-width: 1200px) { 
+    @media (max-width: 1200px) {
         .about__box {
-            height:55%;
+            height: 55%;
 
-            .box__title { font-size: 27px }
-            p { font-size: 18px }
+            .box__title {
+                font-size: 27px;
+            }
+            p {
+                font-size: 18px;
+            }
         }
 
         .img__burger {
-            width:120px;
-            top:13%;
-            right:23%;
+            width: 120px;
+            top: 13%;
+            right: 23%;
         }
-    
+
         .img__laptop {
-            width:120px;
-            bottom:17%;
-            left:25%;
+            width: 120px;
+            bottom: 17%;
+            left: 25%;
         }
     }
 
-    @media (max-width: 570px) { 
+    @media (max-width: 570px) {
         .about__box {
             min-width: 300px;
 
-            .box__title { font-size: 20px }
-            p { font-size: 15px }
+            .box__title {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
         }
 
         .img__burger {
-            width:100px;
-            top:13%;
-            right:11%;
+            width: 100px;
+            top: 13%;
+            right: 11%;
         }
-    
+
         .img__laptop {
-            width:100px;
-            bottom:18%;
-            left:14%;
+            width: 100px;
+            bottom: 18%;
+            left: 14%;
         }
     }
 
-    @media (max-width: 400px) { 
+    @media (max-width: 400px) {
         .about__box {
             min-width: 250px;
-            height:50%;
+            height: 50%;
             border-radius: 50px;
 
-            .box__title { font-size: 18px }
-            p { font-size: 14px }
+            .box__title {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
         }
 
         .img__burger {
-            width:80px;
-            top:19%;
+            width: 80px;
+            top: 19%;
             right: 4%;
         }
-    
+
         .img__laptop {
-            width:80px;
-            bottom:21%;
-            left:8%;
+            width: 80px;
+            bottom: 21%;
+            left: 8%;
         }
     }
 }

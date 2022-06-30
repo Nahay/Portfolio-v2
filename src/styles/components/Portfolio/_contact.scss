@@ -1,158 +1,166 @@
 .contact {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
-    width:100%;
-    height:100%;
 
-    * { transition: all .5s }
+    width: 100%;
+    height: 100%;
+
+    * {
+        transition: all 0.5s;
+    }
 
     .title__container {
         .contact__img {
-            position : absolute;
-            z-index:-99;
+            position: absolute;
+            z-index: -99;
 
             &:nth-child(2) {
-                top:-8%;
-                right:23%;
-                width:22.5%;
+                top: -8%;
+                right: 23%;
+                width: 22.5%;
             }
 
             &:nth-child(3) {
-                bottom:13%;
-                left:34%;
-                width:9%;
+                bottom: 13%;
+                left: 34%;
+                width: 9%;
             }
         }
     }
 
     .contact__left {
-        display:flex;
+        display: flex;
         justify-content: flex-end;
         align-items: center;
 
-        width:40%;
-        height:100%;
+        width: 40%;
+        height: 100%;
     }
 
     .contact__right {
         position: relative;
 
-        width:50%;
-        height:100%;
+        width: 50%;
+        height: 100%;
     }
 }
-
 
 // FORM ------------------------------------------------
 
 .form__container {
-    width:70%;
-    height:60%;
-    min-width:420px;
-    max-width:480px;
-    max-height:600px;
+    width: 70%;
+    height: 60%;
+    min-width: 420px;
+    max-width: 480px;
+    max-height: 600px;
 
     .contact-form {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    
-        width:100%;
-        height:100%;
-    
-        font-weight:bold;
+
+        width: 100%;
+        height: 100%;
+
+        font-weight: bold;
         padding: 5% 2%;
         border-radius: 10%;
 
         .glare-wrapper {
-            z-index:-99;
+            z-index: -99;
         }
-    
+
         .form__title {
             font-size: 38px;
-    
+
             .underline::after {
-                height:4px;
-                bottom:-6px;
+                height: 4px;
+                bottom: -6px;
             }
         }
-    
+
         .form__middle {
-            display:flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-    
-            width:60%;
-    
-            input:first-child, input:nth-child(2) { margin-bottom:14% }
+
+            width: 60%;
+
+            input:first-child,
+            input:nth-child(2) {
+                margin-bottom: 14%;
+            }
         }
-    
-        input[type='text'], input[type='number'], textarea {
-            width:100%;
-    
-            color:white;
-            background : none;
-            font-size:17px;
-            
-            border:none;
+
+        input[type='text'],
+        input[type='number'],
+        textarea {
+            width: 100%;
+
+            color: white;
+            background: none;
+            font-size: 17px;
+
+            border: none;
             border-bottom: solid white 4px;
             outline: none;
         }
-    
-        input::placeholder, textarea::placeholder {
-            color:rgb(147,146,145);
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgb(147, 146, 145);
             font-weight: bold;
         }
-    
-        input[type='text'], input[type='number'] {
-            height:45px;
+
+        input[type='text'],
+        input[type='number'] {
+            height: 45px;
             padding: 0 5%;
         }
-    
+
         textarea {
-            height:80px;
+            height: 80px;
             padding: 5%;
-            cursor:auto;
-            resize:none;          
+            cursor: auto;
+            resize: none;
         }
-    
+
         .form__bottom {
-    
-            display:flex;
+            display: flex;
             justify-content: space-between;
             align-items: center;
-    
-            width:60%;
-    
-            margin-bottom:30px;
-    
+
+            width: 60%;
+
+            margin-bottom: 30px;
+
             input:first-child {
-    
-                width:55px;
-    
+                width: 55px;
+
                 // hide arrow from input number --------------
-    
+
                 // Chrome, Safari, Edge, Opera
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {
                     -webkit-appearance: none;
                     margin: 0;
                 }
-    
+
                 // Firefox
-                input[type=number] { -moz-appearance: textfield }
-    
+                input[type='number'] {
+                    -moz-appearance: textfield;
+                }
+
                 // -------------------------------------------
             }
-    
-            input[type="submit"] {
-                height:100%;
 
-                margin-top:4px;
+            input[type='submit'] {
+                height: 100%;
+
+                margin-top: 4px;
                 font-size: 23px;
                 font-weight: bold;
             }
@@ -160,34 +168,39 @@
     }
 }
 
-
 // RIGHT FORM (SOCIAL) -----------------------------
 
 .social__box {
-    position : absolute;
+    position: absolute;
 
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    width:80px;
-    height:80px;
+    width: 80px;
+    height: 80px;
 
     border-radius: 10px;
 
-    &:hover { background : $color-red }
-    
-    .social__img { width:60% }
+    &:hover {
+        background: $color-red;
+    }
+
+    .social__img {
+        width: 60%;
+    }
 
     // discord
     &:first-child {
-        bottom:10%;
-        left:45%;
+        bottom: 10%;
+        left: 45%;
 
         transform: rotate(-15deg);
         cursor: pointer;
 
-        &:hover {transform:rotate(-375deg)}
+        &:hover {
+            transform: rotate(-375deg);
+        }
 
         &:hover > span {
             opacity: 1;
@@ -197,118 +210,144 @@
             opacity: 0;
 
             position: absolute;
-            top:-40%;
+            top: -40%;
             border-radius: 5px;
-            padding:5px 10px;
-            background:$color-red
+            padding: 5px 10px;
+            background: $color-red;
         }
     }
 
     // github
     &:nth-child(2) {
-        bottom:15%;
-        right:15%;
+        bottom: 15%;
+        right: 15%;
 
         transform: rotate(15deg);
 
-        &:hover {transform:rotate(375deg)}
+        &:hover {
+            transform: rotate(375deg);
+        }
     }
 
     // linkedin
     &:last-child {
-        bottom:15%;
-        left:15%;
+        bottom: 15%;
+        left: 15%;
 
         transform: rotate(-30deg);
 
-        &:hover {transform:rotate(-390deg)}
+        &:hover {
+            transform: rotate(-390deg);
+        }
     }
 }
-
 
 // RESPONSIVE --------------------------------------
 
 @media (max-width: 1350px) {
     .social__box {
-        width:70px;
-        height:70px;
-    
+        width: 70px;
+        height: 70px;
+
         &:first-child span {
-            top:-37%;
+            top: -37%;
             font-size: 15px;
             padding: 2.5px 5px;
         }
-    }   
+    }
 }
 
 @media (max-width: 1100px) {
     .contact {
-        .contact__left {width:50% }
-        .contact__right { width:20% }
+        .contact__left {
+            width: 50%;
+        }
+        .contact__right {
+            width: 20%;
+        }
     }
 
-    .form__container { max-height: 520px }
+    .form__container {
+        max-height: 520px;
+    }
 
     .social__box {
         // discord
         &:first-child {
-            bottom:43%;
-            left:65%;
+            bottom: 43%;
+            left: 65%;
         }
 
         // github
         &:nth-child(2) {
-            bottom:18%;
-            right:-15%;
+            bottom: 18%;
+            right: -15%;
         }
 
         // linkedin
         &:last-child {
-            top:25%;
-            left:65%;
+            top: 25%;
+            left: 65%;
         }
     }
 }
 
 @media (max-width: 750px) {
     .contact {
-        .contact__left {width:50% }
-        .contact__right { width:20% }
+        .contact__left {
+            width: 50%;
+        }
+        .contact__right {
+            width: 20%;
+        }
     }
 
     .form__container {
         max-height: 460px;
         min-width: 350px;
-        height:50%;
+        height: 50%;
 
         .contact-form {
-            .form__title { font-size:30px }
+            .form__title {
+                font-size: 30px;
+            }
 
-            .form__middle { width:55% }
+            .form__middle {
+                width: 55%;
+            }
 
-            input[type='text'], input[type='number'], textarea {
+            input[type='text'],
+            input[type='number'],
+            textarea {
                 border-bottom: solid white 3px;
             }
 
-            input[type='text'], input[type='number'], textarea {
-                font-size:14px
+            input[type='text'],
+            input[type='number'],
+            textarea {
+                font-size: 14px;
             }
 
-            input[type='text'], input[type='number'] {
-                height:35px;
+            input[type='text'],
+            input[type='number'] {
+                height: 35px;
             }
 
-            textarea { height:70px }
+            textarea {
+                height: 70px;
+            }
 
             .form__bottom {
-                height:45px;
-                
-                input:first-child { width:45px }
-        
-                input[type="submit"] {
-                    height:100%;
-    
-                    margin-top:3px;
+                height: 45px;
+
+                input:first-child {
+                    width: 45px;
+                }
+
+                input[type='submit'] {
+                    height: 100%;
+
+                    margin-top: 3px;
                     font-size: 19px;
                 }
             }
@@ -316,68 +355,84 @@
     }
 
     .social__box {
-        width:60px;
-        height:60px;
+        width: 60px;
+        height: 60px;
 
         // github
-        &:nth-child(2) { bottom:23% }
+        &:nth-child(2) {
+            bottom: 23%;
+        }
 
         // linkedin
-        &:last-child { top:30% }
+        &:last-child {
+            top: 30%;
+        }
     }
 }
 
 @media (max-width: 600px) {
-
     .contact {
         flex-direction: column;
 
         .contact__left {
-            height:70%;
+            height: 70%;
             justify-content: center;
         }
-        
+
         .contact__right {
-            margin-top:4vh;
-            width:100%;
-            height:20%;
+            margin-top: 4vh;
+            width: 100%;
+            height: 20%;
         }
     }
 
     .form__container {
         min-width: 270px;
-        min-height:320px;
+        min-height: 320px;
         max-height: 350px;
-        height:40%;
+        height: 40%;
 
         .contact-form {
-            .form__title { font-size:22px }
+            .form__title {
+                font-size: 22px;
+            }
 
-            .form__middle { width:55% }
+            .form__middle {
+                width: 55%;
+            }
 
-            input[type='text'], input[type='number'], textarea {
+            input[type='text'],
+            input[type='number'],
+            textarea {
                 border-bottom: solid white 2px;
             }
 
-            input[type='text'], input[type='number'], textarea {
-                font-size:12px;
+            input[type='text'],
+            input[type='number'],
+            textarea {
+                font-size: 12px;
             }
 
-            input[type='text'], input[type='number'] {
-                height:30px;
+            input[type='text'],
+            input[type='number'] {
+                height: 30px;
             }
 
-            textarea { height:60px }
+            textarea {
+                height: 60px;
+            }
 
             .form__bottom {
-                height:45px;
-                
-                input:first-child { width:35px }
-        
-                input[type="submit"] {
-                    height:80%;
-    
-                    margin-top:2px;
+                height: 45px;
+
+                input:first-child {
+                    width: 35px;
+                }
+
+                input[type='submit'] {
+                    height: 80%;
+
+                    margin-top: 2px;
                     font-size: 16px;
                     padding: 8px 20px;
                 }
@@ -386,25 +441,25 @@
     }
 
     .social__box {
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
 
         // discord
         &:first-child {
-            bottom:100%;
-            left:48%;
+            bottom: 100%;
+            left: 48%;
         }
 
         // github
         &:nth-child(2) {
-            bottom:100%;
-            right:10%;
+            bottom: 100%;
+            right: 10%;
         }
 
         // linkedin
         &:last-child {
-            top:-30%;
-            left:15%;
+            top: -30%;
+            left: 15%;
         }
     }
 }

@@ -1,65 +1,68 @@
 // NAVBAR ----------------------------------------------------------------
 
 .navbar {
-    position : absolute;
-    top:0;
-    left:0;
-    right:0;
-    z-index : 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 
-    display : flex;
-    justify-content : flex-end;
-    align-items : center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-    color : white;
-    margin-top : 20px;
+    color: white;
+    margin-top: 20px;
 
     button {
-        font-size:17px;
-        color : white;
+        font-size: 17px;
+        color: white;
     }
 
     .navbar__right {
         display: flex;
         justify-content: center;
 
-        width:40%;
-        min-width:470px;
-        margin-right:100px;
+        width: 40%;
+        min-width: 470px;
+        margin-right: 100px;
 
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            width:100%;
-            
+            width: 100%;
+
             font-size: 18px;
-            font-weight : 400;
+            font-weight: 400;
             letter-spacing: 0.035em;
 
             .nav__btn {
-
                 &::after {
-                    content : '';
-                    position : absolute;
-                    background : $color-red;
-                    width : 0px;
-                    height : 7px;
-                    transition : 0.4s;
-                    display : block;
+                    content: '';
+                    position: absolute;
+                    background: $color-red;
+                    width: 0px;
+                    height: 7px;
+                    transition: 0.4s;
+                    display: block;
                 }
-                
-                &:hover::after { width: 100% }
+
+                &:hover::after {
+                    width: 100%;
+                }
             }
 
             button {
-                position : relative;
-                width : auto;
+                position: relative;
+                width: auto;
                 margin: 0 10px;
             }
         }
 
-        @media (max-width: 800px) { display:none }
+        @media (max-width: 800px) {
+            display: none;
+        }
     }
 }

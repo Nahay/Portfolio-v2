@@ -1,13 +1,9 @@
-import React from 'react';
-
-
 const Logo = () => {
-
-    return ( 
+    return (
         <div className="logo__content">
-            <span onClick={() => document.documentElement.scrollTop = 0}>lilyb</span>
+            <span onClick={() => (document.documentElement.scrollTop = 0)}>lilyb</span>
         </div>
     );
-}
+};
 
 export default Logo;

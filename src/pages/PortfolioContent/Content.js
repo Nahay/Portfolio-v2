@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import { useState } from 'react';
 
 import Home from './Home';
 import About from './About';
@@ -13,89 +13,77 @@ import SIOVeille from '../SIO/SIOVeille';
 import { worksListEn } from '../../assets/Portfolio/works/worksListEn';
 import { worksListFr } from '../../assets/Portfolio/works/worksListFr';
 
-
 const Content = ({ mainApp }) => {
-
     const [on, setOn] = useState(false);
-
 
     window.addEventListener('scroll', () => handleScroll());
 
-    const handleScroll = () => { document.documentElement.scrollTop > 300 ? setOn(true) : setOn(false) }
+    const handleScroll = () => {
+        document.documentElement.scrollTop > 300 ? setOn(true) : setOn(false);
+    };
 
     const onUpClick = () => {
         document.documentElement.scrollTop = 0;
         setOn(false);
-    }
+    };
 
     return (
-
         <>
-            {on ? 
+            {on ? (
                 <button className="up up---on" onClick={onUpClick} aria-label="Goes Up">
                     <span className="up--left"></span>
                     <span className="up--right"></span>
                 </button>
-            
-                :
-
+            ) : (
                 <button className="up" aria-label="Goes Up">
                     <span className="up--left"></span>
                     <span className="up--right"></span>
-                </button>   
-            }
+                </button>
+            )}
 
-            { mainApp ?
-
+            {mainApp ? (
                 <>
-
                     <section className="section">
-                        <Home/>
+                        <Home />
                     </section>
 
                     <section className="section">
-                        <About/>
+                        <About />
                     </section>
 
                     <section className="section">
-                        <Skills/>
+                        <Skills />
                     </section>
 
                     <section className="section">
-                        <Services/>
+                        <Services />
                     </section>
 
                     <section className="section">
-                        <WorksSlider worksList={worksListEn}/>
+                        <WorksSlider worksList={worksListEn} />
                     </section>
 
                     <section className="section">
-                        <Contact/>
+                        <Contact />
                     </section>
-
                 </>
-                
-            :
-
+            ) : (
                 <>
-
                     <section className="section">
-                        <SIOAbout/>
+                        <SIOAbout />
                     </section>
 
                     <section className="section">
-                        <WorksSlider worksList={worksListFr} fr={true}/>
+                        <WorksSlider worksList={worksListFr} fr={true} />
                     </section>
 
                     <section className="section">
-                        <SIOVeille/>
+                        <SIOVeille />
                     </section>
-
                 </>
-            
-            }
-        </>        
+            )}
+        </>
     );
-}
+};
 
 export default Content;

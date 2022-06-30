@@ -7,14 +7,17 @@
 Just take a look ! Everything's here: [lilyb.netlify.app](https://lilyb.netlify.app)
 
 ## 💡 Imagined with
-- [Adobe Xd](https://www.adobe.com/fr/products/xd.html)
-- [Adobe Photoshop](https://www.adobe.com/fr/products/photoshop.html)
-- my brain skill
+
+-   [Adobe Xd](https://www.adobe.com/fr/products/xd.html)
+-   [Adobe Photoshop](https://www.adobe.com/fr/products/photoshop.html)
+-   my brain skill
 
 ## 💻 Dev with
-- Reactjs
-- [react-parallax-tilt](https://github.com/mkosir/react-parallax-tilt)
-- [ts-particles](https://github.com/matteobruni/tsparticles)
+
+-   Reactjs
+-   [react-parallax-tilt](https://github.com/mkosir/react-parallax-tilt)
+-   [ts-particles](https://github.com/matteobruni/tsparticles)
 
 ## Credits
-- [catalyst](https://dribbble.com/catalystvibes) for her extra astro pics
+
+-   [catalyst](https://dribbble.com/catalystvibes) for her extra astro pics

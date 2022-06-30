@@ -1,42 +1,43 @@
 .home {
-
     @keyframes topToBottom {
         0% {
-            transform: translate(0,100px);
+            transform: translate(0, 100px);
         }
         50% {
             transform: translate(0px);
         }
         100% {
-            transform: translate(0,100px);
+            transform: translate(0, 100px);
         }
     }
 
     .home__flying-astro {
-        height:200px;
-        position : absolute;
+        height: 200px;
+        position: absolute;
         right: 20%;
-        top:25%;
-        animation : topToBottom 10s ease-in-out alternate infinite;
+        top: 25%;
+        animation: topToBottom 10s ease-in-out alternate infinite;
     }
 
     .home__titles {
-        position : absolute;
-        display : flex;
+        position: absolute;
+        display: flex;
         justify-content: space-between;
         flex-direction: column;
         top: 35%;
-        left : 13%;
-        height : 310px;
+        left: 13%;
+        height: 310px;
 
         .titles__hi {
-            font-size : 70px;
-            font-weight : bold;
+            font-size: 70px;
+            font-weight: bold;
             white-space: nowrap; /* Keeps the content on a single line */
-            letter-spacing: .10em;
-            color : white;
+            letter-spacing: 0.1em;
+            color: white;
 
-            span { text-decoration: underline }
+            span {
+                text-decoration: underline;
+            }
         }
 
         .wrapper {
@@ -63,7 +64,7 @@
                     font-weight: bold;
                     position: relative;
                     top: 0;
-                    width : fit-content;
+                    width: fit-content;
                     animation: slide 12s steps(4) infinite;
 
                     &:nth-of-type(4) h2 {
@@ -91,7 +92,6 @@
             }
         }
 
-                
         // typing effect
         @keyframes typing {
             from {
@@ -101,7 +101,7 @@
                 width: 100%;
             }
         }
-        
+
         // typewriter cursor effect
         @keyframes blink-caret {
             from,
@@ -112,77 +112,104 @@
                 border-right: 0.15em solid $color-orange;
             }
         }
-        
+
         // btn cv
-        a { align-self: flex-start }
+        a {
+            align-self: flex-start;
+        }
     }
-
-
 
     // RESPONSIVE -----------------------------------------------
 
     @media (max-width: 1050px) {
         .home__flying-astro {
-            right:15%;
-            top:6%;
+            right: 15%;
+            top: 6%;
         }
     }
 
     @media (max-width: 810px) {
-        .home__titles { height:280px }
+        .home__titles {
+            height: 280px;
+        }
 
-        h1, .wrapper .static-txt, .wrapper .dynamic-txts li h2 {
-            font-size:8vw !important; 
+        h1,
+        .wrapper .static-txt,
+        .wrapper .dynamic-txts li h2 {
+            font-size: 8vw !important;
         }
     }
 
     @media (max-width: 700px) {
-
         @keyframes slide2 {
-            100% { top: -280px }
+            100% {
+                top: -280px;
+            }
         }
 
         .dynamic-txts {
-            height:70px !important;
+            height: 70px !important;
             line-height: 70px !important;
 
-            li { animation : slide2 12s steps(4) infinite !important }
+            li {
+                animation: slide2 12s steps(4) infinite !important;
+            }
         }
     }
 
-    @media (max-width: 734px) { .home__titles { height: 240px }}
+    @media (max-width: 734px) {
+        .home__titles {
+            height: 240px;
+        }
+    }
 
-    @media (max-width: 595px) { .home__titles { height: 230px }}
+    @media (max-width: 595px) {
+        .home__titles {
+            height: 230px;
+        }
+    }
 
-    @media (max-width: 400px) { .home__titles { height: 190px }}
+    @media (max-width: 400px) {
+        .home__titles {
+            height: 190px;
+        }
+    }
 
     @media (max-width: 450px) {
-
         @keyframes slide3 {
-            100% { top: -200px }
+            100% {
+                top: -200px;
+            }
         }
 
         .dynamic-txts {
-            height:50px !important;
+            height: 50px !important;
             line-height: 50px !important;
 
-            li { animation : slide3 12s steps(4) infinite !important }
+            li {
+                animation: slide3 12s steps(4) infinite !important;
+            }
         }
 
-        .home__flying-astro { height:170px }
+        .home__flying-astro {
+            height: 170px;
+        }
     }
 
     @media (max-width: 340px) {
-
         @keyframes slide4 {
-            100% { top: -160px }
+            100% {
+                top: -160px;
+            }
         }
 
         .dynamic-txts {
-            height:40px !important;
+            height: 40px !important;
             line-height: 40px !important;
 
-            li { animation : slide4 12s steps(4) infinite !important }
+            li {
+                animation: slide4 12s steps(4) infinite !important;
+            }
         }
     }
 }

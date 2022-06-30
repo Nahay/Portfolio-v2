@@ -1,35 +1,31 @@
-import React from 'react';
-
-
 const Navbar = () => {
-
     const moveTo = (link) => {
         document.getElementById(link).scrollIntoView({
             block: 'start',
-            behavior: 'smooth'
+            behavior: 'smooth',
         });
-    }
+    };
 
-    return ( 
+    return (
         <div className="navbar">
             <div className="navbar__right">
                 <nav>
-                    <button className='nav__btn' onClick={() => moveTo('about')}>
+                    <button className="nav__btn" onClick={() => moveTo('about')}>
                         About
                     </button>
-                    <button className='nav__btn' onClick={() => moveTo('services')}>
+                    <button className="nav__btn" onClick={() => moveTo('services')}>
                         Services
                     </button>
-                    <button className='nav__btn' onClick={() => moveTo('works')}>
+                    <button className="nav__btn" onClick={() => moveTo('works')}>
                         Works
                     </button>
-                    <button className='btn' onClick={() => moveTo('contact')}>
+                    <button className="btn" onClick={() => moveTo('contact')}>
                         Contact
                     </button>
                 </nav>
             </div>
         </div>
     );
-}
+};
 
 export default Navbar;

@@ -1,46 +1,46 @@
 .skills {
     position: absolute;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
     width: 100%;
 
     .skills__planet {
-        position : absolute;
-        z-index:-2;
-        height:15%;
+        position: absolute;
+        z-index: -2;
+        height: 15%;
 
         // gauche
         &:nth-child(2) {
-            right:0%;
-            top:30%;
+            right: 0%;
+            top: 30%;
             transform: rotate(-15deg);
         }
 
         // droite
         &:nth-child(3) {
-            left:11%;
-            bottom:18%;
+            left: 11%;
+            bottom: 18%;
             transform: rotate(65deg);
         }
     }
 
     .skill-box {
-        width:80px;
-        height:80px;
+        width: 80px;
+        height: 80px;
 
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
 
-        transition : all .5s;
-        position : absolute;
+        transition: all 0.5s;
+        position: absolute;
 
         .skill-box__img {
-            width:60%;
-            height:60%;
+            width: 60%;
+            height: 60%;
         }
 
         @keyframes translateEven {
@@ -57,12 +57,12 @@
 
         &:nth-child(even) {
             transform: rotate(15deg);
-            animation : translateEven 6s ease-in-out infinite alternate;
+            animation: translateEven 6s ease-in-out infinite alternate;
         }
 
         &:nth-child(odd) {
             transform: rotate(-15deg);
-            animation : translateOdd 6s ease-in-out infinite alternate;
+            animation: translateOdd 6s ease-in-out infinite alternate;
         }
 
         &:last-child {
@@ -71,157 +71,156 @@
 
         // angular
         &:nth-child(2) {
-            top:10%;
-            left:30%;
+            top: 10%;
+            left: 30%;
         }
 
         // nodejs
         &:nth-child(3) {
-            top:10%;
-            right:40%;
+            top: 10%;
+            right: 40%;
         }
 
         // mongodb
         &:nth-child(4) {
-            top:8%;
-            right:20%;
+            top: 8%;
+            right: 20%;
         }
 
         // sql
         &:nth-child(5) {
-            top:25%;
-            right:5%;
+            top: 25%;
+            right: 5%;
         }
 
         // git
         &:nth-child(6) {
-            bottom:30%;
-            right:5%;
+            bottom: 30%;
+            right: 5%;
         }
 
         // php
         &:nth-child(7) {
-            bottom:10%;
-            right:20%;
+            bottom: 10%;
+            right: 20%;
         }
 
         // sass
         &:nth-child(8) {
-            bottom:15%;
-            left:50%;
+            bottom: 15%;
+            left: 50%;
         }
 
         // css
         &:nth-child(9) {
-            bottom:10%;
-            left:30%;
+            bottom: 10%;
+            left: 30%;
         }
 
         // html
         &:nth-child(10) {
-            bottom:15%;
-            left:5%;
+            bottom: 15%;
+            left: 5%;
         }
 
         // js
         &:nth-child(11) {
-            top:45%;
-            left:5%;
+            top: 45%;
+            left: 5%;
         }
 
         // react
         &:nth-child(12) {
-            top:20%;
-            left:10%;
+            top: 20%;
+            left: 10%;
         }
     }
 
-
-    @media (max-width:1200px) {
+    @media (max-width: 1200px) {
         .skill-box {
             width: 70px;
             height: 70px;
         }
     }
 
-    @media (max-width:900px) {
+    @media (max-width: 900px) {
         .skill-box {
             width: 60px;
             height: 60px;
         }
     }
 
-    @media (max-width:800px) {
+    @media (max-width: 800px) {
         .skill-box {
             // angular
             &:nth-child(2) {
-                top:7%;
-                left:30%;
+                top: 7%;
+                left: 30%;
             }
 
             // nodejs
             &:nth-child(3) {
-                top:20%;
-                right:40%;
+                top: 20%;
+                right: 40%;
             }
 
             // mongodb
             &:nth-child(4) {
-                top:9%;
-                right:12%;
+                top: 9%;
+                right: 12%;
             }
 
             // sql
             &:nth-child(5) {
-                top:30%;
-                right:15%;
+                top: 30%;
+                right: 15%;
             }
 
             // git
             &:nth-child(6) {
-                bottom:30%;
-                right:5%;
+                bottom: 30%;
+                right: 5%;
             }
 
             // php
             &:nth-child(7) {
-                bottom:18%;
-                right:20%;
+                bottom: 18%;
+                right: 20%;
             }
 
             // sass
             &:nth-child(8) {
-                bottom:20%;
-                left:28%;
+                bottom: 20%;
+                left: 28%;
             }
 
             // css
             &:nth-child(9) {
-                bottom:30%;
-                left:50%;
+                bottom: 30%;
+                left: 50%;
             }
 
             // html
             &:nth-child(10) {
-                bottom:30%;
-                left:5%;
+                bottom: 30%;
+                left: 5%;
             }
 
             // js
             &:nth-child(11) {
-                top:20%;
-                left:5%;
+                top: 20%;
+                left: 5%;
             }
 
             // react
             &:nth-child(12) {
-                top:30%;
-                left:20%;
+                top: 30%;
+                left: 20%;
             }
         }
     }
 
-    @media (max-width:500px) {
+    @media (max-width: 500px) {
         .skill-box {
             width: 50px;
             height: 50px;
