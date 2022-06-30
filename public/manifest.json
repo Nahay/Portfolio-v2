@@ -1,32 +1,28 @@
 {
-  "short_name": "Lily B",
-  "name": "Lily B Portfolio",
-  "icons": [
-    {
-      "src": "/images/Lily.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/images/Lily-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/images/Lily-64.png",
-      "sizes": "64x64",
-      "type": "image/png"
-    },
-    {
-      "src": "/images/favicon.ico",
-      "sizes": "48x48",
-      "type": "image/x-icon"
-    }
-  ],
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+    "short_name": "Lily B",
+    "name": "Lily B | Portfolio",
+    "icons": [
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
 }
