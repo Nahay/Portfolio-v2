@@ -1,11 +1,19 @@
-const FourOhFour = () => {
-    const infinite = () => {
-        let tab = [];
-        for (let i = 0; i < 1100; i++) tab.push(<p>LOST</p>);
-        return tab;
-    };
+import { useEffect, useState } from 'react';
 
-    return <div className="four-oh-four">{infinite().map((w) => w)}</div>;
+const FourOhFour = () => {
+    const [counter, setCounter] = useState(3);
+
+    useEffect(() => {
+        setInterval(() => setCounter(counter - 1), 1000);
+        counter === 0 && window.location.assign('/');
+    }, [counter]);
+
+    return (
+        <div className="four-oh-four">
+            <p>LOST</p>
+            <span>{counter}</span>
+        </div>
+    );
 };
 
 export default FourOhFour;
