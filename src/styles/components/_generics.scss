@@ -357,12 +357,12 @@
         right: 30px;
         width: 30px;
         height: 30px;
-        color: white;
+        fill: white;
         cursor: pointer;
         transition: color 0.2s !important;
 
         &:hover {
-            color: $color-red;
+            fill: $color-red;
         }
     }
 

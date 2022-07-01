@@ -1,6 +1,5 @@
 import { useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { ReactComponent as CloseIcon } from '../../assets/rectangle-xmark.svg';
 
 const Modal = ({ setModal, show, info, fr }) => {
     const modalRef = useRef(null);
@@ -67,7 +66,7 @@ const Modal = ({ setModal, show, info, fr }) => {
                 </div>
 
                 <div className="close-icon" onClick={closeModal}>
-                    <FontAwesomeIcon icon={faWindowClose} size="2x" />
+                    <CloseIcon width="30" />
                 </div>
             </div>
             <div className="modal-bg" onClick={closeModal}></div>
