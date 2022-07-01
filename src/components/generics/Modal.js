@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { ReactComponent as CloseIcon } from '../../assets/rectangle-xmark.svg';
 
-const Modal = ({ setModal, show, info, fr }) => {
+const Modal = ({ setModal, show, info }) => {
     const modalRef = useRef(null);
 
     const { title, description, tools, img, banner, url, doc, github, dribbble } = info;
@@ -30,18 +30,14 @@ const Modal = ({ setModal, show, info, fr }) => {
                         <div className="modal-description">
                             {description && <p>{description}</p>}
 
-                            {tools && (
-                                <p>
-                                    {fr ? 'Outils' : 'Tools'} : {tools}
-                                </p>
-                            )}
+                            {tools && <p>Tools : {tools}</p>}
                         </div>
                     </div>
 
                     <div className="modal-footer">
                         {url && (
                             <a href={url} target="_blank" rel="noopener noreferrer">
-                                {fr ? 'Lien' : 'Link'}
+                                Link
                             </a>
                         )}
 

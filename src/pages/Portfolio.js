@@ -5,7 +5,7 @@ import SideNav from '../components/fixed/SideNav';
 import Logo from '../components/Logo';
 import Content from './PortfolioContent/Content';
 
-const Portfolio = ({ mainApp }) => {
+const Portfolio = () => {
     const customInit = (Main) => loadStarsPreset(Main);
 
     return (
@@ -27,13 +27,9 @@ const Portfolio = ({ mainApp }) => {
 
             <Logo />
 
-            {mainApp ? (
-                <SideNav anchorList={['home', 'about', 'skills', 'services', 'works', 'contact']} />
-            ) : (
-                <SideNav anchorList={['accueil', 'works', 'veille']} />
-            )}
+            <SideNav anchorList={['home', 'about', 'skills', 'services', 'works', 'contact']} />
 
-            <Content mainApp={mainApp} />
+            <Content />
         </>
     );
 };

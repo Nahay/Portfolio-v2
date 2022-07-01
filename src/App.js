@@ -12,12 +12,7 @@ function App() {
                 <main className="main">
                     <ToastContainer />
                     <Switch>
-                        <Route exact path="/sio">
-                            <Portfolio mainApp={false} />
-                        </Route>
-                        <Route exact path="/">
-                            <Portfolio mainApp={true} />
-                        </Route>
+                        <Route exact path="/" component={Portfolio} />
                         <Route path="*" component={FourOhFour} />
                     </Switch>
                 </main>

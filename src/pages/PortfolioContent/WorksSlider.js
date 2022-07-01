@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 import Modal from '../../components/generics/Modal';
 import { PlanetOne } from '../../assets/Portfolio/indexEtc';
 
-const WorksSlider = ({ worksList, fr }) => {
+const WorksSlider = ({ worksList }) => {
     const container = useRef(null);
     const filters = useRef(null);
     const arrowLeft = useRef(null);
@@ -173,7 +173,7 @@ const WorksSlider = ({ worksList, fr }) => {
 
     return (
         <div className="works" id="works">
-            <Modal show={modal} setModal={setModal} info={currentMod} fr={fr} />
+            <Modal show={modal} setModal={setModal} info={currentMod} />
 
             <div className="title__container">
                 <h2 className="bg-title">WORKS</h2>
