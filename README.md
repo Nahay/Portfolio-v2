@@ -1,10 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9916abd4-b483-49c2-bc7e-308d4c7c3a1e/deploy-status)](https://app.netlify.com/sites/lilyb/deploys)
-
 # Lily's Portfolio
 
-![Homepage](https://raw.githubusercontent.com/Nahay/Assets/master/Portfolio/Portfolio_Home.png)
+![Homepage](https://raw.githubusercontent.com/Nahay/Assets/master/Old%20Portfolio/Portfolio_Home.png)
 
-Just take a look ! Everything's here: [lilyb.netlify.app](https://lilyb.netlify.app)
+Just take a look ! Everything's [here](https://portfoliov2.lilybarberou.fr)
 
 ## 💡 Imagined with
 
